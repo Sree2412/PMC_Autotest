@@ -120,7 +120,7 @@ public class testBase {
     public void getUrl(String url) throws IOException {
         driver.manage().window().maximize();
         log.info("navigating to :-" + url);
-        // Runtime.getRuntime().exec("C:\\Users\\samada.CONSILIOTEST\\Documents\\GitHub\\PMC_Test\\AutoITScrpts\\Handle2Authentication.exe");
+        Runtime.getRuntime().exec("C:\\Users\\samada.CONSILIOTEST\\Documents\\GitHub\\PMC_Test\\AutoITScrpts\\Handle2Authentication.exe");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(url);
     }
