@@ -1,17 +1,33 @@
 package testBase;
 
+
 import com.relevantcodes.extentreports.ExtentReports;
+
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
+
+import org.apache.commons.codec.EncoderException;
+//import org.apache.commons.codec.binary.Base64;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.DevTools;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v91.network.Network;
+import org.openqa.selenium.devtools.v91.network.model.Headers;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebDriver.TargetLocator;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -22,11 +38,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.firefox.FirefoxBinary;
+
+
+
 
 //import org.openqa.selenium.devtools.network.model.Headers;
 //import customListner.WebEventListener.WebEventListener;
@@ -43,6 +60,7 @@ public class testBase {
     public Properties OR = new Properties();
     public static ExtentReports extent;
     public static ExtentTest test;
+
     //public ITestResult result;
 
     public WebDriver getDriver() {
@@ -68,7 +86,7 @@ public class testBase {
     }
 
     /*Initializing objects*/
-    public void init() throws IOException {
+    public void init() throws IOException, InterruptedException {
         loadData();
         extent = new ExtentReports(System.getProperty("user.dir")+ "/src/main/java/Report/test.html",false);
         String log4jConfPath = "log4j.properties";
@@ -76,15 +94,35 @@ public class testBase {
         System.out.println(OR.getProperty("browser"));
         selectBrowser(OR.getProperty("browser"));
         getUrl(OR.getProperty("url"));
+        //getCredentials(OR.getProperty("username","password"));
+
     }
+
+   /*public void getCredentials(String property) throws InterruptedException {
+        //driver.switchTo().alert();
+        // Handling Username alert
+        Thread.sleep(20000);
+        driver.switchTo().alert().sendKeys("username");
+        driver.switchTo().alert().accept();
+        // Handling Password alert
+        driver.switchTo().alert().sendKeys("password");
+        driver.switchTo().alert().accept();
+
+    }*/
+
     /*To select and open browsers of choice using different OS*/
-    public void selectBrowser(String browser) {
+    public void selectBrowser(String browser) throws IOException {
         System.out.println(System.getProperty("os.name"));
         if (System.getProperty("os.name").contains("Window")) {
             if (browser.equals("chrome")) {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
+                //ChromeOptions options = new ChromeOptions();
+                //options.addArguments("C:/Program Files/Java/http-auto-auth-develop/http-auto-auth-develop");
+               // driver = new ChromeDriver(options);
+                //driver.get("http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!"); //passing auto_auth_ext_credentials=admin:pass123A!@# param to the url will automatically fills the username as admin and password as pass123A!@#
+                //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
                 // driver = new EventFiringWebDriver(dr);
                 // eventListener = new WebEventListener();
                 // driver.register(eventListener);
@@ -92,6 +130,14 @@ public class testBase {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
                 driver = new FirefoxDriver();
+                Alert confirmation = driver.switchTo().alert();
+                String alerttext = confirmation.getText();
+                System.out.println(alerttext);
+                driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
+                driver.switchTo().alert().accept();
+               // firefox_binary="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/Drivers/geckodriver");
+
+
                 // driver = new EventFiringWebDriver(dr);
                 //eventListener = new customListner.WebEventListener();
                 // driver.register(eventListener);
@@ -117,13 +163,32 @@ public class testBase {
         }
     }
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
-    public void getUrl(String url) throws IOException {
+    public void getUrl(String url) throws InterruptedException {
+
         driver.manage().window().maximize();
-        log.info("navigating to :-" + url);
-        Runtime.getRuntime().exec("C:\\Users\\samada.CONSILIOTEST\\Documents\\GitHub\\PMC_Test\\AutoITScrpts\\Handle2Authentication.exe");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //String URL = "http://" + "samada" + ":" + "Supernova2021!!" + "@" + "http://lvsvtapaw01.consiliotest.com/pmc";
         driver.get(url);
+        log.info("navigating to :-" + url);
+        Thread.sleep(1500);
+        /*Alert confirmation = driver.switchTo().alert();
+        String alerttext = confirmation.getText();
+        System.out.println(alerttext);
+        driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
+        driver.switchTo().alert().accept();*/
+        // Handling Password alert
+        //driver.switchTo().alert().sendKeys("Supernova2021!!");
+        //driver.switchTo().alert().accept();
+
+       // driver = new EventFiringWebDriver(driver);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
+
     }
+
+
+
+
 
 
     /*Read Excel sheet data
@@ -261,15 +326,15 @@ public class testBase {
         extent.endTest(test);
         extent.flush();
     }
-    /*Explicit Wait method for Webelement to be clickable*/
+   /* Explicit Wait method for Webelement to be clickable*/
     public void  waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
         wait.until(ExpectedConditions.elementToBeClickable(element));
 //		return element;
     }
 
-
 }
+
 
 
 

@@ -1,3 +1,507 @@
 2021-05-01 17:12:22 INFO  testBase:122 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
 2021-05-01 17:12:24 INFO  testBase:22 - =======started NewFormcreation Test===========
 2021-05-01 17:16:27 INFO  testBase:122 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 17:33:41 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 18:08:50 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 21:07:56 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 21:07:56 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 21:24:20 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 21:24:20 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 21:52:56 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 21:52:56 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:28:25 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:28:25 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:31:21 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:31:21 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:44:47 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:44:47 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:46:46 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:46:46 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:48:42 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:48:42 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 22:57:20 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 22:57:20 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 23:03:19 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 23:03:19 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 23:11:02 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 23:11:02 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-01 23:56:24 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-01 23:56:24 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 08:05:26 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 08:05:26 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 08:35:49 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 08:35:49 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 08:47:14 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 08:47:14 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 08:51:57 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 08:51:57 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 08:56:37 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 08:56:37 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:01:07 INFO  testBase:123 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 09:01:07 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:39:50 INFO  testBase:124 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 09:39:50 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:44:22 INFO  testBase:125 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 09:44:22 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:44:24 INFO  testBase:264 - browser closed
+2021-05-02 09:49:05 INFO  testBase:128 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 09:49:05 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:49:08 INFO  testBase:265 - browser closed
+2021-05-02 09:50:09 INFO  testBase:128 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 09:50:10 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:51:12 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 09:51:14 INFO  testBase:265 - browser closed
+2021-05-02 13:43:58 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 13:47:32 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 13:48:33 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 13:48:35 INFO  testBase:265 - browser closed
+2021-05-02 13:53:30 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 13:53:33 INFO  testBase:265 - browser closed
+2021-05-02 13:55:55 INFO  testBase:127 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 13:55:55 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 14:08:00 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 14:08:00 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 14:16:18 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 14:16:18 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 14:44:02 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 14:44:02 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 21:22:42 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 21:22:42 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 21:50:36 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 21:50:36 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:10:11 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 22:10:11 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:12:46 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 22:12:46 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:17:22 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 22:17:22 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:18:31 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 22:18:31 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:19:36 INFO  testBase:128 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-02 22:19:36 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-02 22:50:50 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 08:05:49 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 08:46:57 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 08:48:25 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 08:48:25 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 09:22:33 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 09:25:38 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 10:17:07 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:25:51 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:40:11 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:40:13 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 12:43:49 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:43:49 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 12:45:21 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:45:22 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 12:47:22 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 12:47:22 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:31:34 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:31:34 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:31:45 INFO  testBase:288 - browser closed
+2021-05-03 15:35:13 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:35:13 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:38:06 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:38:07 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:44:11 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:44:11 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:46:40 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:46:40 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:47:12 INFO  testBase:129 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:47:12 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 15:59:45 INFO  testBase:129 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 15:59:45 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 16:00:17 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (0bbf93e86cdbf33b3239774f299e3940)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-03 16:00:17 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (0bbf93e86cdbf33b3239774f299e3940)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-03 16:00:17 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (0bbf93e86cdbf33b3239774f299e3940)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-03 16:00:17 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (0bbf93e86cdbf33b3239774f299e3940)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-03 16:00:28 INFO  testBase:288 - browser closed
+2021-05-03 16:03:40 INFO  testBase:129 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 16:03:40 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 16:08:30 INFO  testBase:129 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-03 16:08:30 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 16:09:08 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ceea26f0c9894de03fc3e4ce56d06a27)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-03 16:09:09 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (ceea26f0c9894de03fc3e4ce56d06a27)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-03 16:09:09 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (ceea26f0c9894de03fc3e4ce56d06a27)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-03 16:09:09 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ceea26f0c9894de03fc3e4ce56d06a27)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-03 16:09:20 INFO  testBase:288 - browser closed
+2021-05-03 16:19:58 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 19:18:13 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 19:22:00 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 19:26:33 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 19:31:15 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-03 19:31:42 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (7f5ac14ce7506cfa06305d7fa3f76e45)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-03 19:31:42 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (7f5ac14ce7506cfa06305d7fa3f76e45)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-03 19:31:42 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (7f5ac14ce7506cfa06305d7fa3f76e45)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-03 19:31:42 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (7f5ac14ce7506cfa06305d7fa3f76e45)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-03 19:31:53 INFO  testBase:283 - browser closed
+2021-05-04 06:19:44 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 06:45:19 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 06:45:53 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ee5e6a6a987435fa4d675bb44b28601c)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-04 06:45:53 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (ee5e6a6a987435fa4d675bb44b28601c)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-04 06:45:54 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (ee5e6a6a987435fa4d675bb44b28601c)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-04 06:45:54 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ee5e6a6a987435fa4d675bb44b28601c)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-04 06:46:04 INFO  testBase:283 - browser closed
+2021-05-04 08:23:31 INFO  testBase:134 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 08:23:31 INFO  testBase:272 - browser closed
+2021-05-04 08:24:31 INFO  testBase:134 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 08:24:31 INFO  testBase:272 - browser closed
+2021-05-04 09:05:12 INFO  testBase:138 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:05:12 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 09:06:23 INFO  testBase:138 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:06:23 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 09:06:53 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (0b5b340802fb51d8a375d8bcec5056d2)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-04 09:06:53 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (0b5b340802fb51d8a375d8bcec5056d2)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-04 09:06:53 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (0b5b340802fb51d8a375d8bcec5056d2)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-04 09:06:54 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (0b5b340802fb51d8a375d8bcec5056d2)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-04 09:07:04 INFO  testBase:296 - browser closed
+2021-05-04 09:24:48 INFO  testBase:138 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:24:48 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 09:26:35 INFO  testBase:138 - navigating to :-http://consiliotestsamada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:26:35 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 09:34:49 INFO  testBase:138 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:34:49 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 09:36:14 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (395238c02d5b143de985c7da03af0681)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-04 09:36:14 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (395238c02d5b143de985c7da03af0681)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-04 09:36:15 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (395238c02d5b143de985c7da03af0681)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-04 09:36:15 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (395238c02d5b143de985c7da03af0681)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-04 09:36:25 INFO  testBase:296 - browser closed
+2021-05-04 09:45:26 INFO  testBase:138 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 09:45:26 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:06:46 INFO  testBase:138 - navigating to :-http://mlvtwsrv01:8082/
+2021-05-04 10:06:46 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:11:22 INFO  testBase:138 - navigating to :-http://productions.qa.consiliotest.com/
+2021-05-04 10:11:22 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:16:37 INFO  testBase:138 - navigating to :-https://lvsvqwrewb01.consiliotest.com/Relativity/External.aspx?AppID=-1&ArtifactID=62&ArtifactTypeID=8&navigateListPage=True&DirectTo=%25applicationpath%25%2FCustomPages%2F2ff16b11-a4ca-4f02-8bbb-1f07f23fe713%2Findex.html%3F%25appid%25%26%25artifacttypeid%25%26%25systemid%25&SelectedTab=1015520#/ViewId=112
+2021-05-04 10:16:37 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:19:32 INFO  testBase:138 - navigating to :-http://samada:Global@88821144@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 10:19:32 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:23:16 INFO  testBase:138 - navigating to :-http://samada:Global@productions.qa.consiliotest.com/
+2021-05-04 10:23:16 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 10:25:52 INFO  testBase:138 - navigating to :-http://mlvtwsrv01:8082/
+2021-05-04 10:25:52 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 11:06:32 INFO  testBase:138 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:06:32 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 11:27:50 INFO  testBase:140 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:27:50 INFO  testBase:22 - =======started NewFormcreation Test===========
+2021-05-04 11:46:21 INFO  testBase:140 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:46:21 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 11:47:37 INFO  testBase:140 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:47:37 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 11:48:45 INFO  testBase:140 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:48:45 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 11:51:29 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (a558726f3e6bfb5f80e8a66d8d38067e)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-04 11:51:29 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (a558726f3e6bfb5f80e8a66d8d38067e)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-04 11:51:29 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (a558726f3e6bfb5f80e8a66d8d38067e)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-04 11:51:30 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (a558726f3e6bfb5f80e8a66d8d38067e)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-04 11:51:40 INFO  testBase:281 - browser closed
+2021-05-04 11:53:11 INFO  testBase:140 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:53:11 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 11:59:25 INFO  testBase:140 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 11:59:25 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 12:03:32 INFO  testBase:140 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:03:32 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 12:18:12 INFO  testBase:154 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:21:40 INFO  testBase:154 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:22:33 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:24:14 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:26:59 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:43:34 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:45:16 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 12:45:16 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-04 13:07:32 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 13:07:32 INFO  testBase:26 - =======started NewFormcreation Test===========
+2021-05-04 14:32:13 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 14:32:13 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 14:36:47 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 14:36:47 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 14:47:07 INFO  testBase:155 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 15:41:41 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 15:46:52 INFO  testBase:156 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 15:51:10 INFO  testBase:156 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 15:54:20 INFO  testBase:156 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 16:10:11 INFO  testBase:156 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 16:24:50 INFO  testBase:156 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 16:31:20 INFO  testBase:157 - navigating to :-http://samada:Supernova2021!!@lvsvtapaw01.consiliotest.com/pmc
+2021-05-04 18:58:21 INFO  testBase:157 - navigating to :-http://mlvtwsrv01:8082/
+2021-05-04 19:06:17 INFO  testBase:157 - navigating to :-http://mlvtwsrv01:8082/
+2021-05-04 19:06:17 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 19:13:19 INFO  testBase:157 - navigating to :-http://mlvtwsrv01:8082/
+2021-05-04 19:13:20 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 22:04:57 INFO  testBase:160 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-04 22:04:57 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 22:10:35 INFO  testBase:160 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-04 22:10:35 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 22:16:59 INFO  testBase:164 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-04 22:16:59 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-04 22:18:51 INFO  testBase:163 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-04 22:18:51 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-05 06:58:13 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 06:58:13 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-05 06:58:53 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8068d8673bbe39004281a01b79d44996)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-05 06:58:53 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (8068d8673bbe39004281a01b79d44996)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-05 06:58:53 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (8068d8673bbe39004281a01b79d44996)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-05 06:58:53 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8068d8673bbe39004281a01b79d44996)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-05 06:58:54 INFO  testBase:305 - browser closed
+2021-05-05 07:00:20 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 07:00:20 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-05 07:00:42 INFO  HomePage:72 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (4a813b114e19c80761afccf8cea85bf1)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-05 07:00:42 INFO  HomePage:74 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (4a813b114e19c80761afccf8cea85bf1)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-05 07:00:42 INFO  HomePage:76 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (4a813b114e19c80761afccf8cea85bf1)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-05 07:00:43 INFO  HomePage:78 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (4a813b114e19c80761afccf8cea85bf1)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-05 10:02:09 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 10:02:09 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-05 10:02:33 INFO  HomePage:85 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (d1d5b505608de847c06c548ab2842178)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-05 10:02:33 INFO  HomePage:87 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (d1d5b505608de847c06c548ab2842178)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-05 10:02:33 INFO  HomePage:89 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (d1d5b505608de847c06c548ab2842178)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-05 10:03:57 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 10:03:57 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 10:06:27 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 10:06:27 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 10:55:04 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 10:55:04 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 10:58:38 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 10:58:38 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 11:02:21 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 11:02:21 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 11:13:04 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 11:13:04 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 11:16:57 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 11:16:58 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 11:24:28 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 11:24:28 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 11:40:08 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 11:40:08 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 13:26:06 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:26:06 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 13:29:44 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:29:44 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-05 13:32:29 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:32:29 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 13:46:07 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:46:07 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 13:49:37 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:49:37 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 13:53:51 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:53:51 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 13:56:07 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 13:56:07 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:22:51 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:22:51 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:27:16 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:27:16 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:35:13 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:35:13 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:38:40 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:38:40 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:42:27 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:42:27 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:43:56 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:43:56 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 14:46:04 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 14:46:04 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 15:08:01 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 15:08:01 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 15:19:40 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 15:19:40 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 15:44:18 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 15:44:18 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 15:52:05 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 15:52:05 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-05 15:56:30 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-05 15:56:30 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 07:20:29 INFO  testBase:161 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 07:20:29 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 07:30:25 INFO  testBase:163 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 07:34:56 INFO  testBase:163 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 07:41:04 INFO  testBase:164 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 08:39:07 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 08:48:23 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 08:50:28 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 08:50:29 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 08:52:46 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 08:52:47 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 08:53:08 INFO  testBase:28 - =======Finished compareForm Test===========
+2021-05-06 09:04:34 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:04:35 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:11:56 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:11:58 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:17:26 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:17:27 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:21:17 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:21:19 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:24:24 INFO  testBase:166 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:24:25 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:38:33 INFO  testBase:167 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:38:35 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:41:46 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:41:47 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:43:38 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:43:40 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:45:03 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:45:05 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:45:25 INFO  testBase:28 - =======Finished compareForm Test===========
+2021-05-06 09:49:44 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:49:46 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:51:28 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:51:29 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:55:03 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:55:05 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 09:58:45 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 09:58:47 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:01:55 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:01:57 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:04:09 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:04:10 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:08:33 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:08:34 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:09:52 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:09:54 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:26:59 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:27:01 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-06 10:28:14 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:28:16 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-06 10:32:02 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 10:32:04 INFO  testBase:33 - =======started compareformclosebutton Test===========
+2021-05-06 10:32:28 INFO  testBase:37 - =======Finished compareformclosebutton Test===========
+2021-05-06 11:15:50 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:15:51 INFO  testBase:23 - =======started compareformclosebutton Test===========
+2021-05-06 11:16:12 INFO  testBase:27 - =======Finished compareformclosebutton Test===========
+2021-05-06 11:16:12 INFO  testBase:325 - browser closed
+2021-05-06 11:17:30 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:17:32 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:17:50 INFO  HomePage:85 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (4da29d8e8cb45f9d4c6b0bafb0aef5a9)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:17:50 INFO  HomePage:87 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (4da29d8e8cb45f9d4c6b0bafb0aef5a9)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:17:50 INFO  HomePage:89 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (4da29d8e8cb45f9d4c6b0bafb0aef5a9)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:26:38 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:26:39 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:27:01 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (85044d663fad93ebee2eba3a73753d33)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:27:01 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (85044d663fad93ebee2eba3a73753d33)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:27:01 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (85044d663fad93ebee2eba3a73753d33)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:29:24 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:29:25 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:29:43 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8c68c787d6d1aa115e9efe5b4beab9ce)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:29:43 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (8c68c787d6d1aa115e9efe5b4beab9ce)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:29:43 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (8c68c787d6d1aa115e9efe5b4beab9ce)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:31:19 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:31:21 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:31:39 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (5615efd19cad1e4b8a1aa6fae281c315)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:31:39 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (5615efd19cad1e4b8a1aa6fae281c315)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:31:39 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (5615efd19cad1e4b8a1aa6fae281c315)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:35:51 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:35:52 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:36:11 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (257450314edefdd578b4151c3e187130)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:36:11 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (257450314edefdd578b4151c3e187130)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:36:11 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (257450314edefdd578b4151c3e187130)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:38:58 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:38:59 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:39:30 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ad2c8e7eee731007e28032ab1ba53220)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:39:30 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (ad2c8e7eee731007e28032ab1ba53220)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:39:30 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (ad2c8e7eee731007e28032ab1ba53220)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:40:44 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:40:45 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:41:03 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (2fdeeb00dec5399276636902935742b4)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:41:03 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (2fdeeb00dec5399276636902935742b4)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:41:04 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (2fdeeb00dec5399276636902935742b4)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:41:04 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (2fdeeb00dec5399276636902935742b4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 11:44:03 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:44:04 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:44:24 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:44:24 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:44:24 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:44:24 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 11:44:24 INFO  HomePage:95 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 11:44:24 INFO  HomePage:97 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (8f8b8275edbf4c1843db85056591f7fe)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-06 11:44:25 INFO  testBase:31 - =======Finished NewFormcreation Test===========
+2021-05-06 11:45:04 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 11:45:06 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 11:45:25 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 11:45:25 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 11:45:25 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 11:45:25 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 11:45:26 INFO  HomePage:95 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 11:45:26 INFO  HomePage:97 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (ec6ad5f179114ea394c4eaa9bd06faf8)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-06 11:45:26 INFO  testBase:31 - =======Finished NewFormcreation Test===========
+2021-05-06 12:06:35 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 12:06:37 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 12:06:57 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 12:06:57 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 12:06:57 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 12:06:57 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 12:06:57 INFO  HomePage:95 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 12:06:57 INFO  HomePage:97 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (df5fd954b795777783b9992fa4b6cf0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-06 12:06:58 INFO  testBase:31 - =======Finished NewFormcreation Test===========
+2021-05-06 12:07:14 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 12:07:16 INFO  testBase:26 - =======started NewFormcreation Test===========
+2021-05-06 12:07:36 INFO  HomePage:103 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 12:07:37 INFO  HomePage:105 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 12:07:37 INFO  HomePage:107 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 12:07:37 INFO  HomePage:110 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 12:07:37 INFO  HomePage:112 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 12:07:37 INFO  HomePage:114 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (8dcf26ffd5bd593872cb5f70bf154bd5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-06 12:07:37 INFO  testBase:33 - =======Finished NewFormcreation Test===========
+2021-05-06 12:07:38 INFO  testBase:325 - browser closed
+2021-05-06 12:08:06 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 12:08:08 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-06 12:08:30 INFO  HomePage:121 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (3d33d535b3b7835c0b8e0d5d91cc5219)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 12:08:30 INFO  HomePage:123 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (3d33d535b3b7835c0b8e0d5d91cc5219)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 12:08:30 INFO  HomePage:125 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (3d33d535b3b7835c0b8e0d5d91cc5219)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 12:08:30 INFO  HomePage:128 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (3d33d535b3b7835c0b8e0d5d91cc5219)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-06 12:08:31 INFO  testBase:325 - browser closed
+2021-05-06 13:18:50 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 13:18:51 INFO  testBase:23 - =======started NewFormcreation Test===========
+2021-05-06 13:19:11 INFO  HomePage:156 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (f6721b4f80f33943181e7035ee5d1ff3)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 13:19:11 INFO  HomePage:158 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (f6721b4f80f33943181e7035ee5d1ff3)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 13:19:12 INFO  HomePage:160 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (f6721b4f80f33943181e7035ee5d1ff3)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 13:19:22 INFO  testBase:325 - browser closed
+2021-05-06 13:22:27 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 13:22:29 INFO  testBase:23 - =======started NewFormcreation Test===========
+2021-05-06 13:22:48 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 13:22:49 INFO  testBase:23 - =======started NewFormcreation Test===========
+2021-05-06 13:23:16 INFO  HomePage:156 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (9557e33894eaa14ad7965d7e751f8459)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-06 13:23:16 INFO  HomePage:158 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (9557e33894eaa14ad7965d7e751f8459)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-06 13:23:16 INFO  HomePage:160 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (9557e33894eaa14ad7965d7e751f8459)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 13:23:26 INFO  HomePage:162 - click cancel button object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(2) > span'
+2021-05-06 13:23:26 INFO  testBase:27 - =======Finished NewFormcreation Test===========
+2021-05-06 13:23:26 INFO  testBase:325 - browser closed
+2021-05-06 14:52:43 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 14:52:44 INFO  testBase:23 - =======started compareformclosebutton Test===========
+2021-05-06 15:41:03 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 15:41:04 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 15:41:24 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (140a91dd5dbad761e07dc47d7dfb6d38)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:41:24 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (140a91dd5dbad761e07dc47d7dfb6d38)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:41:24 INFO  testBase:325 - browser closed
+2021-05-06 15:51:30 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 15:51:31 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 15:51:52 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (d0e9e26f39ad30e4b07051f69c049e71)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:51:52 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (d0e9e26f39ad30e4b07051f69c049e71)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:51:52 INFO  testBase:325 - browser closed
+2021-05-06 15:55:53 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 15:55:54 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 15:56:13 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (585e2aeb0b24408954b3a8c3f3863096)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:56:13 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (585e2aeb0b24408954b3a8c3f3863096)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:56:14 INFO  testBase:325 - browser closed
+2021-05-06 15:58:13 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 15:58:15 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 15:58:34 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (ef3dcbd49dc16b7b9c156dbf8228a312)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:58:34 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (ef3dcbd49dc16b7b9c156dbf8228a312)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 15:58:35 INFO  testBase:325 - browser closed
+2021-05-06 16:04:39 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 16:04:40 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 16:05:00 INFO  testBase:325 - browser closed
+2021-05-06 16:08:28 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 16:08:30 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 16:08:50 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (6e324d0e80bd8fa73db96e2c0ae51ccb)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:08:51 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (6e324d0e80bd8fa73db96e2c0ae51ccb)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:08:51 INFO  HomePage:66 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (6e324d0e80bd8fa73db96e2c0ae51ccb)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 16:09:01 INFO  testBase:325 - browser closed
+2021-05-06 16:10:22 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 16:10:24 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 16:10:43 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (2024ac2979d851e07151ddce293e4e77)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:10:43 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (2024ac2979d851e07151ddce293e4e77)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:10:43 INFO  HomePage:66 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (2024ac2979d851e07151ddce293e4e77)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-06 16:12:32 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-06 16:12:33 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-06 16:12:50 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (1d199d77f243169a1df009b652aa0d0d)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:12:50 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (1d199d77f243169a1df009b652aa0d0d)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-06 16:12:50 INFO  HomePage:67 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (1d199d77f243169a1df009b652aa0d0d)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
