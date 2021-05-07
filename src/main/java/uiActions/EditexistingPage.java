@@ -2,6 +2,7 @@ package uiActions;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import testBase.testBase;
 
-
-
+import java.util.List;
 
 
 /* For every new class always extend from testBase*/
@@ -31,8 +31,8 @@ public class EditexistingPage  extends testBase {
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-top.ng-tns-c120-5.ng-star-inserted")
     WebElement Openexistingformdialog;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)")
-    WebElement Selectexistingform;
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-8.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(1)")
+    WebElement Selectexistingformtable;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span")
     WebElement Openexistingformbutton;
@@ -56,19 +56,39 @@ public class EditexistingPage  extends testBase {
         waitForElement(driver, 5000, EnterHCode);
         EnterHCode.click();
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
-        EnterHCode.sendKeys("H45678 - QA - H45678");
+        EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
-        //Select hcode = new Select(EnterHCode);
-        //log.info("select Hcode from the dropdown object is:-" + EnterHCode.toString());
-        //hcode.selectByIndex(0);
-        //log.info("1st hcode selected:-" + EnterHCode.toString());
-
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        EnterHCode.sendKeys(Keys.DOWN);
+        log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
+        EnterHCode.sendKeys(Keys.ENTER);
+        log.info("Enter Hcode value object enter:-" + EnterHCode.toString());
         Editexistingformbutton.click();
         log.info("clicked on Edit existing form object is:-" + Editexistingformbutton.toString());
-        Selectexistingform.click();
-        log.info("clicked on Edit existing form object is:-" + Editexistingformbutton.toString());
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // find the table
+        WebElement table = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody"));
+
+        // find the row
+        WebElement tablerow = table.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)"));
+
+        //click on the row
+        tablerow.click();
+        log.info("click on 1st row of the table :-" + tablerow.toString());
         Openexistingformbutton.click();
         log.info("clicked on Open form object is:-" + Openexistingformbutton.toString());
+
+
+
+
 
 
     }
@@ -77,15 +97,24 @@ public class EditexistingPage  extends testBase {
         waitForElement(driver, 5000, EnterHCode);
         EnterHCode.click();
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
-        EnterHCode.sendKeys("H45678 - QA - H45678");
+        EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
-        //Select hcode = new Select(EnterHCode);
-        //log.info("select Hcode from the dropdown object is:-" + EnterHCode.toString());
-        //hcode.selectByIndex(0);
-        //log.info("1st hcode selected:-" + EnterHCode.toString());
-
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        EnterHCode.sendKeys(Keys.DOWN);
+        log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
+        EnterHCode.sendKeys(Keys.ENTER);
+        log.info("Enter Hcode value object enter:-" + EnterHCode.toString());
         Editexistingformbutton.click();
         log.info("clicked on Edit existing form object is:-" + Editexistingformbutton.toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         CancelexistingformButton.click();
         log.info("clicked on Cancel object is:-" + CancelexistingformButton.toString());
     }

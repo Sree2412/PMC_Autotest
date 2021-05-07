@@ -28,6 +28,9 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebDriver.TargetLocator;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -163,14 +166,37 @@ public class testBase {
         }
     }
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
-    public void getUrl(String url) throws InterruptedException {
+    public void getUrl(String url)  {
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //String URL = "http://" + "samada" + ":" + "Supernova2021!!" + "@" + "http://lvsvtapaw01.consiliotest.com/pmc";
         driver.get(url);
         log.info("navigating to :-" + url);
-        Thread.sleep(1500);
+        //Thread.sleep(1500);
+      /*  Screen scr = new Screen();
+        Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\username.png");
+        try {
+            scr.type(ptnlink1,"samada");
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+        Pattern ptnlink2 = new Pattern(System.getProperty("user.dir") + "\\password.png");
+                try {
+            scr.type(ptnlink1,"Supernova2021!!");
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+        Pattern ptnlink3 = new Pattern(System.getProperty("user.dir") + "\\signin.png");
+        try {
+            scr.click(ptnlink3);
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }*/
+
+
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //String URL = "http://" + "samada" + ":" + "Supernova2021!!" + "@" + "http://lvsvtapaw01.consiliotest.com/pmc";
+
+
         /*Alert confirmation = driver.switchTo().alert();
         String alerttext = confirmation.getText();
         System.out.println(alerttext);
@@ -182,8 +208,12 @@ public class testBase {
 
        // driver = new EventFiringWebDriver(driver);
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
-
+        try {
+            Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\AutoITScrpts\\Handle2Authentication.exe");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        log.info("Entering creds to :-" + url);
     }
 
 
