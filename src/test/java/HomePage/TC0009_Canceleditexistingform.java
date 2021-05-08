@@ -32,7 +32,7 @@ public class TC0009_Canceleditexistingform  extends testBase {
     @AfterClass
     public void endTest() {
 
-        //closeBrowser();
+        closeBrowser();
     }
 }
 

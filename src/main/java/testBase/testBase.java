@@ -121,10 +121,9 @@ public class testBase {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
-                //ChromeOptions options = new ChromeOptions();
-                //options.addArguments("C:/Program Files/Java/http-auto-auth-develop/http-auto-auth-develop");
-               // driver = new ChromeDriver(options);
-                //driver.get("http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!"); //passing auto_auth_ext_credentials=admin:pass123A!@# param to the url will automatically fills the username as admin and password as pass123A!@#
+               // ChromeOptions options = new ChromeOptions();
+                //options.addArguments(System.getProperty("user.dir") + "/http-auto-auth-develop");
+                //driver = new ChromeDriver(options);
                 //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
                 // driver = new EventFiringWebDriver(dr);
                 // eventListener = new WebEventListener();
@@ -133,11 +132,11 @@ public class testBase {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
                 driver = new FirefoxDriver();
-                Alert confirmation = driver.switchTo().alert();
-                String alerttext = confirmation.getText();
-                System.out.println(alerttext);
-                driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
-                driver.switchTo().alert().accept();
+               // Alert confirmation = driver.switchTo().alert();
+               // String alerttext = confirmation.getText();
+               // System.out.println(alerttext);
+               // driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
+               // driver.switchTo().alert().accept();
                // firefox_binary="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/Drivers/geckodriver");
 
 
@@ -172,48 +171,54 @@ public class testBase {
         driver.get(url);
         log.info("navigating to :-" + url);
         //Thread.sleep(1500);
-      /*  Screen scr = new Screen();
-        Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\username.png");
+        Screen scr = new Screen();
+
+        Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498568825.png");
         try {
             scr.type(ptnlink1,"samada");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink2 = new Pattern(System.getProperty("user.dir") + "\\password.png");
-                try {
-            scr.type(ptnlink1,"Supernova2021!!");
+        Pattern ptnlink2 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498582329.png");
+        try {
+            scr.type(ptnlink2,"Supernova2021!!");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink3 = new Pattern(System.getProperty("user.dir") + "\\signin.png");
+        Pattern ptnlink3 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498595989.png");
         try {
             scr.click(ptnlink3);
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
-        }*/
+        }
 
-
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //String URL = "http://" + "samada" + ":" + "Supernova2021!!" + "@" + "http://lvsvtapaw01.consiliotest.com/pmc";
-
-
-        /*Alert confirmation = driver.switchTo().alert();
-        String alerttext = confirmation.getText();
-        System.out.println(alerttext);
-        driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
-        driver.switchTo().alert().accept();*/
-        // Handling Password alert
-        //driver.switchTo().alert().sendKeys("Supernova2021!!");
-        //driver.switchTo().alert().accept();
-
-       // driver = new EventFiringWebDriver(driver);
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Pattern ptnlink4 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498568825.png");
         try {
-            Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\AutoITScrpts\\Handle2Authentication.exe");
-        } catch (IOException e) {
-            e.printStackTrace();
+            scr.type(ptnlink4,"samada");
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+        Pattern ptnlink5 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498582329.png");
+        try {
+            scr.type(ptnlink5,"Supernova2021!!");
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
+        }
+        Pattern ptnlink6 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498595989.png");
+        try {
+            scr.click(ptnlink6);
+        } catch (FindFailed findFailed) {
+            findFailed.printStackTrace();
         }
         log.info("Entering creds to :-" + url);
+
+
+
+
+
+
+
+
     }
 
 

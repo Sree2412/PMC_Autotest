@@ -35,7 +35,7 @@ public class TC0004_CreatenewForm_RelUK extends testBase {
     @AfterClass
     public void endTest() {
 
-        //closeBrowser();
+        closeBrowser();
     }
 
 }

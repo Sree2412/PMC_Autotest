@@ -33,7 +33,7 @@ public class TC0008_Editexistingform extends testBase {
     @AfterClass
     public void endTest() {
 
-        //closeBrowser();
+        closeBrowser();
     }
 }
 

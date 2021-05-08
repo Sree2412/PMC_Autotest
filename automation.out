@@ -837,3 +837,187 @@
 2021-05-07 15:30:19 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (f4f0428afc7954ce8b10a76cb7cf432b)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
 2021-05-07 15:30:36 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
 2021-05-07 15:30:37 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 09:02:56 INFO  testBase:173 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 09:02:56 INFO  testBase:216 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 09:02:56 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 09:03:15 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 09:03:15 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 09:03:20 INFO  HomePage:67 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 09:03:20 INFO  HomePage:69 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 09:03:21 INFO  HomePage:71 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 09:03:21 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (549c3678204489d23a80e97970da10cf)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
+2021-05-08 09:03:22 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
+2021-05-08 09:03:22 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 09:40:11 INFO  testBase:173 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:40:11 INFO  testBase:216 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:40:11 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 09:46:08 INFO  testBase:173 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:46:08 INFO  testBase:216 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:46:08 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 09:49:29 INFO  testBase:173 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:49:29 INFO  testBase:216 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:49:29 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 09:53:46 INFO  testBase:173 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc?auto_auth_ext_credentials=samada:Supernova2021!!
+2021-05-08 09:53:46 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:03:29 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:03:41 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:03:42 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:11:09 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:11:16 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:11:16 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:13:00 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:13:03 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:13:03 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:39:01 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:39:05 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:39:05 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:42:52 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:43:01 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:43:01 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 10:56:22 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:56:32 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 10:56:32 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:02:30 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:02:39 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:02:39 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:11:02 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:11:12 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:11:12 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:17:34 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:17:43 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:17:43 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:22:58 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:23:02 INFO  testBase:193 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:23:02 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:24:59 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:25:03 INFO  testBase:194 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:25:03 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:27:47 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:27:51 INFO  testBase:194 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:27:51 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:33:00 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:33:05 INFO  testBase:194 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:33:05 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:37:43 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:37:51 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:37:51 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:37:52 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:37:52 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:37:57 INFO  HomePage:67 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:37:58 INFO  HomePage:69 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:37:58 INFO  HomePage:71 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:37:58 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (1ae570715a8c2c38cde2767bc07ef9e2)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
+2021-05-08 11:37:59 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
+2021-05-08 11:37:59 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 11:38:31 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:38:39 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:38:39 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:38:40 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:38:40 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:38:45 INFO  HomePage:67 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:38:45 INFO  HomePage:69 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:38:45 INFO  HomePage:71 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:38:46 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (188c86eccefa70a9b4f6330bd08381dd)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
+2021-05-08 11:38:46 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
+2021-05-08 11:38:46 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 11:40:30 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:40:39 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:40:39 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:40:39 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:40:39 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:40:44 INFO  HomePage:67 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:40:44 INFO  HomePage:69 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:40:44 INFO  HomePage:71 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:40:45 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (afc5ebfa8fedc566d71106d7feefb060)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
+2021-05-08 11:40:46 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
+2021-05-08 11:40:46 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 11:42:09 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:42:18 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:42:18 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-08 11:42:18 INFO  HomePage:86 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:42:18 INFO  HomePage:88 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:42:18 INFO  HomePage:90 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:42:18 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:42:18 INFO  HomePage:95 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:42:18 INFO  HomePage:97 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (2a87bb995038da5f99afdde5effef117)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-08 11:42:19 INFO  testBase:31 - =======Finished NewFormcreation Test===========
+2021-05-08 11:42:19 INFO  testBase:360 - browser closed
+2021-05-08 11:42:38 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:42:47 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:42:47 INFO  testBase:26 - =======started NewFormcreation Test===========
+2021-05-08 11:42:47 INFO  HomePage:103 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:42:47 INFO  HomePage:105 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:42:47 INFO  HomePage:107 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:42:47 INFO  HomePage:110 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:42:48 INFO  HomePage:112 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:42:48 INFO  HomePage:114 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (4527e7aff0010725842e472cab6a2277)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-08 11:42:48 INFO  testBase:33 - =======Finished NewFormcreation Test===========
+2021-05-08 11:42:48 INFO  testBase:360 - browser closed
+2021-05-08 11:43:08 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:43:17 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:43:17 INFO  testBase:24 - =======started NewFormcreation Test===========
+2021-05-08 11:43:17 INFO  HomePage:121 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (6fc553db597e4735f2349c861de45ccb)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:43:17 INFO  HomePage:123 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (6fc553db597e4735f2349c861de45ccb)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:43:17 INFO  HomePage:125 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (6fc553db597e4735f2349c861de45ccb)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:43:18 INFO  HomePage:128 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (6fc553db597e4735f2349c861de45ccb)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:43:18 INFO  testBase:360 - browser closed
+2021-05-08 11:44:15 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:44:24 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:44:24 INFO  testBase:25 - =======started NewFormcreation Test===========
+2021-05-08 11:44:24 INFO  HomePage:138 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:44:24 INFO  HomePage:140 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:44:25 INFO  HomePage:142 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:44:25 INFO  HomePage:145 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:44:25 INFO  HomePage:147 - click Select Relativity US Form object is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-08 11:44:25 INFO  HomePage:149 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (335bb5368af64a4e8f33a9fc15690fb4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span]
+2021-05-08 11:44:25 INFO  testBase:32 - =======Finished NewFormcreation Test===========
+2021-05-08 11:44:26 INFO  testBase:360 - browser closed
+2021-05-08 11:44:46 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:44:55 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:44:55 INFO  testBase:23 - =======started NewFormcreation Test===========
+2021-05-08 11:44:55 INFO  HomePage:156 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (ec11781a6c70e91bfd808513292e0b37)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:44:55 INFO  HomePage:158 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (ec11781a6c70e91bfd808513292e0b37)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:44:55 INFO  HomePage:160 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (ec11781a6c70e91bfd808513292e0b37)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:44:55 INFO  HomePage:162 - click cancel button object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(2) > span'
+2021-05-08 11:44:55 INFO  testBase:27 - =======Finished NewFormcreation Test===========
+2021-05-08 11:44:55 INFO  testBase:360 - browser closed
+2021-05-08 11:45:13 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:45:22 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:45:22 INFO  testBase:23 - =======started NewFormcreation Test===========
+2021-05-08 11:45:22 INFO  HomePage:156 - clicked on Choose Campus Dropdown object is:-[[ChromeDriver: chrome on WINDOWS (58c7c215da10094f045ac7316f3c0073)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ui-dropdown-trigger.ui-state-default.ui-corner-right.ng-tns-c64-1 > span]
+2021-05-08 11:45:22 INFO  HomePage:158 - clicked on Choose QA Campus object is:-[[ChromeDriver: chrome on WINDOWS (58c7c215da10094f045ac7316f3c0073)] -> css selector: #ui-fieldset-0-content > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c64-1.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div > ul > p-dropdownitem:nth-child(2) > li]
+2021-05-08 11:45:22 INFO  HomePage:160 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (58c7c215da10094f045ac7316f3c0073)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:45:22 INFO  HomePage:162 - click cancel button object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(2) > span'
+2021-05-08 11:45:22 INFO  testBase:27 - =======Finished NewFormcreation Test===========
+2021-05-08 11:45:22 INFO  testBase:360 - browser closed
+2021-05-08 11:45:51 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:46:00 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:46:00 INFO  testBase:24 - =======started compareForm Test===========
+2021-05-08 11:46:01 INFO  testBase:360 - browser closed
+2021-05-08 11:46:20 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:46:29 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:46:29 INFO  testBase:23 - =======started compareformclosebutton Test===========
+2021-05-08 11:46:31 INFO  testBase:360 - browser closed
+2021-05-08 11:47:06 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:47:15 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:47:15 INFO  testBase:26 - =======started openexistingform Test===========
+2021-05-08 11:47:15 INFO  HomePage:58 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:15 INFO  HomePage:60 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:20 INFO  HomePage:67 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:20 INFO  HomePage:69 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:20 INFO  HomePage:71 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:47:21 INFO  HomePage:85 - click on 1st row of the table :-[[[[ChromeDriver: chrome on WINDOWS (8f29453c67b13547d359a7bd9867ab5f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody]] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)]
+2021-05-08 11:47:22 INFO  HomePage:87 - clicked on Open form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(1) > span'
+2021-05-08 11:47:22 INFO  testBase:30 - =======Finished openexistingform Test===========
+2021-05-08 11:47:22 INFO  testBase:360 - browser closed
+2021-05-08 11:47:40 INFO  testBase:172 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:47:48 INFO  testBase:213 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-08 11:47:49 INFO  testBase:25 - =======started cancelexistingformbutton Test===========
+2021-05-08 11:47:49 INFO  HomePage:99 - clicked on EnterHcode object is:-[[ChromeDriver: chrome on WINDOWS (942930ac8a67ae1011e0ac35902f14a2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:49 INFO  HomePage:101 - Enter Hcode value object is:-[[ChromeDriver: chrome on WINDOWS (942930ac8a67ae1011e0ac35902f14a2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:49 INFO  HomePage:108 - Enter Hcode value object click down:-[[ChromeDriver: chrome on WINDOWS (942930ac8a67ae1011e0ac35902f14a2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:49 INFO  HomePage:110 - Enter Hcode value object enter:-[[ChromeDriver: chrome on WINDOWS (942930ac8a67ae1011e0ac35902f14a2)] -> css selector: #ui-fieldset-2-content > div > p-autocomplete > span > input]
+2021-05-08 11:47:50 INFO  HomePage:112 - clicked on Edit existing form object is:-[[ChromeDriver: chrome on WINDOWS (942930ac8a67ae1011e0ac35902f14a2)] -> css selector: #ui-fieldset-2-content > div > div > p-button:nth-child(1) > button > span]
+2021-05-08 11:47:55 INFO  HomePage:119 - clicked on Cancel object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-5.ng-star-inserted > p-footer > button:nth-child(2) > span'
+2021-05-08 11:47:55 INFO  testBase:29 - =======Finished openexistingformbutton Test===========
+2021-05-08 11:47:55 INFO  testBase:360 - browser closed
