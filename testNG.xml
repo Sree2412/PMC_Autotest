@@ -4,16 +4,60 @@
 <suite name="Regression Suite" preserve-order="true" parallel="classes" thread-count="1">
 
     <listeners>
+        <!--  <listener class-name="com.test.automation.uiAutomation.customListner.Listener"></listener>  -->
 
     </listeners>
-
-    <test name="TC000_CreatenewForm">
+    <test name="createNewFormrelus">
         <classes>
-            <class name="TC000_CreatenewForm"></class>
+            <class name="HomePage.TC0001_CreatenewForm_RelUS"></class>
 
         </classes>
     </test>
 
+    <test name="createNewFormslus">
+        <classes>
+            <class name="HomePage.TC0002_CreatenewForm_SL_US"></class>
 
+        </classes>
+    </test>
+
+    <test name="createNewFormsluk">
+        <classes>
+            <class name="HomePage.TC0003_CreatenewForm_SL_UK"></class>
+        </classes>
+    </test>
+
+    <test name="createNewFormreluk">
+        <classes>
+            <class name="HomePage.TC0004_CreatenewForm_RelUK"></class>
+        </classes>
+    </test>
+
+    <test name="cancelselectform">
+        <classes>
+            <class name="HomePage.TC0005_Cancelselectform"></class>
+        </classes>
+    </test>
+
+    <test name="compareForm">
+        <classes>
+            <class name="HomePage.TC0006_CompareForms"></class>
+        </classes>
+    </test>
+    <test name="compareformclosebutton">
+        <classes>
+            <class name="HomePage.TC0007_CompareFormClose"></class>
+        </classes>
+    </test>
+    <test name="openexistingform">
+        <classes>
+            <class name="HomePage.TC0008_Editexistingform"></class>
+        </classes>
+    </test>
+    <test name="cancelexistingformbutton">
+        <classes>
+            <class name="HomePage.TC0009_Canceleditexistingform"></class>
+        </classes>
+    </test>
 
 </suite>
