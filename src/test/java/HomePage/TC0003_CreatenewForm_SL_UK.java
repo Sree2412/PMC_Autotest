@@ -23,10 +23,7 @@ public class TC0003_CreatenewForm_SL_UK extends testBase {
     public void createNewFormsluk() {
         log.info("=======started NewFormcreation Test===========");
         HomePage homepage = new HomePage(driver);
-        //BasicAuthHandle auth = new BasicAuthHandle(driver);
         homepage.NewFormcreation_sluk();
-        // DesiredCapability cap = new DesiredCapability(driver);
-        //auth.getUrl("");
         Assert.assertEquals(true, homepage.getProjectInformationheader());
         log.info("=======Finished NewFormcreation Test===========");
     }

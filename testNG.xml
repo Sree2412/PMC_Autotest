@@ -59,5 +59,15 @@
             <class name="HomePage.TC0009_Canceleditexistingform"></class>
         </classes>
     </test>
+    <test name="copyexistingform">
+        <classes>
+            <class name="HomePage.TC0010_Copyexistingform"></class>
+        </classes>
+    </test>
+    <test name="cancelcopyexistingform">
+        <classes>
+            <class name="HomePage.TC0011_Cancelcopyexistingform"></class>
+        </classes>
+    </test>
 
 </suite>

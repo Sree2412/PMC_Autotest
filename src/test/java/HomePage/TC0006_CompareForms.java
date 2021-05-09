@@ -23,7 +23,7 @@ public class TC0006_CompareForms extends testBase {
         public void compareForm() {
             log.info("=======started compareForm Test===========");
             ComparePage comparepage = new ComparePage(driver);
-            comparepage.comapareProdspecforms();
+            comparepage.compareProdspecforms();
             Assert.assertTrue(true,("No Differences Found, Forms Are The Same."));
             log.info("=======Finished compareForm Test===========");
         }

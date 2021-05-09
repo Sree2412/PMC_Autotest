@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.01">
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.02">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0010_Copyexistingform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0011_Cancelcopyexistingform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0006_CompareForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0006_CompareForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,25 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0006_CompareForms.compareForm" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HomePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HomePage" />
-      <option name="MAIN_CLASS_NAME" value="HomePage.TC0006_CompareForms" />
-      <option name="METHOD_NAME" value="compareForm" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0007_CompareFormClose" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0007_CompareFormClose.compareformclosebutton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -90,24 +80,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="HomePage" />
       <option name="MAIN_CLASS_NAME" value="HomePage.TC0007_CompareFormClose" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0008_Editexistingform.openexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HomePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HomePage" />
-      <option name="MAIN_CLASS_NAME" value="HomePage.TC0008_Editexistingform" />
-      <option name="METHOD_NAME" value="openexistingform" />
+      <option name="METHOD_NAME" value="compareformclosebutton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,13 +139,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC0010_Copyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0010_Copyexistingform" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0011_Cancelcopyexistingform.cancelcopyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0011_Cancelcopyexistingform" />
+      <option name="METHOD_NAME" value="cancelcopyexistingform" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
+        <item itemvalue="TestNG.TC0007_CompareFormClose.compareformclosebutton" />
+        <item itemvalue="TestNG.TC0011_Cancelcopyexistingform.cancelcopyexistingform" />
+        <item itemvalue="TestNG.TC0010_Copyexistingform" />
         <item itemvalue="TestNG.TC0009_Canceleditexistingform" />
-        <item itemvalue="TestNG.TC0008_Editexistingform.openexistingform" />
-        <item itemvalue="TestNG.TC0007_CompareFormClose" />
-        <item itemvalue="TestNG.TC0006_CompareForms.compareForm" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620499712598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 1.02">
+      <created>1620502704434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620502704434</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +240,8 @@
     <MESSAGE value="Version 0.01" />
     <MESSAGE value="Version 1.00" />
     <MESSAGE value="Version 1.01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.01" />
+    <MESSAGE value="Version 1.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

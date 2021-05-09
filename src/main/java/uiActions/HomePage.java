@@ -108,7 +108,7 @@ public class HomePage  extends testBase {
         //waitForElement(driver, 25000, SelectFormTemplatedropdown);
         Select selectformdropdown = new Select(SelectFormTemplatedropdown);
         log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(2);
+        selectformdropdown.selectByIndex(1);
         log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
@@ -126,7 +126,7 @@ public class HomePage  extends testBase {
         //waitForElement(driver, 25000, SelectFormTemplatedropdown);
         Select selectformdropdown = new Select(SelectFormTemplatedropdown);
         log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(4);
+        selectformdropdown.selectByIndex(3);
         log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
@@ -143,7 +143,7 @@ public class HomePage  extends testBase {
         //waitForElement(driver, 25000, SelectFormTemplatedropdown);
         Select selectformdropdown = new Select(SelectFormTemplatedropdown);
         log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(3);
+        selectformdropdown.selectByIndex(2);
         log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
