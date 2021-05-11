@@ -1,5 +1,5 @@
 
-package HomePage;
+package Testcases;
 
         import org.testng.Assert;
         import org.testng.annotations.AfterClass;

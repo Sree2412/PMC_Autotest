@@ -1,4 +1,4 @@
-package HomePage;
+package Testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -33,7 +33,7 @@ public class TC0006_CompareForms extends testBase {
         @AfterClass
         public void endTest() {
 
-            closeBrowser();
+           // closeBrowser();
         }
 
     }

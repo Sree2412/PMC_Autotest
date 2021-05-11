@@ -1,19 +1,17 @@
-package HomePage;
+package Testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import testBase.testBase;
-import uiActions.ComparePage;
 import uiActions.EditexistingPage;
 
 import java.io.IOException;
 
 
 
-
-public class TC0008_Editexistingform extends testBase {
+public class TC0009_Canceleditexistingform  extends testBase {
     uiActions.EditexistingPage editexistingpage;
 
     @BeforeClass
@@ -22,12 +20,12 @@ public class TC0008_Editexistingform extends testBase {
     }
 
     @Test
-    public void openexistingform() {
-        log.info("=======started openexistingform Test===========");
+    public void cancelexistingformbutton() {
+        log.info("=======started cancelexistingformbutton Test===========");
         EditexistingPage editexistingpage = new EditexistingPage(driver);
-        editexistingpage.editexistingProdspecforms();
-        Assert.assertEquals(true, editexistingpage.verifyexistingformsopens());
-        log.info("=======Finished openexistingform Test===========");
+        editexistingpage.editexistingcancelbutton();
+        Assert.assertEquals(true, editexistingpage.verifyeditexistingCloseButton());
+        log.info("=======Finished openexistingformbutton Test===========");
     }
 
     @AfterClass

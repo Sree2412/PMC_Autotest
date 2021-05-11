@@ -110,11 +110,7 @@ public class EditexistingPage  extends testBase {
         log.info("Enter Hcode value object enter:-" + EnterHCode.toString());
         Editexistingformbutton.click();
         log.info("clicked on Edit existing form object is:-" + Editexistingformbutton.toString());
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 5000, CancelexistingformButton);
         CancelexistingformButton.click();
         log.info("clicked on Cancel object is:-" + CancelexistingformButton.toString());
     }

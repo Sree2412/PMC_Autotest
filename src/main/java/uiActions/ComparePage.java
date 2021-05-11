@@ -25,7 +25,7 @@ public class ComparePage  extends testBase {
     @FindBy(css = "#ui-fieldset-1-content > div > div > p-button:nth-child(2) > button > span")
     WebElement Compareformsbutton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-6.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")
     WebElement LeftFormdropdown;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(3) > select")
@@ -56,16 +56,27 @@ public class ComparePage  extends testBase {
         waitForElement(driver, 5000, Compareformsbutton);
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
-       // waitForElement(driver, 5000, LeftFormdropdown);
+       /* driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")).click();
+        //log.info("Click on Hcode :-" + LeftFormdropdown.toString());
+        // find the listbox
+        WebElement options = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select > optgroup"));
+
+        // find the 1st option
+        WebElement option1 = options.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select > optgroup > option:nth-child(1)"));
+
+        //click on the option1
+        option1.click();
+        log.info("Enter Hcode value object selected:-" + LeftFormdropdown.toString());*/
+        waitForElement(driver, 5000, LeftFormdropdown);
         Select dropdownField1 = new Select(LeftFormdropdown);
-        dropdownField1.selectByIndex(0);
+        dropdownField1.selectByValue("Relativity - U.S.");
         log.info("clicked on Leftform dropdown button is:-" + LeftFormdropdown.toString());
         waitForElement(driver, 5000, LeftVersiondropdown);
         Select dropdownField2 = new Select(LeftVersiondropdown);
         dropdownField2.selectByValue("0");
         log.info("clicked on Leftversion dropdown button is:-" + LeftVersiondropdown.toString());
         Select dropdownField3 = new Select(RightFormDropdown);
-        dropdownField3.selectByIndex(0);
+        dropdownField3.selectByVisibleText("Relativity - U.S.");
         log.info("clicked on Rightform dropdown button is:-" + RightFormDropdown.toString());
         Select dropdownField4 = new Select(RightVersionDropdown);
         dropdownField4.selectByValue("0");

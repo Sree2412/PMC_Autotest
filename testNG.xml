@@ -9,64 +9,74 @@
     </listeners>
     <test name="createNewFormrelus">
         <classes>
-            <class name="HomePage.TC0001_CreatenewForm_RelUS"></class>
+            <class name="Testcases.TC0001_CreatenewForm_RelUS"></class>
 
         </classes>
     </test>
 
     <test name="createNewFormslus">
         <classes>
-            <class name="HomePage.TC0002_CreatenewForm_SL_US"></class>
+            <class name="Testcases.TC0002_CreatenewForm_SL_US"></class>
 
         </classes>
     </test>
 
     <test name="createNewFormsluk">
         <classes>
-            <class name="HomePage.TC0003_CreatenewForm_SL_UK"></class>
+            <class name="Testcases.TC0003_CreatenewForm_SL_UK"></class>
         </classes>
     </test>
 
     <test name="createNewFormreluk">
         <classes>
-            <class name="HomePage.TC0004_CreatenewForm_RelUK"></class>
+            <class name="Testcases.TC0004_CreatenewForm_RelUK"></class>
         </classes>
     </test>
 
     <test name="cancelselectform">
         <classes>
-            <class name="HomePage.TC0005_Cancelselectform"></class>
+            <class name="Testcases.TC0005_Cancelselectform"></class>
         </classes>
     </test>
 
     <test name="compareForm">
         <classes>
-            <class name="HomePage.TC0006_CompareForms"></class>
+            <class name="Testcases.TC0006_CompareForms"></class>
         </classes>
     </test>
     <test name="compareformclosebutton">
         <classes>
-            <class name="HomePage.TC0007_CompareFormClose"></class>
+            <class name="Testcases.TC0007_CompareFormClose"></class>
         </classes>
     </test>
     <test name="openexistingform">
         <classes>
-            <class name="HomePage.TC0008_Editexistingform"></class>
+            <class name="Testcases.TC0008_Editexistingform"></class>
         </classes>
     </test>
     <test name="cancelexistingformbutton">
         <classes>
-            <class name="HomePage.TC0009_Canceleditexistingform"></class>
+            <class name="Testcases.TC0009_Canceleditexistingform"></class>
         </classes>
     </test>
     <test name="copyexistingform">
         <classes>
-            <class name="HomePage.TC0010_Copyexistingform"></class>
+            <class name="Testcases.TC0010_Copyexistingform"></class>
         </classes>
     </test>
     <test name="cancelcopyexistingform">
         <classes>
-            <class name="HomePage.TC0011_Cancelcopyexistingform"></class>
+            <class name="Testcases.TC0011_Cancelcopyexistingform"></class>
+        </classes>
+    </test>
+    <test name="hcodedropdown">
+        <classes>
+            <class name="Testcases.TC0012_HcodeDropdown"></class>
+        </classes>
+    </test>
+    <test name="expandcollapsesections">
+        <classes>
+            <class name="Testcases.TC0013_Expand_Collapsesections"></class>
         </classes>
     </test>
 

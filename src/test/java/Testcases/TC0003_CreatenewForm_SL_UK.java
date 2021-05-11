@@ -1,4 +1,4 @@
-package HomePage;
+package Testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -10,8 +10,7 @@ import uiActions.HomePage;
 import java.io.IOException;
 
 
-
-public class TC0004_CreatenewForm_RelUK extends testBase {
+public class TC0003_CreatenewForm_SL_UK extends testBase {
     uiActions.HomePage Homepage;
 
     //uiActions.DesiredCapability desiredCapability;
@@ -21,13 +20,10 @@ public class TC0004_CreatenewForm_RelUK extends testBase {
     }
 
     @Test
-    public void createNewFormreluk() {
+    public void createNewFormsluk() {
         log.info("=======started NewFormcreation Test===========");
         HomePage homepage = new HomePage(driver);
-        //BasicAuthHandle auth = new BasicAuthHandle(driver);
-        homepage.NewFormcreation_reluk();
-        // DesiredCapability cap = new DesiredCapability(driver);
-        //auth.getUrl("");
+        homepage.NewFormcreation_sluk();
         Assert.assertEquals(true, homepage.getProjectInformationheader());
         log.info("=======Finished NewFormcreation Test===========");
     }
@@ -39,4 +35,3 @@ public class TC0004_CreatenewForm_RelUK extends testBase {
     }
 
 }
-
