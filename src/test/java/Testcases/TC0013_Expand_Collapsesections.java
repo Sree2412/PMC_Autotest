@@ -31,6 +31,6 @@ public class TC0013_Expand_Collapsesections  extends testBase {
     @AfterClass
     public void endTest() {
 
-        //closeBrowser();
+        closeBrowser();
     }
 }

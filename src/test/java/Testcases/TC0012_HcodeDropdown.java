@@ -32,7 +32,7 @@ public class TC0012_HcodeDropdown extends testBase {
     @AfterClass
     public void endTest() {
 
-        //closeBrowser();
+        closeBrowser();
     }
 }
 

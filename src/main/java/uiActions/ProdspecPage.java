@@ -82,33 +82,49 @@ public class ProdspecPage  extends testBase {
 
     public void expandcollapsesections() {
         selecthcodefromdropdown();
-       // waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-panel-0-label")));
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-label"))).click();
-       // driver.findElement(By.cssSelector("#ui-panel-0-label")).click();
         log.info("clicked on minus button of project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-label"))).click();
-        // waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-panel-1-label")));
-        driver.findElement(By.cssSelector("#ui-panel-1-label")).click();
         log.info("clicked on minus button of production info is:-" + driver.findElement(By.cssSelector("#ui-panel-1-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-2-label"))).click();
-        //waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-panel-2-label")));
-        //driver.findElement(By.cssSelector("#ui-panel-2-label")).click();
         log.info("clicked on minus button of Native imaging option is:-" + driver.findElement(By.cssSelector("#ui-panel-2-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-label"))).click();
-        //waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-panel-3-label")));
-        //driver.findElement(By.cssSelector("#ui-panel-3-label")).click();
         log.info("clicked on minus button of Branding info is:-" + driver.findElement(By.cssSelector("#ui-panel-3-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-label"))).click();
-       // waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-panel-4-label")));
-        //driver.findElement(By.cssSelector("#ui-panel-4-label")).click();
         log.info("clicked on minus button of production file spec is:-" + driver.findElement(By.cssSelector("#ui-panel-4-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-label"))).click();
-       // waitForElement(driver, 15000, driver.findElement(By.cssSelector("#ui-panel-5-label")));
-        // driver.findElement(By.cssSelector("#ui-panel-5-label")).click();
         log.info("clicked on minus button of production location foldering is:-" + driver.findElement(By.cssSelector("#ui-panel-5-label")).toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-label"))).click();
-        //waitForElement(driver, 15000, driver.findElement(By.cssSelector("#ui-panel-6-label")));
-        //driver.findElement(By.cssSelector("#ui-panel-6-label")).click();
         log.info("clicked on minus button of Special instruction is:-" + driver.findElement(By.cssSelector("#ui-panel-6-label")).toString());
     }
 

@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.03">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0012_HcodeDropdown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0013_Expand_Collapsesections.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0001_CreatenewForm_RelUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0001_CreatenewForm_RelUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0002_CreatenewForm_SL_US.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0002_CreatenewForm_SL_US.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0003_CreatenewForm_SL_UK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0004_CreatenewForm_RelUK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0004_CreatenewForm_RelUK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0005_Cancelselectform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0005_Cancelselectform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0006_CompareForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0006_CompareForms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0007_CompareFormClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0007_CompareFormClose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0008_Editexistingform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0009_Canceleditexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0009_Canceleditexistingform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0010_Copyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0010_Copyexistingform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0011_Cancelcopyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0011_Cancelcopyexistingform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0012_HcodeDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0012_HcodeDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0013_Expand_Collapsesections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0013_Expand_Collapsesections.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +54,7 @@
       <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\Sikuli" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml">
+  <component name="RunManager" selected="TestNG.TC0013_Expand_Collapsesections.expandcollapsesections">
     <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
@@ -187,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
         <item itemvalue="TestNG.TC0013_Expand_Collapsesections.expandcollapsesections" />
+        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
         <item itemvalue="TestNG.TC0009_Canceleditexistingform.cancelexistingformbutton" />
         <item itemvalue="TestNG.TC0006_CompareForms.compareForm" />
         <item itemvalue="TestNG.TC0012_HcodeDropdown.hcodedropdown" />
@@ -239,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620604455974</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version 1.04">
+      <created>1620755892370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620755892370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +253,8 @@
     <MESSAGE value="Version 1.01" />
     <MESSAGE value="Version 1.02" />
     <MESSAGE value="Version 1.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.03" />
+    <MESSAGE value="Version 1.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.04" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
