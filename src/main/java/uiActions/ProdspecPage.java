@@ -168,7 +168,7 @@ public class ProdspecPage  extends testBase {
         }
     }
       public void projectinformationcheckboxchecked(){
-          selecthcodefromdropdown();
+          createnewform();
           log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
           try {
               Thread.sleep(8000);
@@ -211,7 +211,7 @@ public class ProdspecPage  extends testBase {
     }
 
     public void projectinformationcheckboxunchecked() {
-        selecthcodefromdropdown();
+        createnewform();
         log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
         try {
             Thread.sleep(8000);

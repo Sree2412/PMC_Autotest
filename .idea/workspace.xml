@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.05">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0014_Confirmationcheckboxes_projectinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0015_Confirmationcheckboxuncheck_projectinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0016_Confirmationcheckbox_prodinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0017_Confirmationcheckboxuncheck_prodinfo.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0001_CreatenewForm_RelUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0001_CreatenewForm_RelUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0002_CreatenewForm_SL_US.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0002_CreatenewForm_SL_US.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0004_CreatenewForm_RelUK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0004_CreatenewForm_RelUK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0006_CompareForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0006_CompareForms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0007_CompareFormClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0007_CompareFormClose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testBase/testBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testBase/testBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +58,7 @@
       <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\Sikuli" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC0017_Confirmationcheckboxuncheck_prodinfo.productioninfocheckconfirmationcheckboxesunchecked">
+  <component name="RunManager" selected="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml">
     <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
@@ -84,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0007_CompareFormClose.compareformclosebutton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0006_CompareForms.compareForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +78,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0007_CompareFormClose" />
-      <option name="METHOD_NAME" value="compareformclosebutton" />
+      <option name="MAIN_CLASS_NAME" value="Testcases.TC0006_CompareForms" />
+      <option name="METHOD_NAME" value="compareForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0010_Copyexistingform.copyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0012_HcodeDropdown.hcodedropdown" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +130,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0010_Copyexistingform" />
-      <option name="METHOD_NAME" value="copyexistingform" />
+      <option name="MAIN_CLASS_NAME" value="Testcases.TC0012_HcodeDropdown" />
+      <option name="METHOD_NAME" value="hcodedropdown" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0016_Confirmationcheckbox_prodinfo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0015_Confirmationcheckboxuncheck_projectinfo.projectinfocheckconfirmationcheckboxesunchecked" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -163,8 +148,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0016_Confirmationcheckbox_prodinfo" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Testcases.TC0015_Confirmationcheckboxuncheck_projectinfo" />
+      <option name="METHOD_NAME" value="projectinfocheckconfirmationcheckboxesunchecked" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -191,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TC0017_Confirmationcheckboxuncheck_prodinfo.productioninfocheckconfirmationcheckboxesunchecked" />
-        <item itemvalue="TestNG.TC0010_Copyexistingform.copyexistingform" />
         <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
-        <item itemvalue="TestNG.TC0007_CompareFormClose.compareformclosebutton" />
-        <item itemvalue="TestNG.TC0016_Confirmationcheckbox_prodinfo" />
+        <item itemvalue="TestNG.TC0006_CompareForms.compareForm" />
+        <item itemvalue="TestNG.TC0012_HcodeDropdown.hcodedropdown" />
+        <item itemvalue="TestNG.TC0017_Confirmationcheckboxuncheck_prodinfo.productioninfocheckconfirmationcheckboxesunchecked" />
+        <item itemvalue="TestNG.TC0015_Confirmationcheckboxuncheck_projectinfo.projectinfocheckconfirmationcheckboxesunchecked" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620761678479</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Version 1.06">
+      <created>1620968715729</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620968715730</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,7 +273,8 @@
     <MESSAGE value="Version 1.03" />
     <MESSAGE value="Version 1.04" />
     <MESSAGE value="Version 1.05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.05" />
+    <MESSAGE value="Version 1.06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import testBase.testBase;
 import uiActions.ComparePage;
 
-
 import java.io.IOException;
 
 public class TC0006_CompareForms extends testBase {
@@ -24,7 +23,7 @@ public class TC0006_CompareForms extends testBase {
             log.info("=======started compareForm Test===========");
             ComparePage comparepage = new ComparePage(driver);
             comparepage.compareProdspecforms();
-            Assert.assertTrue(true,("No Differences Found, Forms Are The Same."));
+            Assert.assertEquals(true, comparepage.verifyCompareForms());
             log.info("=======Finished compareForm Test===========");
         }
 
