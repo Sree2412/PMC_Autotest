@@ -24,10 +24,7 @@ public class TC0004_CreatenewForm_RelUK extends testBase {
     public void createNewFormreluk() {
         log.info("=======started NewFormcreation Test===========");
         HomePage homepage = new HomePage(driver);
-        //BasicAuthHandle auth = new BasicAuthHandle(driver);
         homepage.NewFormcreation_reluk();
-        // DesiredCapability cap = new DesiredCapability(driver);
-        //auth.getUrl("");
         Assert.assertEquals(true, homepage.getProjectInformationheader());
         log.info("=======Finished NewFormcreation Test===========");
     }

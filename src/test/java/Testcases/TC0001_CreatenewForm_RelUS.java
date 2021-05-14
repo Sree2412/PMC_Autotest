@@ -23,10 +23,7 @@ public class TC0001_CreatenewForm_RelUS extends testBase{
     public void createNewFormrelus() {
         log.info("=======started NewFormcreation Test===========");
         HomePage homepage = new HomePage(driver);
-        //BasicAuthHandle auth = new BasicAuthHandle(driver);
         homepage.NewFormcreation_relus();
-       // DesiredCapability cap = new DesiredCapability(driver);
-        //auth.getUrl("");
         Assert.assertEquals(true, homepage.getProjectInformationheader());
         log.info("=======Finished NewFormcreation Test===========");
     }

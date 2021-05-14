@@ -25,10 +25,7 @@ public class TC0002_CreatenewForm_SL_US extends testBase {
     public void createNewFormslus() {
         log.info("=======started NewFormcreation Test===========");
         HomePage homepage = new HomePage(driver);
-        //BasicAuthHandle auth = new BasicAuthHandle(driver);
         homepage.NewFormcreation_slus();
-        // DesiredCapability cap = new DesiredCapability(driver);
-        //auth.getUrl("");
         Assert.assertEquals(true, homepage.getProjectInformationheader());
         log.info("=======Finished NewFormcreation Test===========");
     }

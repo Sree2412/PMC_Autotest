@@ -2,32 +2,17 @@ package testBase;
 
 
 import com.relevantcodes.extentreports.ExtentReports;
-
-import java.nio.charset.StandardCharsets;
-import java.time.Instant;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
-
-import org.apache.commons.codec.EncoderException;
-//import org.apache.commons.codec.binary.Base64;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.DevTools;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.*;
-import org.openqa.selenium.devtools.v91.network.Network;
-import org.openqa.selenium.devtools.v91.network.model.Headers;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.WebDriver.TargetLocator;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
@@ -36,16 +21,18 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.firefox.FirefoxBinary;
+import java.util.Calendar;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
 
-
+//import org.apache.commons.codec.binary.Base64;
 
 
 //import org.openqa.selenium.devtools.network.model.Headers;
@@ -97,21 +84,10 @@ public class testBase {
         System.out.println(OR.getProperty("browser"));
         selectBrowser(OR.getProperty("browser"));
         getUrl(OR.getProperty("url"));
-        //getCredentials(OR.getProperty("username","password"));
 
     }
 
-   /*public void getCredentials(String property) throws InterruptedException {
-        //driver.switchTo().alert();
-        // Handling Username alert
-        Thread.sleep(20000);
-        driver.switchTo().alert().sendKeys("username");
-        driver.switchTo().alert().accept();
-        // Handling Password alert
-        driver.switchTo().alert().sendKeys("password");
-        driver.switchTo().alert().accept();
 
-    }*/
 
     /*To select and open browsers of choice using different OS*/
     public void selectBrowser(String browser) throws IOException {
@@ -121,7 +97,12 @@ public class testBase {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
-               // ChromeOptions options = new ChromeOptions();
+                //setting the chrome profile
+                /*ChromeOptions options = new ChromeOptions();
+                options.addArguments("user-data-dir=C:/Users/samada.CONSILIOTEST/AppData/Local/Google/Chrome/User Data");
+                driver = new ChromeDriver(options);*/
+
+
                 //options.addArguments(System.getProperty("user.dir") + "/http-auto-auth-develop");
                 //driver = new ChromeDriver(options);
                 //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
@@ -214,15 +195,7 @@ public class testBase {
 
 
 
-
-
-
-
-
     }
-
-
-
 
 
 
@@ -351,7 +324,8 @@ public class testBase {
     }
     /*This method will be run after each execution and closes browser*/
     @AfterClass(alwaysRun = true)
-    public void endTest() {
+    public void
+    endTest() {
         closeBrowser();
     }
     /* To quit browser and flush the results to extent reports*/

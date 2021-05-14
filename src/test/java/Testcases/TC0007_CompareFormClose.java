@@ -30,7 +30,7 @@ public class TC0007_CompareFormClose extends testBase {
     @AfterClass
     public void endTest() {
 
-        closeBrowser();
+        //closeBrowser();
     }
 }
 

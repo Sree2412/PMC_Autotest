@@ -79,5 +79,24 @@
             <class name="Testcases.TC0013_Expand_Collapsesections"></class>
         </classes>
     </test>
-
+    <test name="projectinfocheckconfirmationcheckboxes">
+        <classes>
+            <class name="Testcases.TC0014_Confirmationcheckboxes_projectinfo"></class>
+        </classes>
+    </test>
+    <test name="projectinfocheckconfirmationcheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0015_Confirmationcheckboxuncheck_projectinfo"></class>
+        </classes>
+    </test>
+    <test name="productioninfocheckconfirmationcheckboxes">
+        <classes>
+            <class name="Testcases.TC0016_Confirmationcheckbox_prodinfo"></class>
+        </classes>
+    </test>
+    <test name="productioninfocheckconfirmationcheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0017_Confirmationcheckboxuncheck_prodinfo"></class>
+        </classes>
+    </test>
 </suite>

@@ -3,14 +3,10 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import testBase.testBase;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
+import testBase.testBase;
 
 
 /* For every new class always extend from testBase*/
@@ -25,7 +21,7 @@ public class ComparePage  extends testBase {
     @FindBy(css = "#ui-fieldset-1-content > div > div > p-button:nth-child(2) > button > span")
     WebElement Compareformsbutton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")
     WebElement LeftFormdropdown;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(3) > select")
@@ -37,7 +33,7 @@ public class ComparePage  extends testBase {
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(5) > select")
     WebElement RightVersionDropdown;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c120-6.ng-star-inserted > p-footer > button > span")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button")
     WebElement CloseButton;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div.ui-g-12 > p-button > button > span")
@@ -67,7 +63,7 @@ public class ComparePage  extends testBase {
         //click on the option1
         option1.click();
         log.info("Enter Hcode value object selected:-" + LeftFormdropdown.toString());*/
-        waitForElement(driver, 5000, LeftFormdropdown);
+       // waitForElement(driver, 5000, LeftFormdropdown);
         Select dropdownField1 = new Select(LeftFormdropdown);
         dropdownField1.selectByValue("Relativity - U.S.");
         log.info("clicked on Leftform dropdown button is:-" + LeftFormdropdown.toString());
@@ -84,12 +80,16 @@ public class ComparePage  extends testBase {
         CompareButton.click();
 
     }
-
     public void CloseButton() {
         waitForElement(driver, 5000, Compareformsbutton);
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
-       // waitForElement(driver, 5000, CloseButton);
+        //waitForElement(driver, 8000, CloseButton);
+        try {
+            Thread.sleep(12000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         CloseButton.click();
         log.info("clicked on Close button is:-" + CloseButton.toString());
 
@@ -107,7 +107,7 @@ public class ComparePage  extends testBase {
 
     public boolean verifyCloseButton() {
         try {
-            waitForElement(driver, 5000, Compareformsbutton);
+            waitForElement(driver, 8000, Compareformsbutton);
             return true;
         } catch (Exception e) {
             return false;
