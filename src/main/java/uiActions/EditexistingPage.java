@@ -55,10 +55,11 @@ public class EditexistingPage  extends testBase {
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         EnterHCode.sendKeys(Keys.DOWN);
         log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
         EnterHCode.sendKeys(Keys.ENTER);
@@ -74,7 +75,7 @@ public class EditexistingPage  extends testBase {
         editexistingform();
         waitForElement(driver, 10000,driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div")));
         try {
-            Thread.sleep(10000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -93,10 +94,10 @@ public class EditexistingPage  extends testBase {
 
 
           tablerow.click();
-        int x= dialog.getLocation().getX();
-        int y = dialog.getLocation().getY();
-           System.out.println("x cord" +x);
-           System.out.println("x cord" +y);
+        //int x= dialog.getLocation().getX();
+       // int y = dialog.getLocation().getY();
+          // System.out.println("x cord" +x);
+          // System.out.println("x cord" +y);
 
             log.info("click on 1st row of the table :-" + tablerow.toString());
             Openexistingformbutton.click();
@@ -106,12 +107,13 @@ public class EditexistingPage  extends testBase {
 
     public void editexistingcancelbutton() {
         editexistingform();
-        //waitForElement(driver, 5000, CancelexistingformButton);
-        try {
-            Thread.sleep(8000);
+
+       /* try {
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
+        waitForElement(driver, 5000, CancelexistingformButton);
         CancelexistingformButton.click();
         log.info("clicked on Cancel object is:-" + CancelexistingformButton.toString());
     }

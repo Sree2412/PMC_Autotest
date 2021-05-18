@@ -52,7 +52,7 @@ public class CopyexistingPage  extends testBase {
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -63,7 +63,7 @@ public class CopyexistingPage  extends testBase {
         Copyexistingformbutton.click();
         log.info("clicked on Copy existing form object is:-" + Copyexistingformbutton.toString());
         try {
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -94,7 +94,7 @@ public class CopyexistingPage  extends testBase {
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
         try {
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -104,11 +104,6 @@ public class CopyexistingPage  extends testBase {
         log.info("Enter Hcode value object enter:-" + EnterHCode.toString());
         Copyexistingformbutton.click();
         log.info("clicked on Edit existing form object is:-" + Copyexistingformbutton.toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         waitForElement(driver, 5000, CancelButton);
         CancelButton.click();
         log.info("clicked on Cancel object is:-" + CancelButton.toString());

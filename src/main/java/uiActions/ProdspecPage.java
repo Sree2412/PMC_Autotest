@@ -1,6 +1,6 @@
 
 package uiActions;
-        import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,7 +36,7 @@ public class ProdspecPage  extends testBase {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         try {
-            Thread.sleep(8000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -48,14 +48,14 @@ public class ProdspecPage  extends testBase {
         waitForElement(driver, 10, HCodedropdown);
         log.info("Hcode value object found:-" + HCodedropdown.toString());
         try {
-            Thread.sleep(10000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         HCodedropdown.click();
         log.info("Click on Hcode :-" + HCodedropdown.toString());
         try {
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -73,61 +73,43 @@ public class ProdspecPage  extends testBase {
        // int y = option1.getLocation().getY();
         //System.out.println("x cord" +x);
         //System.out.println("x cord" +y);
-
-
         log.info("Enter Hcode value object selected:-" + HCodedropdown.toString());
 
     }
 
     public void expandcollapsesections() {
-        createnewform();;
+        createnewform();
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-label")));
         try {
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-label"))).click();
         log.info("clicked on minus button of project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-1-label")));
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-label"))).click();
         log.info("clicked on minus button of production info is:-" + driver.findElement(By.cssSelector("#ui-panel-1-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-2-label")));
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-2-label"))).click();
         log.info("clicked on minus button of Native imaging option is:-" + driver.findElement(By.cssSelector("#ui-panel-2-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-3-label")));
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-label"))).click();
         log.info("clicked on minus button of Branding info is:-" + driver.findElement(By.cssSelector("#ui-panel-3-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-4-label")));
+
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-label"))).click();
         log.info("clicked on minus button of production file spec is:-" + driver.findElement(By.cssSelector("#ui-panel-4-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-5-label")));
+
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-label"))).click();
         log.info("clicked on minus button of production location foldering is:-" + driver.findElement(By.cssSelector("#ui-panel-5-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-6-label")));
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-label"))).click();
         log.info("clicked on minus button of Special instruction is:-" + driver.findElement(By.cssSelector("#ui-panel-6-label")).toString());
     }
@@ -169,33 +151,16 @@ public class ProdspecPage  extends testBase {
     }
       public void projectinformationcheckboxchecked(){
           createnewform();
+          waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
           log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
-          try {
-              Thread.sleep(8000);
-          } catch (InterruptedException e) {
-              e.printStackTrace();
-          }
           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
           log.info("clicked on 1st checkbox project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
-          try {
-              Thread.sleep(2000);
-          } catch (InterruptedException e) {
-              e.printStackTrace();
-          }
+
           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
           log.info("clicked on 1st checkbox project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
-          try {
-              Thread.sleep(2000);
-          } catch (InterruptedException e) {
-              e.printStackTrace();
-          }
+
           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i"))).click();
           log.info("clicked on 1st checkbox project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).toString());
-          try {
-              Thread.sleep(2000);
-          } catch (InterruptedException e) {
-              e.printStackTrace();
-          }
 
       }
 
@@ -213,25 +178,13 @@ public class ProdspecPage  extends testBase {
     public void projectinformationcheckboxunchecked() {
         createnewform();
         log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
     }
 
 

@@ -54,7 +54,6 @@ public class HomePage  extends testBase {
     }
      public void createnewformfromhome(){
         // waitForElement(driver, 5000, ChooseCampusDropdown);
-        //Thread.sleep(500);
         //ChooseCampusDropdown.click();
         //log.info("clicked on Choose Campus Dropdown object is:-" + ChooseCampusDropdown.toString());
         //ChooseQACampus.click();

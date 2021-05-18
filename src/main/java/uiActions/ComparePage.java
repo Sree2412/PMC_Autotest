@@ -21,18 +21,6 @@ public class ComparePage  extends testBase {
     @FindBy(css = "#ui-fieldset-1-content > div > div > p-button:nth-child(2) > button > span")
     WebElement Compareformsbutton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(2) > select")
-    WebElement LeftFormdropdown;
-
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(3) > select")
-    WebElement LeftVersiondropdown;
-
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(4) > select")
-    WebElement RightFormDropdown;
-
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div:nth-child(5) > select")
-    WebElement RightVersionDropdown;
-
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button")
     WebElement CloseButton;
 
@@ -53,11 +41,11 @@ public class ComparePage  extends testBase {
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
         try {
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+       // waitForElement(driver, 8000, driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div")));
         WebElement dialog = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
         WebElement subdialog = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content"));
         WebElement table = subdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div:nth-child(1)"));
@@ -95,11 +83,12 @@ public class ComparePage  extends testBase {
         log.info("Enter version:-" +  selectclass4.toString());
 
 
-        try {
-            Thread.sleep(8000);
+        /*try {
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
+        waitForElement(driver, 8000, CompareButton);
         CompareButton.click();
 
     }
@@ -108,11 +97,12 @@ public class ComparePage  extends testBase {
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
         //waitForElement(driver, 8000, CloseButton);
-        try {
+       /* try {
             Thread.sleep(12000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
+        waitForElement(driver, 5000, CloseButton);
         CloseButton.click();
         log.info("clicked on Close button is:-" + CloseButton.toString());
 

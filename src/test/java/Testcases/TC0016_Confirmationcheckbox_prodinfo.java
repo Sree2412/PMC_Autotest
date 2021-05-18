@@ -24,8 +24,6 @@ public class TC0016_Confirmationcheckbox_prodinfo  extends testBase {
 
 
 
-
-
     @Test
     public void productioninfocheckconfirmationcheckboxes() {
         log.info("=======started productioninfocheckconfirmationcheckboxes Test===========");

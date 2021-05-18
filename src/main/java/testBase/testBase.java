@@ -22,15 +22,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 //import org.apache.commons.codec.binary.Base64;
 
@@ -56,6 +51,7 @@ public class testBase {
     public WebDriver getDriver() {
         return driver;
     }
+
     /*For Extent Reporting*/
     static {
         Calendar calendar = Calendar.getInstance();
@@ -70,6 +66,7 @@ public class testBase {
         OR.load(f);
 
     }
+
     /*To set up Webevent Listners*/
     public void setDriver(EventFiringWebDriver driver) {
         this.driver = driver;
@@ -78,7 +75,7 @@ public class testBase {
     /*Initializing objects*/
     public void init() throws IOException, InterruptedException {
         loadData();
-        extent = new ExtentReports(System.getProperty("user.dir")+ "/src/main/java/Report/test.html",false);
+        extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test.html", false);
         String log4jConfPath = "log4j.properties";
         PropertyConfigurator.configure(log4jConfPath);
         System.out.println(OR.getProperty("browser"));
@@ -86,7 +83,6 @@ public class testBase {
         getUrl(OR.getProperty("url"));
 
     }
-
 
 
     /*To select and open browsers of choice using different OS*/
@@ -97,54 +93,43 @@ public class testBase {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
-                //setting the chrome profile
-                /*ChromeOptions options = new ChromeOptions();
-                options.addArguments("user-data-dir=C:/Users/samada.CONSILIOTEST/AppData/Local/Google/Chrome/User Data");
-                driver = new ChromeDriver(options);*/
 
+                File file = new File("Cookies.data");
+                FileReader fileReader = new FileReader(file);
+                BufferedReader Buffreader = new BufferedReader(fileReader);
+                String strline;
+                while ((strline = Buffreader.readLine()) != null) {
+                    StringTokenizer token = new StringTokenizer(strline, ";");
+                    while (token.hasMoreTokens()) {
+                        String name = token.nextToken();
+                        String value = token.nextToken();
+                        String domain = token.nextToken();
+                        String path = token.nextToken();
+                        Date expiry = null;
 
-                //options.addArguments(System.getProperty("user.dir") + "/http-auto-auth-develop");
-                //driver = new ChromeDriver(options);
-                //Runtime.getRuntime().exec("C:/Users/samada.CONSILIOTEST/Documents/GitHub/AutoITScrpts/Handle2Authentication.exe");
-                // driver = new EventFiringWebDriver(dr);
-                // eventListener = new WebEventListener();
-                // driver.register(eventListener);
-            } else if (browser.equals("firefox")) {
-                System.out.println(System.getProperty("user.dir"));
-                System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
-                driver = new FirefoxDriver();
-               // Alert confirmation = driver.switchTo().alert();
-               // String alerttext = confirmation.getText();
-               // System.out.println(alerttext);
-               // driver.switchTo().alert().sendKeys("samada" + Keys.TAB.toString() + "Supernova2021!!");
-               // driver.switchTo().alert().accept();
-               // firefox_binary="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/Drivers/geckodriver");
-
-
-                // driver = new EventFiringWebDriver(dr);
-                //eventListener = new customListner.WebEventListener();
-                // driver.register(eventListener);
-                // setDriver(driver);
+                        String val;
+                        if (!(val = token.nextToken()).equals("null")) {
+                            expiry = new Date(val);
+                        }
+                        //Boolean isSecure = new Boolean(token.nextToken()).
+                        //booleanValue();
+                        Cookie ck = new Cookie(name, value, domain, path, expiry);
+                        System.out.println(ck);
+                        driver.manage().addCookie(ck); // This will add the stored cookie to your current session
+                    }
+                }
             }
-        } else if (System.getProperty("os.name").contains("Mac")) {
-            if (browser.equals("chrome")) {
-                System.out.println(System.getProperty("user.dir"));
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
-                driver = new ChromeDriver();
-                // driver = new EventFiringWebDriver(dr);
-                // eventListener = new WebEventListener();
-                // driver.register(eventListener);
-            } else if (browser.equals("firefox")) {
-                System.out.println(System.getProperty("user.dir"));
-                System.setProperty("webdriver.firefox.marionette", System.getProperty("user.dir") + "/Drivers/geckodriver");
-                driver = new FirefoxDriver();
-                // driver = new EventFiringWebDriver(dr);
-                //eventListener = new customListner.WebEventListener();
-                // driver.register(eventListener);
-                // setDriver(driver);
-            }
+
+
+        } else if (browser.equals("firefox")) {
+            System.out.println(System.getProperty("user.dir"));
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
+            driver = new FirefoxDriver();
+
         }
     }
+
+
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
     public void getUrl(String url)  {
 
@@ -193,9 +178,38 @@ public class testBase {
         }
         log.info("Entering creds to :-" + url);
 
+        // create file named Cookies to store Login Information
+        File file = new File("Cookies.data");
+        try
+        {
+            // Delete old file if exists
+            file.delete();
+            file.createNewFile();
+            FileWriter fileWrite = new FileWriter(file);
+            BufferedWriter Bwrite = new BufferedWriter(fileWrite);
+            // loop for getting the cookie information
 
+            // loop for getting the cookie information
+            for(Cookie ck : driver.manage().getCookies())
+            {
+                Bwrite.write((ck.getName()+";"+ck.getValue()+";"+ck.getDomain()+";"+ck.getPath()+";"+ck.getExpiry()+";"+ck.isSecure()));
+                Bwrite.newLine();
+            }
+            Bwrite.close();
+            fileWrite.close();
 
+        }
+        catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
     }
+
+
+
+
+
+
 
 
 
@@ -250,7 +264,7 @@ public class testBase {
     /*Capturing screenshots for successful runs and feed to extent reports and testng reports*/
     public void getScreenShotOnSucess(WebDriver driver, ITestResult result) {
         Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        SimpleDateFormat formater = new SimpleDateFormat("MM_dd_yyyy_hh_mm_ss");
 
         String methodName = result.getName();
 
