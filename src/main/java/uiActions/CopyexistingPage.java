@@ -10,6 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import testBase.testBase;
 
+        import java.util.concurrent.TimeUnit;
+
 
 /* For every new class always extend from testBase*/
 public class CopyexistingPage  extends testBase {
@@ -51,22 +53,14 @@ public class CopyexistingPage  extends testBase {
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         EnterHCode.sendKeys(Keys.DOWN);
         log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
         EnterHCode.sendKeys(Keys.ENTER);
         log.info("Enter Hcode value object enter:-" + EnterHCode.toString());
         Copyexistingformbutton.click();
         log.info("clicked on Copy existing form object is:-" + Copyexistingformbutton.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         WebElement dialog = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
         WebElement table = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content"));
         WebElement ptreetable =table.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-treetable"));
@@ -93,11 +87,7 @@ public class CopyexistingPage  extends testBase {
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         EnterHCode.sendKeys(Keys.DOWN);
         log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
         EnterHCode.sendKeys(Keys.ENTER);

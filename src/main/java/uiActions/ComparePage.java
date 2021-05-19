@@ -1,4 +1,5 @@
 package uiActions;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -7,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import testBase.testBase;
+
+import java.util.concurrent.TimeUnit;
 
 
 /* For every new class always extend from testBase*/
@@ -40,11 +43,7 @@ public class ComparePage  extends testBase {
         waitForElement(driver, 5000, Compareformsbutton);
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
        // waitForElement(driver, 8000, driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div")));
         WebElement dialog = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
         WebElement subdialog = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content"));
@@ -81,13 +80,6 @@ public class ComparePage  extends testBase {
         log.info("select version:-" +  selectclass4.toString());
         selectclass4.sendKeys(Keys.ENTER);
         log.info("Enter version:-" +  selectclass4.toString());
-
-
-        /*try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
         waitForElement(driver, 8000, CompareButton);
         CompareButton.click();
 
@@ -97,11 +89,6 @@ public class ComparePage  extends testBase {
         Compareformsbutton.click();
         log.info("clicked on Compare button is:-" + Compareformsbutton.toString());
         //waitForElement(driver, 8000, CloseButton);
-       /* try {
-            Thread.sleep(12000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
         waitForElement(driver, 5000, CloseButton);
         CloseButton.click();
         log.info("clicked on Close button is:-" + CloseButton.toString());

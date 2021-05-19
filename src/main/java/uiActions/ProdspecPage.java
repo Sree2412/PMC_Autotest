@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testBase.testBase;
 
+import java.util.concurrent.TimeUnit;
+
 
 /* For every new class always extend from testBase*/
 public class ProdspecPage  extends testBase {
@@ -35,11 +37,13 @@ public class ProdspecPage  extends testBase {
     public void createnewform(){
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
+       // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
     }
 
     /* Create all page action  methods here*/
@@ -47,18 +51,12 @@ public class ProdspecPage  extends testBase {
         createnewform();
         waitForElement(driver, 10, HCodedropdown);
         log.info("Hcode value object found:-" + HCodedropdown.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
         HCodedropdown.click();
         log.info("Click on Hcode :-" + HCodedropdown.toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         WebElement dialog = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-matter > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c80-8.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted"));
         WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-matter > div > p-dropdown > div > div.ng-trigger.ng-trigger-overlayAnimation.ng-tns-c80-8.ui-dropdown-panel.ui-widget.ui-widget-content.ui-corner-all.ui-shadow.ng-star-inserted > div"));
         // find the listbox
@@ -80,11 +78,8 @@ public class ProdspecPage  extends testBase {
     public void expandcollapsesections() {
         createnewform();
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-label")));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-label"))).click();
         log.info("clicked on minus button of project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
 
@@ -94,21 +89,28 @@ public class ProdspecPage  extends testBase {
         log.info("clicked on minus button of production info is:-" + driver.findElement(By.cssSelector("#ui-panel-1-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-2-label")));
 
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-2-label"))).click();
         log.info("clicked on minus button of Native imaging option is:-" + driver.findElement(By.cssSelector("#ui-panel-2-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-3-label")));
 
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-label"))).click();
         log.info("clicked on minus button of Branding info is:-" + driver.findElement(By.cssSelector("#ui-panel-3-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-4-label")));
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-label"))).click();
         log.info("clicked on minus button of production file spec is:-" + driver.findElement(By.cssSelector("#ui-panel-4-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-5-label")));
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-label"))).click();
         log.info("clicked on minus button of production location foldering is:-" + driver.findElement(By.cssSelector("#ui-panel-5-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-6-label")));
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-label"))).click();
         log.info("clicked on minus button of Special instruction is:-" + driver.findElement(By.cssSelector("#ui-panel-6-label")).toString());
@@ -203,11 +205,7 @@ public class ProdspecPage  extends testBase {
     public void productioninformationcheckboxchecked()  {
         createnewform();;
        log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
-        try {
-            Thread.sleep(8000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on production type checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
 

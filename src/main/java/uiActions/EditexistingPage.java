@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import testBase.testBase;
 
+import java.util.concurrent.TimeUnit;
+
 
 /* For every new class always extend from testBase*/
 public class EditexistingPage  extends testBase {
@@ -54,12 +56,13 @@ public class EditexistingPage  extends testBase {
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
         EnterHCode.sendKeys("H");
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
+        //driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
         EnterHCode.sendKeys(Keys.DOWN);
         log.info("Enter Hcode value object click down:-" + EnterHCode.toString());
         EnterHCode.sendKeys(Keys.ENTER);
@@ -74,11 +77,8 @@ public class EditexistingPage  extends testBase {
     public void editexistingProdspecforms()  {
         editexistingform();
         waitForElement(driver, 10000,driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div")));
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
         // find the dialog
             WebElement dialogwrapper = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
             WebElement dialog = dialogwrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content"));
@@ -107,12 +107,6 @@ public class EditexistingPage  extends testBase {
 
     public void editexistingcancelbutton() {
         editexistingform();
-
-       /* try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
         waitForElement(driver, 5000, CancelexistingformButton);
         CancelexistingformButton.click();
         log.info("clicked on Cancel object is:-" + CancelexistingformButton.toString());
