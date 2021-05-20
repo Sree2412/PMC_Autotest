@@ -1,4 +1,5 @@
 
+
 package Testcases;
 
         import org.testng.Assert;
@@ -12,7 +13,7 @@ package Testcases;
 
 
 
-public class TC0014_Confirmationcheckboxes_projectinfo extends testBase {
+public class TC0015_Confirmationcheckboxuncheck_Generalprodreq extends testBase {
     uiActions.ProdspecPage prodspecPage;
 
     @BeforeClass
@@ -20,13 +21,17 @@ public class TC0014_Confirmationcheckboxes_projectinfo extends testBase {
         init();
     }
 
+
+
     @Test
-    public void generalprodreqcheckboxes() {
-        log.info("=======started generalprodreqcheckboxes Test===========");
+    public void generalprodreqcheckboxesunchecked() {
+        log.info("=======started generalprodreqcheckboxesunchecked Test===========");
+
+
         ProdspecPage prodspecpage = new ProdspecPage(driver);
-        prodspecpage.Generalprodreqcheckboxchecked();
-        Assert.assertEquals(true, prodspecpage.verifygeneralprodreqcheckboxchecked());
-        log.info("=======Finished generalprodreqcheckboxes Test===========");
+        prodspecpage.generalprodreqcheckboxunchecked();
+        Assert.assertEquals(true, prodspecpage.verifygeneralprodreqcheckboxunchecked());
+        log.info("=======Finished generalprodreqcheckboxesunchecked Test===========");
     }
 
 

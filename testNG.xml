@@ -79,24 +79,74 @@
             <class name="Testcases.TC0013_Expand_Collapsesections"></class>
         </classes>
     </test>
-    <test name="projectinfocheckconfirmationcheckboxes">
+    <test name="generalprodreqcheckboxes">
         <classes>
-            <class name="Testcases.TC0014_Confirmationcheckboxes_projectinfo"></class>
+            <class name="Testcases.TC0014_Confirmationcheckboxes_GeneralProdreq"></class>
         </classes>
     </test>
-    <test name="projectinfocheckconfirmationcheckboxesunchecked">
+    <test name="generalprodreqcheckboxesunchecked">
         <classes>
-            <class name="Testcases.TC0015_Confirmationcheckboxuncheck_projectinfo"></class>
+            <class name="Testcases.TC0015_Confirmationcheckboxuncheck_Generalprodreq"></class>
         </classes>
     </test>
-    <test name="productioninfocheckconfirmationcheckboxes">
+    <test name="redactionandplaceholderreqcheckboxes">
         <classes>
-            <class name="Testcases.TC0016_Confirmationcheckbox_prodinfo"></class>
+            <class name="Testcases.TC0016_Confirmationcheckbox_redactionplaceholder"></class>
         </classes>
     </test>
-    <test name="productioninfocheckconfirmationcheckboxesunchecked">
+    <test name="redactionplaceholderreqcheckboxesunchecked">
         <classes>
-            <class name="Testcases.TC0017_Confirmationcheckboxuncheck_prodinfo"></class>
+            <class name="Testcases.TC0017_Confirmationcheckboxuncheck_redactionplaceholder"></class>
         </classes>
     </test>
+
+    <test name="nativeimagingoptionscheckboxeschecked">
+        <classes>
+            <class name="Testcases.TC0018_Confirmationcheckboxcheck_nativeimagingoptions"></class>
+        </classes>
+    </test>
+
+    <test name="nativeimagingoptionscheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0019_Confirmationcheckboxuncheck_nativeimagingoptions"></class>
+        </classes>
+    </test>
+
+    <test name="brandinginfocheckboxeschecked">
+        <classes>
+            <class name="Testcases.TC0020_Confirmationcheckboxcheck_brandinginfo"></class>
+        </classes>
+    </test>
+
+    <test name="brandinginfocheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0021_Confirmationcheckboxuncheck_brandinginfo"></class>
+        </classes>
+    </test>
+
+    <test name="prodfilespeccheckboxeschecked">
+        <classes>
+            <class name="Testcases.TC0022_Confirmationcheckboxcheck_prodfilespec"></class>
+        </classes>
+    </test>
+
+    <test name="prodfilespeccheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0023_Confirmationcheckboxuncheck_prodfilespec"></class>
+        </classes>
+    </test>
+
+    <test name="prodlocationcheckboxeschecked">
+        <classes>
+            <class name="Testcases.TC0024_Confirmationcheckboxcheck_prodlocationfoldering"></class>
+        </classes>
+    </test>
+
+    <test name="prodlocationcheckboxesunchecked">
+        <classes>
+            <class name="Testcases.TC0025_Confirmationcheckboxuncheck_prodlocationfoldering"></class>
+        </classes>
+    </test>
+
+
 </suite>

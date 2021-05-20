@@ -14,7 +14,7 @@ package Testcases;
 
 
 
-public class TC0017_Confirmationcheckboxuncheck_prodinfo  extends testBase {
+public class TC0017_Confirmationcheckboxuncheck_redactionplaceholder extends testBase {
     uiActions.ProdspecPage prodspecPage;
 
     @BeforeClass
