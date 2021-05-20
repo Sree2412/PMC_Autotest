@@ -25,12 +25,12 @@ public class TC0016_Confirmationcheckbox_prodinfo  extends testBase {
 
 
     @Test
-    public void productioninfocheckconfirmationcheckboxes() {
-        log.info("=======started productioninfocheckconfirmationcheckboxes Test===========");
+    public void redactionandplaceholderreqcheckboxes() {
+        log.info("=======started redactionandplaceholderreqcheckboxes Test===========");
         ProdspecPage prodspecpage = new ProdspecPage(driver);
-        prodspecpage.productioninformationcheckboxchecked();
-        Assert.assertEquals(true, prodspecpage.verifyproductioninfomaincheckboxchecked());
-        log.info("=======Finished productioninfocheckconfirmationcheckboxes Test===========");
+        prodspecpage.redactionandplaceholderreqcheckboxchecked();
+        Assert.assertEquals(true, prodspecpage.verifyredactionplaceholderreqcheckboxchecked());
+        log.info("=======Finished redactionandplaceholderreqcheckboxes Test===========");
     }
 
 

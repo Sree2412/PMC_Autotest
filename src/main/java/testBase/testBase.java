@@ -27,12 +27,6 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-//import org.apache.commons.codec.binary.Base64;
-
-
-//import org.openqa.selenium.devtools.network.model.Headers;
-//import customListner.WebEventListener.WebEventListener;
-
 
 public class testBase {
 
@@ -75,49 +69,50 @@ public class testBase {
     /*Initializing objects*/
     public void init() throws IOException, InterruptedException {
         loadData();
-        extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test.html", false);
+        extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/testreport.html", false);
         String log4jConfPath = "log4j.properties";
         PropertyConfigurator.configure(log4jConfPath);
         System.out.println(OR.getProperty("browser"));
         selectBrowser(OR.getProperty("browser"));
+
+
         getUrl(OR.getProperty("url"));
 
     }
 
 
     /*To select and open browsers of choice using different OS*/
-    public void selectBrowser(String browser) throws IOException {
+    public  void selectBrowser(String browser) throws IOException {
         System.out.println(System.getProperty("os.name"));
         if (System.getProperty("os.name").contains("Window")) {
             if (browser.equals("chrome")) {
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
-
-                File file = new File("Cookies.data");
-                FileReader fileReader = new FileReader(file);
-                BufferedReader Buffreader = new BufferedReader(fileReader);
-                String strline;
-                while ((strline = Buffreader.readLine()) != null) {
-                    StringTokenizer token = new StringTokenizer(strline, ";");
-                    while (token.hasMoreTokens()) {
-                        String name = token.nextToken();
-                        String value = token.nextToken();
-                        String domain = token.nextToken();
-                        String path = token.nextToken();
-                        Date expiry = null;
-
-                        String val;
-                        if (!(val = token.nextToken()).equals("null")) {
-                            expiry = new Date(val);
+                try{
+                    File file = new File("Cookie.data");
+                    FileReader fileReader = new FileReader(file);
+                    BufferedReader Buffreader = new BufferedReader(fileReader);
+                    String strline;
+                    while((strline=Buffreader.readLine())!=null){
+                        StringTokenizer token = new StringTokenizer(strline,";");
+                        while(token.hasMoreTokens()){
+                            String name = token.nextToken();String value = token.nextToken();
+                            String domain = token.nextToken();String path = token.nextToken();
+                            Date expiry = null;
+                            String val;
+                            if(!(val=token.nextToken()).equals("null")){
+                                expiry = new Date(val);
+                            }
+                            //Boolean isSecure = new Boolean(token.nextToken()).booleanValue();
+                            Cookie ck = new Cookie(name,value,domain,path,expiry);
+                            driver.manage().addCookie(ck); // This will add the stored cookie to our current session
                         }
-                        //Boolean isSecure = new Boolean(token.nextToken()).
-                        //booleanValue();
-                        Cookie ck = new Cookie(name, value, domain, path, expiry);
-                        System.out.println(ck);
-                        driver.manage().addCookie(ck); // This will add the stored cookie to your current session
                     }
+                }catch(Exception ex){
+                    ex.printStackTrace();
                 }
+
             }
 
 
@@ -136,7 +131,7 @@ public class testBase {
         driver.manage().window().maximize();
         driver.get(url);
         log.info("navigating to :-" + url);
-        //Thread.sleep(1500);
+
         Screen scr = new Screen();
 
         Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498568825.png");
@@ -177,39 +172,28 @@ public class testBase {
             findFailed.printStackTrace();
         }
         log.info("Entering creds to :-" + url);
+        Set<Cookie> cookies = driver.manage().getCookies();
 
-        // create file named Cookies to store Login Information
-        File file = new File("Cookies.data");
-        try
-        {
-            // Delete old file if exists
+
+        // create file named Cookie to store username Information
+        File file = new File("Cookie.data");
+        try { // Delete if any old file exists
             file.delete();
             file.createNewFile();
-            FileWriter fileWrite = new FileWriter(file);
-            BufferedWriter Bwrite = new BufferedWriter(fileWrite);
-            // loop for getting the cookie information
-
-            // loop for getting the cookie information
-            for(Cookie ck : driver.manage().getCookies())
-            {
-                Bwrite.write((ck.getName()+";"+ck.getValue()+";"+ck.getDomain()+";"+ck.getPath()+";"+ck.getExpiry()+";"+ck.isSecure()));
-                Bwrite.newLine();
+            FileWriter fileWriter = new FileWriter(file);
+            BufferedWriter bufferwrite = new BufferedWriter(fileWriter);
+            for(Cookie cook : driver.manage().getCookies()){
+                String writeup = cook.getName()+";"+cook.getValue()+";"+cook.getDomain()+";"+cook.getPath()+""
+                        + ";"+cook.getExpiry()+";"+cook.isSecure();
+                bufferwrite.write(writeup);
+                System.out.println(writeup);
+                bufferwrite.newLine();
             }
-            Bwrite.close();
-            fileWrite.close();
-
-        }
-        catch(Exception ex)
-        {
-            ex.printStackTrace();
+            bufferwrite.flush();bufferwrite.close();fileWriter.close();
+        }catch(Exception exp){
+            exp.printStackTrace();
         }
     }
-
-
-
-
-
-
 
 
 

@@ -21,12 +21,12 @@ public class TC0014_Confirmationcheckboxes_projectinfo extends testBase {
     }
 
     @Test
-    public void projectinfocheckconfirmationcheckboxes() {
-        log.info("=======started checkconfirmationcheckboxes Test===========");
+    public void generalprodreqcheckboxes() {
+        log.info("=======started generalprodreqcheckboxes Test===========");
         ProdspecPage prodspecpage = new ProdspecPage(driver);
-        prodspecpage.projectinformationcheckboxchecked();
-        Assert.assertEquals(true, prodspecpage.verifyprojectinfomaincheckboxchecked());
-        log.info("=======Finished checkconfirmationcheckboxes Test===========");
+        prodspecpage.Generalprodreqcheckboxchecked();
+        Assert.assertEquals(true, prodspecpage.verifygeneralprodreqcheckboxchecked());
+        log.info("=======Finished generalprodreqcheckboxes Test===========");
     }
 
 

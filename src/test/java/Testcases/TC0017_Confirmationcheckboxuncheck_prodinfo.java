@@ -28,12 +28,12 @@ public class TC0017_Confirmationcheckboxuncheck_prodinfo  extends testBase {
 
 
     @Test
-    public void productioninfocheckconfirmationcheckboxesunchecked() {
-        log.info("=======started productioninfocheckconfirmationcheckboxesunchecked Test===========");
+    public void redactionplaceholderreqcheckboxesunchecked() {
+        log.info("=======started redactionplaceholderreqcheckboxesunchecked Test===========");
         ProdspecPage prodspecpage = new ProdspecPage(driver);
-        prodspecpage.produtioninfocheckboxunchecked();
-        Assert.assertEquals(true, prodspecpage.verifyproductioninfomaincheckboxunchecked());
-        log.info("=======Finished productioninfocheckconfirmationcheckboxesunchecked Test===========");
+        prodspecpage.redactionplaceholderreqcheckboxunchecked();
+        Assert.assertEquals(true, prodspecpage.verifyredactionplaceholderreqcheckboxunchecked());
+        log.info("=======Finished redactionplaceholderreqcheckboxesunchecked Test===========");
     }
     @AfterClass
     public void endTest() {
