@@ -172,7 +172,11 @@ public class testBase {
             findFailed.printStackTrace();
         }
         log.info("Entering creds to :-" + url);
-        Set<Cookie> cookies = driver.manage().getCookies();
+
+
+
+
+        //Set<Cookie> cookies = driver.manage().getCookies();
 
 
         // create file named Cookie to store username Information

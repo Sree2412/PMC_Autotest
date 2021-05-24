@@ -4,22 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.10">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0018_Confirmationcheckboxcheck_nativeimagingoptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0019_Confirmationcheckboxuncheck_nativeimagingoptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0020_Confirmationcheckboxcheck_brandinginfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0021_Confirmationcheckboxuncheck_brandinginfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0022_Confirmationcheckboxcheck_prodfilespec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0023_Confirmationcheckboxuncheck_prodfilespec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0024_Confirmationcheckboxcheck_prodlocationfoldering.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0025_Confirmationcheckboxuncheck_prodlocationfoldering.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.11">
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0026_HcodeDropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0027_Expand_Collapsesections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0028_Confirmationcheckboxes_GeneralProdreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0029_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0030_Confirmationcheckbox_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0031_Confirmationcheckboxuncheck_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0032_Confirmationcheckboxcheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0033_Confirmationcheckboxuncheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0034_Confirmationcheckboxcheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0035_Confirmationcheckboxuncheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0036_Confirmationcheckboxcheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0037_Confirmationcheckboxuncheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0038_Confirmationcheckboxcheck_prodlocationfoldering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0039_Confirmationcheckboxuncheck_prodlocationfoldering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0013_Expand_Collapsesections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0018_Confirmationcheckboxcheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0019_Confirmationcheckboxuncheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0020_Confirmationcheckboxcheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0021_Confirmationcheckboxuncheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0022_Confirmationcheckboxcheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0023_Confirmationcheckboxuncheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0024_Confirmationcheckboxcheck_prodlocationfoldering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0025_Confirmationcheckboxuncheck_prodlocationfoldering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0054_HcodeDropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0056_Confirmationcheckboxes_GeneralProdreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0057_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0058_Confirmationcheckbox_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0059_Confirmationcheckboxuncheck_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0040_HcodeDropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0041_Expand_Collapsesections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0042_Confirmationcheckboxes_GeneralProdreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0043_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0044_Confirmationcheckbox_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0045_Confirmationcheckboxuncheck_redactionplaceholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0046_Confirmationcheckboxcheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0047_Confirmationcheckboxuncheck_nativeimagingoptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0048_Confirmationcheckboxcheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0049_Confirmationcheckboxuncheck_brandinginfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0050_Confirmationcheckboxcheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0051_Confirmationcheckboxuncheck_prodfilespec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0052_Confirmationcheckboxcheck_prodlocationfoldering.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0053_Confirmationcheckboxuncheck_prodlocationfoldering.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoITScrpts/Handle2Authentication.au3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoITScrpts/Handle2Authentication.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0014_Confirmationcheckboxes_projectinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0014_Confirmationcheckboxes_GeneralProdreq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0015_Confirmationcheckboxuncheck_projectinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0015_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0016_Confirmationcheckbox_prodinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0016_Confirmationcheckbox_redactionplaceholder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0017_Confirmationcheckboxuncheck_prodinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testcases/TC0017_Confirmationcheckboxuncheck_redactionplaceholder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0001_CreatenewForm_RelUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0001_CreatenewForm_RelUS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0002_CreatenewForm_SL_US.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0002_CreatenewForm_SL_US.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0003_CreatenewForm_SL_UK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0004_CreatenewForm_RelUK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0004_CreatenewForm_RelUK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0005_Cancelselectform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0005_Cancelselectform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0006_CompareForms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0006_CompareForms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0007_CompareFormClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0007_CompareFormClose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0008_Editexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0009_Canceleditexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0009_Canceleditexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0010_Copyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0010_Copyexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0011_Cancelcopyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0011_Cancelcopyexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0012_HcodeDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0012_HcodeDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0013_Expand_Collapsesections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0055_Expand_Collapsesections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0014_Confirmationcheckboxes_GeneralProdreq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0014_Confirmationcheckboxes_GeneralProdreq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0015_Confirmationcheckboxuncheck_Generalprodreq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0015_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0016_Confirmationcheckbox_redactionplaceholder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0016_Confirmationcheckbox_redactionplaceholder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0017_Confirmationcheckboxuncheck_redactionplaceholder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0017_Confirmationcheckboxuncheck_redactionplaceholder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0018_Confirmationcheckboxcheck_nativeimagingoptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0060_Confirmationcheckboxcheck_nativeimagingoptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0019_Confirmationcheckboxuncheck_nativeimagingoptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0061_Confirmationcheckboxuncheck_nativeimagingoptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0020_Confirmationcheckboxcheck_brandinginfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0062_Confirmationcheckboxcheck_brandinginfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0021_Confirmationcheckboxuncheck_brandinginfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0063_Confirmationcheckboxuncheck_brandinginfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0022_Confirmationcheckboxcheck_prodfilespec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0064_Confirmationcheckboxcheck_prodfilespec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0023_Confirmationcheckboxuncheck_prodfilespec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0065_Confirmationcheckboxuncheck_prodfilespec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0024_Confirmationcheckboxcheck_prodlocationfoldering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0066_Confirmationcheckboxcheck_prodlocationfoldering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testcases/TC0025_Confirmationcheckboxuncheck_prodlocationfoldering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0067_Confirmationcheckboxuncheck_prodlocationfoldering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testBase/testBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testBase/testBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,9 +104,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Report/test.html" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="1s0hda1S8ETV94GearZOIbGhsE1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -67,20 +123,27 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest" />
+      <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\src\test\java\SLUSForms" />
+      <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\src\test\java\SLUKForms" />
+      <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\src\test\java\RELUKForms" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\samada.CONSILIOTEST\Documents\GitHub\PMC_UITest\Sikuli" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="RELUSForms" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml">
-    <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.&lt;default&gt; (1)">
+    <configuration name="All in UI_Testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,17 +182,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0022_Confirmationcheckboxcheck_prodfilespec.prodfilespeccheckboxeschecked" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0055_Expand_Collapsesections.expandcollapsesections" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Testcases.*" />
+          <option name="PATTERN" value="SLUKForms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0022_Confirmationcheckboxcheck_prodfilespec" />
-      <option name="METHOD_NAME" value="prodfilespeccheckboxeschecked" />
+      <option name="PACKAGE_NAME" value="SLUKForms" />
+      <option name="MAIN_CLASS_NAME" value="SLUKForms.TC0055_Expand_Collapsesections" />
+      <option name="METHOD_NAME" value="expandcollapsesections" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,54 +200,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0023_Confirmationcheckboxuncheck_prodfilespec.prodfilespeccheckboxesunchecked" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;default&gt; (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0023_Confirmationcheckboxuncheck_prodfilespec" />
-      <option name="METHOD_NAME" value="prodfilespeccheckboxesunchecked" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0024_Confirmationcheckboxcheck_prodlocationfoldering.prodlocationcheckboxeschecked" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0024_Confirmationcheckboxcheck_prodlocationfoldering" />
-      <option name="METHOD_NAME" value="prodlocationcheckboxeschecked" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0025_Confirmationcheckboxuncheck_prodlocationfoldering.prodlocationcheckboxesunchecked" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="screenshot" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Testcases.*" />
+          <option name="PATTERN" value="screenshot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Testcases" />
-      <option name="MAIN_CLASS_NAME" value="Testcases.TC0025_Confirmationcheckboxuncheck_prodlocationfoldering" />
-      <option name="METHOD_NAME" value="prodlocationcheckboxesunchecked" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="screenshot" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -193,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
-        <item itemvalue="TestNG.TC0025_Confirmationcheckboxuncheck_prodlocationfoldering.prodlocationcheckboxesunchecked" />
-        <item itemvalue="TestNG.TC0024_Confirmationcheckboxcheck_prodlocationfoldering.prodlocationcheckboxeschecked" />
-        <item itemvalue="TestNG.TC0023_Confirmationcheckboxuncheck_prodfilespec.prodfilespeccheckboxesunchecked" />
-        <item itemvalue="TestNG.TC0022_Confirmationcheckboxcheck_prodfilespec.prodfilespeccheckboxeschecked" />
+        <item itemvalue="TestNG.&lt;default&gt; (1)" />
+        <item itemvalue="JUnit.All in UI_Testing" />
+        <item itemvalue="TestNG.screenshot" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.TC0055_Expand_Collapsesections.expandcollapsesections" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621526434354</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Version 1.0.11">
+      <created>1621536603837</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621536603837</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +374,8 @@
     <MESSAGE value="Version 1.0.8" />
     <MESSAGE value="Version 1.0.9" />
     <MESSAGE value="Version 1.0.10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.10" />
+    <MESSAGE value="Version 1.0.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -34,25 +34,19 @@ public class ProdspecPage  extends testBase {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public void createnewform(){
-        HomePage homepage = new HomePage(driver);
-        homepage.NewFormcreation_relus();
-       // driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+    /* Create all page action  methods here*/
+
+    public void selecthcodefromdropdown() {
+
+        waitForElement(driver, 10, HCodedropdown);
+        log.info("Hcode value object found:-" + HCodedropdown.toString());
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-    }
-
-    /* Create all page action  methods here*/
-    public void selecthcodefromdropdown() {
-        createnewform();
-        waitForElement(driver, 10, HCodedropdown);
-        log.info("Hcode value object found:-" + HCodedropdown.toString());
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
         HCodedropdown.click();
         log.info("Click on Hcode :-" + HCodedropdown.toString());
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
@@ -67,55 +61,144 @@ public class ProdspecPage  extends testBase {
 
         //click on the option1
         option1.click();
-       // int x= option1.getLocation().getX();
-       // int y = option1.getLocation().getY();
+        // int x= option1.getLocation().getX();
+        // int y = option1.getLocation().getY();
         //System.out.println("x cord" +x);
         //System.out.println("x cord" +y);
         log.info("Enter Hcode value object selected:-" + HCodedropdown.toString());
 
     }
 
+    public void selecthcodefromdropdown_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        selecthcodefromdropdown();
+
+    }
+
+    public void selecthcodefromdropdown_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        selecthcodefromdropdown();
+
+    }
+
+    public void selecthcodefromdropdown_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        selecthcodefromdropdown();
+
+    }
+    public void selecthcodefromdropdown_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        selecthcodefromdropdown();
+
+    }
+
+
     public void expandcollapsesections() {
-        createnewform();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-label")));
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-label"))).click();
-        log.info("clicked on minus button of project info section:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
-
+        log.info("clicked on minus button of production set details section:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-1-label")));
-
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-label"))).click();
-        log.info("clicked on minus button of production info is:-" + driver.findElement(By.cssSelector("#ui-panel-1-label")).toString());
+        log.info("clicked on minus button of general prod req info is:-" + driver.findElement(By.cssSelector("#ui-panel-1-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-2-label")));
 
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-2-label"))).click();
-        log.info("clicked on minus button of Native imaging option is:-" + driver.findElement(By.cssSelector("#ui-panel-2-label")).toString());
+        log.info("clicked on minus button of Redaction and placeholder req is:-" + driver.findElement(By.cssSelector("#ui-panel-2-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-3-label")));
 
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-label"))).click();
-        log.info("clicked on minus button of Branding info is:-" + driver.findElement(By.cssSelector("#ui-panel-3-label")).toString());
+        log.info("clicked on minus button of Native imaging option info is:-" + driver.findElement(By.cssSelector("#ui-panel-3-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-4-label")));
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-label"))).click();
-        log.info("clicked on minus button of production file spec is:-" + driver.findElement(By.cssSelector("#ui-panel-4-label")).toString());
+        log.info("clicked on minus button of Branding info is:-" + driver.findElement(By.cssSelector("#ui-panel-4-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-5-label")));
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-label"))).click();
-        log.info("clicked on minus button of production location foldering is:-" + driver.findElement(By.cssSelector("#ui-panel-5-label")).toString());
+        log.info("clicked on minus button of Prod file spec is:-" + driver.findElement(By.cssSelector("#ui-panel-5-label")).toString());
         waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-6-label")));
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-label"))).click();
-        log.info("clicked on minus button of Special instruction is:-" + driver.findElement(By.cssSelector("#ui-panel-6-label")).toString());
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-label"))).click();
+        log.info("clicked on minus button of Prod location and foldering is:-" + driver.findElement(By.cssSelector("#ui-panel-6-label")).toString());
+        waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-7-label")));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-7-label"))).click();
+        log.info("clicked on minus button of Special instruction is:-" + driver.findElement(By.cssSelector("#ui-panel-7-label")).toString());
     }
 
+    public void expandcollapsesections_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        expandcollapsesections();
+
+    }
+    public void expandcollapsesections_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        expandcollapsesections();
+
+    }
+    public void expandcollapsesections_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        expandcollapsesections();
+
+    }
+    public void expandcollapsesections_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        expandcollapsesections();
+
+    }
 
     public boolean verifyhcodedropdown() {
         try {
@@ -152,7 +235,11 @@ public class ProdspecPage  extends testBase {
         }
     }
       public void Generalprodreqcheckboxchecked(){
-          createnewform();
+          try {
+              Thread.sleep(2000);
+          } catch (InterruptedException e) {
+              e.printStackTrace();
+          }
           waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
           log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
@@ -177,6 +264,31 @@ public class ProdspecPage  extends testBase {
           log.info("clicked on 7th checkbox prod info section:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > div > user-confirmation-checkbox > i")).toString());
       }
 
+    public void Generalprodreqcheckboxchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        Generalprodreqcheckboxchecked();
+    }
+    public void Generalprodreqcheckboxchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        Generalprodreqcheckboxchecked();
+
+    }
+
+    public void Generalprodreqcheckboxchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        Generalprodreqcheckboxchecked();
+
+    }
+    public void Generalprodreqcheckboxchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        Generalprodreqcheckboxchecked();
+
+    }
+
     public boolean verifygeneralprodreqcheckboxchecked() {
         try {
             String className0 = driver.findElement(By.cssSelector("#ui-panel-1-titlebar > p-header > div:nth-child(1) > user-confirmation-checkbox > i")).getAttribute("class");
@@ -188,8 +300,14 @@ public class ProdspecPage  extends testBase {
         }
     }
 
+
+
     public void generalprodreqcheckboxunchecked() {
-        createnewform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
@@ -199,6 +317,34 @@ public class ProdspecPage  extends testBase {
         log.info("clicked on 2nd checkbox prod info section:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
 
     }
+
+    public void generalprodreqcheckboxunchecked_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        generalprodreqcheckboxunchecked();
+
+    }
+    public void generalprodreqcheckboxunchecked_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        generalprodreqcheckboxunchecked();
+
+
+    }
+    public void generalprodreqcheckboxunchecked_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        generalprodreqcheckboxunchecked();
+
+    }
+    public void generalprodreqcheckboxunchecked_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        generalprodreqcheckboxunchecked();
+
+    }
+
+
 
 
 
@@ -214,7 +360,11 @@ public class ProdspecPage  extends testBase {
     }
 
     public void redactionandplaceholderreqcheckboxchecked()  {
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
        log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
@@ -258,6 +408,31 @@ public class ProdspecPage  extends testBase {
 
     }
 
+    public void redactionandplaceholderreqcheckboxchecked_relus()  {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        redactionandplaceholderreqcheckboxchecked();
+
+    }
+
+    public void redactionandplaceholderreqcheckboxchecked_reluk()  {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        redactionandplaceholderreqcheckboxchecked();
+    }
+    public void redactionandplaceholderreqcheckboxchecked_slus()  {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        redactionandplaceholderreqcheckboxchecked();
+
+    }
+    public void redactionandplaceholderreqcheckboxchecked_sluk()  {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        redactionandplaceholderreqcheckboxchecked();
+
+    }
+
     public boolean verifyredactionplaceholderreqcheckboxchecked() {
         try {
             String className0 = driver.findElement(By.cssSelector("#ui-panel-2-titlebar > p-header > div:nth-child(1) > user-confirmation-checkbox > i")).getAttribute("class");
@@ -270,7 +445,11 @@ public class ProdspecPage  extends testBase {
     }
 
     public void redactionplaceholderreqcheckboxunchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on production type checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
@@ -282,6 +461,33 @@ public class ProdspecPage  extends testBase {
 
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on family association checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
+
+    }
+
+    public void redactionplaceholderreqcheckboxunchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        redactionplaceholderreqcheckboxunchecked();
+    }
+
+    public void redactionplaceholderreqcheckboxunchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        redactionplaceholderreqcheckboxunchecked();
+
+    }
+
+    public void redactionplaceholderreqcheckboxunchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        redactionplaceholderreqcheckboxunchecked();
+
+    }
+
+    public void redactionplaceholderreqcheckboxunchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        redactionplaceholderreqcheckboxunchecked();
 
     }
 
@@ -297,7 +503,11 @@ public class ProdspecPage  extends testBase {
     }
 
     public void nativeimagingoptionscheckboxchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
@@ -306,6 +516,34 @@ public class ProdspecPage  extends testBase {
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 3rd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
+
+    }
+
+    public void nativeimagingoptionscheckboxchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        nativeimagingoptionscheckboxchecked();
+
+
+    }
+    public void nativeimagingoptionscheckboxchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        nativeimagingoptionscheckboxchecked();
+
+
+    }
+    public void nativeimagingoptionscheckboxchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        nativeimagingoptionscheckboxchecked();
+
+
+    }
+    public void nativeimagingoptionscheckboxchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        nativeimagingoptionscheckboxchecked();
 
     }
 
@@ -321,13 +559,41 @@ public class ProdspecPage  extends testBase {
     }
 
     public void nativeimagingoptionscheckboxunchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 2nd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
 
+    }
+
+    public void nativeimagingoptionscheckboxunchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        nativeimagingoptionscheckboxunchecked();
+
+    }
+    public void nativeimagingoptionscheckboxunchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        nativeimagingoptionscheckboxunchecked();
+
+    }
+    public void nativeimagingoptionscheckboxunchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        nativeimagingoptionscheckboxunchecked();
+
+    }
+    public void nativeimagingoptionscheckboxunchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        nativeimagingoptionscheckboxunchecked();
 
     }
 
@@ -343,18 +609,45 @@ public class ProdspecPage  extends testBase {
     }
 
     public void brandinginfocheckboxchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
+        log.info("clicked on 1st checkbox on branding info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 2nd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i")).toString());
+        log.info("clicked on 2nd checkbox on branding info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 3rd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i"))).click();
+        log.info("clicked on 3rd checkbox on branding info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-9-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 3rd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-9-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
+
+    }
+    public void brandinginfocheckboxchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        brandinginfocheckboxchecked();
+
+    }
+    public void brandinginfocheckboxchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        brandinginfocheckboxchecked();
+
+    }
+    public void brandinginfocheckboxchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        brandinginfocheckboxchecked();
+
+    }
+    public void brandinginfocheckboxchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        brandinginfocheckboxchecked();
 
     }
 
@@ -370,16 +663,38 @@ public class ProdspecPage  extends testBase {
     }
 
     public void brandinginfocheckboxunchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 2nd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 3rd checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i")).toString());
+    }
+    public void brandinginfocheckboxunchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        brandinginfocheckboxunchecked();
 
+    }
+    public void brandinginfocheckboxunchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        brandinginfocheckboxunchecked();
+    }
+    public void brandinginfocheckboxunchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        brandinginfocheckboxunchecked();
+    }
+    public void brandinginfocheckboxunchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        brandinginfocheckboxunchecked();
     }
 
     public boolean verifybrandinginfocheckboxunchecked() {
@@ -393,7 +708,11 @@ public class ProdspecPage  extends testBase {
         }
     }
     public void prodfilespeccheckboxchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
@@ -411,6 +730,31 @@ public class ProdspecPage  extends testBase {
 
     }
 
+    public void prodfilespeccheckboxchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        prodfilespeccheckboxchecked();
+
+    }
+    public void prodfilespeccheckboxchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        prodfilespeccheckboxchecked();
+
+    }
+    public void prodfilespeccheckboxchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        prodfilespeccheckboxchecked();
+
+    }
+    public void prodfilespeccheckboxchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        prodfilespeccheckboxchecked();
+
+    }
+
     public boolean verifyprodfilespeccheckboxchecked() {
         try {
             String className0 = driver.findElement(By.cssSelector("#ui-panel-5-titlebar > p-header > div:nth-child(1) > user-confirmation-checkbox > i")).getAttribute("class");
@@ -423,7 +767,11 @@ public class ProdspecPage  extends testBase {
     }
 
     public void prodfilespeccheckboxunchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
@@ -435,6 +783,31 @@ public class ProdspecPage  extends testBase {
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
+    }
+
+    public void prodfilespeccheckboxunchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        prodfilespeccheckboxunchecked();
+
+    }
+    public void prodfilespeccheckboxunchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        prodfilespeccheckboxunchecked();
+
+    }
+    public void prodfilespeccheckboxunchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        prodfilespeccheckboxunchecked();
+
+    }
+    public void prodfilespeccheckboxunchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        prodfilespeccheckboxunchecked();
+
     }
 
     public boolean verifyprodfilespeccheckboxunchecked() {
@@ -449,7 +822,11 @@ public class ProdspecPage  extends testBase {
     }
 
     public void prodlocationcheckboxchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
@@ -468,6 +845,30 @@ public class ProdspecPage  extends testBase {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(6) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(6) > div > user-confirmation-checkbox > i")).toString());
     }
+    public void prodlocationcheckboxchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        prodlocationcheckboxchecked();
+
+    }
+    public void prodlocationcheckboxchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        prodlocationcheckboxchecked();
+
+    }
+    public void prodlocationcheckboxchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        prodlocationcheckboxchecked();
+
+    }
+    public void prodlocationcheckboxchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        prodlocationcheckboxchecked();
+
+    }
 
     public boolean verifyprodlocationcheckboxchecked() {
         try {
@@ -481,12 +882,40 @@ public class ProdspecPage  extends testBase {
     }
 
     public void prodlocationcheckboxunchecked(){
-        createnewform();;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
 
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
         log.info("clicked on 1st checkbox on native info section:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
+
+    }
+    public void prodlocationcheckboxunchecked_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        prodlocationcheckboxunchecked();
+
+    }
+    public void prodlocationcheckboxunchecked_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        prodlocationcheckboxunchecked();
+
+    }
+    public void prodlocationcheckboxunchecked_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        prodlocationcheckboxunchecked();
+
+    }
+    public void prodlocationcheckboxunchecked_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        prodlocationcheckboxunchecked();
 
     }
 
@@ -500,6 +929,8 @@ public class ProdspecPage  extends testBase {
             return false;
         }
     }
+
+
 }
 
 

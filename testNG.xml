@@ -3,150 +3,66 @@
 
 <suite name="Regression Suite" preserve-order="true" parallel="classes" thread-count="1">
 
-    <listeners>
-        <!--  <listener class-name="com.test.automation.uiAutomation.customListner.Listener"></listener>  -->
-
-    </listeners>
     <test name="createNewFormrelus">
         <classes>
-            <class name="Testcases.TC0001_CreatenewForm_RelUS"></class>
+            <class name="HomePage.TC0001_CreatenewForm_RelUS"></class>
 
         </classes>
     </test>
 
     <test name="createNewFormslus">
         <classes>
-            <class name="Testcases.TC0002_CreatenewForm_SL_US"></class>
+            <class name="HomePage.TC0002_CreatenewForm_SL_US"></class>
 
         </classes>
     </test>
 
     <test name="createNewFormsluk">
         <classes>
-            <class name="Testcases.TC0003_CreatenewForm_SL_UK"></class>
+            <class name="HomePage.TC0003_CreatenewForm_SL_UK"></class>
         </classes>
     </test>
 
     <test name="createNewFormreluk">
         <classes>
-            <class name="Testcases.TC0004_CreatenewForm_RelUK"></class>
+            <class name="HomePage.TC0004_CreatenewForm_RelUK"></class>
         </classes>
     </test>
 
     <test name="cancelselectform">
         <classes>
-            <class name="Testcases.TC0005_Cancelselectform"></class>
+            <class name="HomePage.TC0005_Cancelselectform"></class>
         </classes>
     </test>
 
     <test name="compareForm">
         <classes>
-            <class name="Testcases.TC0006_CompareForms"></class>
+            <class name="HomePage.TC0006_CompareForms"></class>
         </classes>
     </test>
     <test name="compareformclosebutton">
         <classes>
-            <class name="Testcases.TC0007_CompareFormClose"></class>
+            <class name="HomePage.TC0007_CompareFormClose"></class>
         </classes>
     </test>
     <test name="openexistingform">
         <classes>
-            <class name="Testcases.TC0008_Editexistingform"></class>
+            <class name="HomePage.TC0008_Editexistingform"></class>
         </classes>
     </test>
     <test name="cancelexistingformbutton">
         <classes>
-            <class name="Testcases.TC0009_Canceleditexistingform"></class>
+            <class name="HomePage.TC0009_Canceleditexistingform"></class>
         </classes>
     </test>
     <test name="copyexistingform">
         <classes>
-            <class name="Testcases.TC0010_Copyexistingform"></class>
+            <class name="HomePage.TC0010_Copyexistingform"></class>
         </classes>
     </test>
     <test name="cancelcopyexistingform">
         <classes>
-            <class name="Testcases.TC0011_Cancelcopyexistingform"></class>
+            <class name="HomePage.TC0011_Cancelcopyexistingform"></class>
         </classes>
     </test>
-    <test name="hcodedropdown">
-        <classes>
-            <class name="Testcases.TC0012_HcodeDropdown"></class>
-        </classes>
-    </test>
-    <test name="expandcollapsesections">
-        <classes>
-            <class name="Testcases.TC0013_Expand_Collapsesections"></class>
-        </classes>
-    </test>
-    <test name="generalprodreqcheckboxes">
-        <classes>
-            <class name="Testcases.TC0014_Confirmationcheckboxes_GeneralProdreq"></class>
-        </classes>
-    </test>
-    <test name="generalprodreqcheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0015_Confirmationcheckboxuncheck_Generalprodreq"></class>
-        </classes>
-    </test>
-    <test name="redactionandplaceholderreqcheckboxes">
-        <classes>
-            <class name="Testcases.TC0016_Confirmationcheckbox_redactionplaceholder"></class>
-        </classes>
-    </test>
-    <test name="redactionplaceholderreqcheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0017_Confirmationcheckboxuncheck_redactionplaceholder"></class>
-        </classes>
-    </test>
-
-    <test name="nativeimagingoptionscheckboxeschecked">
-        <classes>
-            <class name="Testcases.TC0018_Confirmationcheckboxcheck_nativeimagingoptions"></class>
-        </classes>
-    </test>
-
-    <test name="nativeimagingoptionscheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0019_Confirmationcheckboxuncheck_nativeimagingoptions"></class>
-        </classes>
-    </test>
-
-    <test name="brandinginfocheckboxeschecked">
-        <classes>
-            <class name="Testcases.TC0020_Confirmationcheckboxcheck_brandinginfo"></class>
-        </classes>
-    </test>
-
-    <test name="brandinginfocheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0021_Confirmationcheckboxuncheck_brandinginfo"></class>
-        </classes>
-    </test>
-
-    <test name="prodfilespeccheckboxeschecked">
-        <classes>
-            <class name="Testcases.TC0022_Confirmationcheckboxcheck_prodfilespec"></class>
-        </classes>
-    </test>
-
-    <test name="prodfilespeccheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0023_Confirmationcheckboxuncheck_prodfilespec"></class>
-        </classes>
-    </test>
-
-    <test name="prodlocationcheckboxeschecked">
-        <classes>
-            <class name="Testcases.TC0024_Confirmationcheckboxcheck_prodlocationfoldering"></class>
-        </classes>
-    </test>
-
-    <test name="prodlocationcheckboxesunchecked">
-        <classes>
-            <class name="Testcases.TC0025_Confirmationcheckboxuncheck_prodlocationfoldering"></class>
-        </classes>
-    </test>
-
-
 </suite>
