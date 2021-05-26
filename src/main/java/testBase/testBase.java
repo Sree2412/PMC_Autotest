@@ -22,11 +22,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
-import java.util.*;
-
+import java.util.Calendar;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
 
 public class testBase {
 
@@ -74,11 +78,12 @@ public class testBase {
         PropertyConfigurator.configure(log4jConfPath);
         System.out.println(OR.getProperty("browser"));
         selectBrowser(OR.getProperty("browser"));
-
-
         getUrl(OR.getProperty("url"));
 
+
     }
+
+
 
 
     /*To select and open browsers of choice using different OS*/
@@ -86,32 +91,18 @@ public class testBase {
         System.out.println(System.getProperty("os.name"));
         if (System.getProperty("os.name").contains("Window")) {
             if (browser.equals("chrome")) {
+
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 driver = new ChromeDriver();
-                try{
-                    File file = new File("Cookie.data");
-                    FileReader fileReader = new FileReader(file);
-                    BufferedReader Buffreader = new BufferedReader(fileReader);
-                    String strline;
-                    while((strline=Buffreader.readLine())!=null){
-                        StringTokenizer token = new StringTokenizer(strline,";");
-                        while(token.hasMoreTokens()){
-                            String name = token.nextToken();String value = token.nextToken();
-                            String domain = token.nextToken();String path = token.nextToken();
-                            Date expiry = null;
-                            String val;
-                            if(!(val=token.nextToken()).equals("null")){
-                                expiry = new Date(val);
-                            }
-                            //Boolean isSecure = new Boolean(token.nextToken()).booleanValue();
-                            Cookie ck = new Cookie(name,value,domain,path,expiry);
-                            driver.manage().addCookie(ck); // This will add the stored cookie to our current session
-                        }
-                    }
-                }catch(Exception ex){
-                    ex.printStackTrace();
-                }
+               /* ChromeOptions options = new ChromeOptions();
+               // options.addArguments("headless");
+                options.addArguments("--start-maximized");
+                //options.addArguments("user-data-dir=C:\\Users\\samada.CONSILIOTEST\\AppData\\Local\\Google\\Chrome\\User Data");
+                ChromeDriver driver = new ChromeDriver(options);
+                driver.get("http://lvsvtapaw01.consiliotest.com/pmc");*/
+
+
 
             }
 
@@ -121,51 +112,55 @@ public class testBase {
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
             driver = new FirefoxDriver();
 
+
         }
     }
 
 
+
+
+
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
     public void getUrl(String url)  {
-
-        driver.manage().window().maximize();
+       driver.manage().window().maximize();
         driver.get(url);
         log.info("navigating to :-" + url);
 
+
         Screen scr = new Screen();
 
-        Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498568825.png");
+        Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065504963.png");
         try {
             scr.type(ptnlink1,"samada");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink2 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498582329.png");
+        Pattern ptnlink2 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065515325.png");
         try {
             scr.type(ptnlink2,"Supernova2021!!");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink3 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498595989.png");
+        Pattern ptnlink3 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065523887.png");
         try {
             scr.click(ptnlink3);
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
 
-        Pattern ptnlink4 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498568825.png");
+        Pattern ptnlink4 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065504963.png");
         try {
             scr.type(ptnlink4,"samada");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink5 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498582329.png");
+        Pattern ptnlink5 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065515325.png");
         try {
             scr.type(ptnlink5,"Supernova2021!!");
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
         }
-        Pattern ptnlink6 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\Sikuliide.sikuli\\1620498595989.png");
+        Pattern ptnlink6 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065523887.png");
         try {
             scr.click(ptnlink6);
         } catch (FindFailed findFailed) {
@@ -174,29 +169,6 @@ public class testBase {
         log.info("Entering creds to :-" + url);
 
 
-
-
-        //Set<Cookie> cookies = driver.manage().getCookies();
-
-
-        // create file named Cookie to store username Information
-        File file = new File("Cookie.data");
-        try { // Delete if any old file exists
-            file.delete();
-            file.createNewFile();
-            FileWriter fileWriter = new FileWriter(file);
-            BufferedWriter bufferwrite = new BufferedWriter(fileWriter);
-            for(Cookie cook : driver.manage().getCookies()){
-                String writeup = cook.getName()+";"+cook.getValue()+";"+cook.getDomain()+";"+cook.getPath()+""
-                        + ";"+cook.getExpiry()+";"+cook.isSecure();
-                bufferwrite.write(writeup);
-                System.out.println(writeup);
-                bufferwrite.newLine();
-            }
-            bufferwrite.flush();bufferwrite.close();fileWriter.close();
-        }catch(Exception exp){
-            exp.printStackTrace();
-        }
     }
 
 
