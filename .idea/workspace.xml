@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.14" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.14">
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0068_Nondefaultconfirmationcheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0069_Nondefaultconfirmationcheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0070_Nondefaultconfirmationcheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0071_Nondefaultconfirmationcheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +72,7 @@
       <recent name="Testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)">
+  <component name="RunManager" selected="TestNG.TC0071_Nondefaultconfirmationcheck.nondefaultvalueselectionconfirmationcheck">
     <configuration name="basicAuth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicAuth" />
       <module name="UI_Testing" />
@@ -192,6 +201,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC0071_Nondefaultconfirmationcheck.nondefaultvalueselectionconfirmationcheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SLUSForms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SLUSForms" />
+      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0071_Nondefaultconfirmationcheck" />
+      <option name="METHOD_NAME" value="nondefaultvalueselectionconfirmationcheck" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;default&gt; (1)" type="TestNG" nameIsGenerated="true">
       <module name="UI_Testing" />
       <option name="PACKAGE_NAME" value="" />
@@ -204,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC0071_Nondefaultconfirmationcheck.nondefaultvalueselectionconfirmationcheck" />
         <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)" />
         <item itemvalue="TestNG.TC0001_CreatenewForm_RelUS.createNewFormrelus" />
         <item itemvalue="TestNG.TC0002_CreatenewForm_SL_US" />
         <item itemvalue="Application.basicAuth" />
-        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622067277727</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Version 1.0.14">
+      <created>1622067892743</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622067892743</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
