@@ -1352,6 +1352,57 @@ public class ProdspecPage  extends testBase {
 
     }
 
+    public void clearsectionconfirmationcheck(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-titlebar > p-header > div.general-production-buttons > button > span"))).click();
+        log.info("clicked on General Production Requirements clear section:-" + driver.findElement(By.cssSelector("#ui-panel-1-titlebar > p-header > div.general-production-buttons > button > span")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-2-titlebar > p-header > div.redaction-placeholder-buttons > button > span"))).click();
+        log.info("clicked on Redaction and Placeholder Requirements clear section:-" + driver.findElement(By.cssSelector("#ui-panel-2-titlebar > p-header > div.redaction-placeholder-buttons > button > span")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-titlebar > p-header > div.native-imaging-buttons > button > span"))).click();
+        log.info("clicked on Native Imaging Options clear section:-" + driver.findElement(By.cssSelector("#ui-panel-3-titlebar > p-header > div.native-imaging-buttons > button > span")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-titlebar > p-header > div.branding-information-buttons > button > span"))).click();
+        log.info("clicked on Branding Information clear section:-" + driver.findElement(By.cssSelector("#ui-panel-4-titlebar > p-header > div.branding-information-buttons > button > span")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-titlebar > p-header > div.production-file-spec-buttons > button > span"))).click();
+        log.info("clicked on Production File Specifications clear section:-" + driver.findElement(By.cssSelector("#ui-panel-5-titlebar > p-header > div.production-file-spec-buttons > button > span")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-titlebar > p-header > div.production-location-foldering-buttons > button > span"))).click();
+        log.info("clicked on Production Location and Foldering clear section:-" + driver.findElement(By.cssSelector("#ui-panel-6-titlebar > p-header > div.production-location-foldering-buttons > button > span")).toString());
+
+
+    }
+    public void clearsectionconfirmationcheck_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        clearsectionconfirmationcheck();
+
+    }
+    public void clearsectionconfirmationcheck_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        clearsectionconfirmationcheck();
+
+    }
+    public void clearsectionconfirmationcheck_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        clearsectionconfirmationcheck();
+
+    }
+    public void clearsectionconfirmationcheck_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        clearsectionconfirmationcheck();
+
+    }
+    public boolean verifyclearsectionconfirmationcheck() {
+        verifynondefaultvalueconfirmationchecked();
+        return true;
+
+    }
+
 }
 
 
