@@ -1237,6 +1237,121 @@ public class ProdspecPage  extends testBase {
         }
     }
 
+    public void clearvalueclickingXandconfirmingcheckbox(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Production DAT/TIFF/Text Time:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Production Date Format:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Production Time Format:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Production Type:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(5) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Sort Order:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(5) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(6) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Previously Produced Docs-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(6) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Family Association:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Markup Set:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Text:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Image Redaction Label:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Blackout Redactions Text/Audio:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Redacted with Family:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Unreadable Placeholder/Text-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Unreadable with Family-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on 1Privilege Placeholder/Text-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Privilege with Family Member-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Empty File Identifier:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Empty Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Native Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Tiff failure/Exception Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Spreadsheet Files:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Presentation Files:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Other Files:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on Production Numbering Method:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Use Existing Fields:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Branding Font:-" + driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Load File Delimeters:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Load File Encoding:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Image File Delivery Format:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Text File Delivery Format:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(5) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Native File Delivery Format:-" + driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(5) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Image Folder:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Text Folder:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Natives Folder:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Load Files Folder:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *Path Prefix:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(6) > span > editable-dropdown > div > div > span > i"))).click();
+        log.info("clicked on *PDF Files Folder:-" + driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(6) > span > editable-dropdown > div > div > span > i")).toString());
+
+
+
+    }
+    public void clearvalueclickingXandconfirmingcheckbox_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        clearvalueclickingXandconfirmingcheckbox();
+
+    }
+    public void clearvalueclickingXandconfirmingcheckbox_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        clearvalueclickingXandconfirmingcheckbox();
+
+    }
+    public void clearvalueclickingXandconfirmingcheckbox_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        clearvalueclickingXandconfirmingcheckbox();
+
+    }
+    public void clearvalueclickingXandconfirmingcheckbox_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        clearvalueclickingXandconfirmingcheckbox();
+
+    }
+
+    public boolean verifyclearvalueclickingXandconfirmingcheckbox() {
+        verifynondefaultvalueconfirmationchecked();
+            return true;
+
+    }
+
 }
 
 
