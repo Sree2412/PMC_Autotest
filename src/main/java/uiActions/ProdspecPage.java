@@ -959,7 +959,6 @@ public class ProdspecPage  extends testBase {
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > select")));
         Select FamilyAssociation = new Select(driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > select")));
         FamilyAssociation.selectByIndex(2);
-
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > span > editable-dropdown > div > select")));
         Select MarkupsetorRedactionlayer = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > span > editable-dropdown > div > select")));
         MarkupsetorRedactionlayer.selectByIndex(2);
@@ -969,32 +968,35 @@ public class ProdspecPage  extends testBase {
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Select Imageredactionlabel = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Imageredactionlabel.selectByIndex(2);
+        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > span > editable-dropdown > div > select")));
+        Select BlackoutredactionorAudio = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > span > editable-dropdown > div > select")));
+        BlackoutredactionorAudio.selectByIndex(2);
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > span > editable-dropdown > div > select")));
         Select RedactedwithFamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > span > editable-dropdown > div > select")));
         RedactedwithFamily.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Unreadableplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        Select Unreadableplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > select")));
         Unreadableplaceholder.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Select Unreadablewithfamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Unreadablewithfamily.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Privilegeplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        Select Privilegeplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > select")));
         Privilegeplaceholder.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Select Privilegewithfamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > span > editable-dropdown > div > select")));
         Privilegewithfamily.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Emptyfileidentifier = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        Select Emptyfileidentifier = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > span > editable-dropdown > div > select")));
         Emptyfileidentifier.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(3) > span > editable-dropdown > div > select")));
-        Select Emptyfiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        Select Emptyfiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > select")));
         Emptyfiles.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > span > editable-dropdown > div > select")));
-        Select Nativefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        Select Nativefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > span > editable-dropdown > div > select")));
         Nativefiles.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Tifffailurefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
+        Select Tifffailurefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
         Tifffailurefiles.selectByIndex(2);
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > select")));
         Select Spreadsheetfiles = new Select(driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > select")));
@@ -1054,7 +1056,6 @@ public class ProdspecPage  extends testBase {
         WebElement Splinstructiontext = driver.findElement(By.cssSelector("#ui-panel-7-content > div > div > textarea"));
         Splinstructiontext.sendKeys("test");
 
-
     }
 
     public void nondefaultconfirmationcheck_relus(){
@@ -1084,91 +1085,149 @@ public class ProdspecPage  extends testBase {
     }
     public boolean verifynondefaultvalueconfirmationchecked() {
         try {
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
             String className0 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className0.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
             String className1 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className1.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
             String className2 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className2.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")));
             String className3 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className3.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
             String className4 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className4.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(6) > div > user-confirmation-checkbox > i")));
             String className5 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(6) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className5.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > div > user-confirmation-checkbox > i")));
             String className6 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className6.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
             String className7 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className7.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
             String className8 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className8.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
             String className9 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className9.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > div > user-confirmation-checkbox > i")));
+            String className10 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            className10.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
             String className11 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className11.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
             String className12 = driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className12.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
             String className13 = driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className13.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
             String className14 = driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className14.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
             String className15 = driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className15.contains("pi pi-check-circle default-option-check");
-            String className16 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
+            String className16 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className16.contains("pi pi-check-circle default-option-check");
-            String className17 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
+            String className17 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-16 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className17.contains("pi pi-check-circle default-option-check");
-            String className18 = driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
+            String className18 = driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className18.contains("pi pi-check-circle default-option-check");
-            String className19 = driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
+            String className19 = driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className19.contains("pi pi-check-circle default-option-check");
-            String className20 = driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-17 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
+            String className20 = driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className20.contains("pi pi-check-circle default-option-check");
+
+           waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
             String className21 = driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className21.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i")));
             String className22 = driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(10) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className22.contains("pi pi-check-circle default-option-check");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i")));
             String className23 = driver.findElement(By.cssSelector("#ui-panel-4-content > div > div > div.ui-g-9 > div:nth-child(11) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className23.contains("pi pi-check-circle default-option-check");
-            String className24 = driver.findElement(By.cssSelector("#ui-fieldset-9-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
-            className24.contains("pi pi-check-circle default-option-check");
-            String className25 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
-            className25.contains("pi pi-check-circle default-option-check");
-            String className26 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
+            String className26 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className26.contains("pi pi-check-circle default-option-check");
-            String className27 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
+            String className27 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className27.contains("pi pi-check-circle default-option-check");
 
-            String className28 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
+            String className28 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className28.contains("pi pi-check-circle default-option-check");
 
-            String className29 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")));
+            String className29 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className29.contains("pi pi-check-circle default-option-check");
 
-            String className30 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
+            String className30 = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className30.contains("pi pi-check-circle default-option-check");
 
-            String className31 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
+            String className31 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className31.contains("pi pi-check-circle default-option-check");
 
-            String className32 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
+            String className32 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className32.contains("pi pi-check-circle default-option-check");
 
-            String className33 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
+            String className33 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className33.contains("pi pi-check-circle default-option-check");
 
-            String className34 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")));
+            String className34 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className34.contains("pi pi-check-circle default-option-check");
 
-            String className35 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(6) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
+            String className35 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className35.contains("pi pi-check-circle default-option-check");
 
-            String className36 = driver.findElement(By.cssSelector("#ui-panel-7-titlebar > p-header > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
+            String className36 = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className36.contains("pi pi-check-circle default-option-check");
 
-
-
-
+            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-7-titlebar > p-header > div > user-confirmation-checkbox > i")));
+            String className37 = driver.findElement(By.cssSelector("#ui-panel-7-titlebar > p-header > div > user-confirmation-checkbox > i")).getAttribute("class");
+           className37.contains("pi pi-check-circle default-option-check");
 
 
 

@@ -29,7 +29,7 @@ import java.io.IOException;
         @AfterClass
         public void endTest() {
 
-            //closeBrowser();
+            closeBrowser();
         }
     }
 
