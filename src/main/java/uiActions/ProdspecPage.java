@@ -1403,6 +1403,45 @@ public class ProdspecPage  extends testBase {
 
     }
 
+    public void clearallconfirmationcheck(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button"))).click();
+        log.info("clicked on General Production Requirements clear section:-" + driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button")).toString());
+
+    }
+    public void clearallconfirmationcheck_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        clearallconfirmationcheck();
+
+    }
+    public void clearallconfirmationcheck_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        clearallconfirmationcheck();
+
+    }
+    public void clearallconfirmationcheck_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        clearallconfirmationcheck();
+
+    }
+    public void clearallconfirmationcheck_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        clearallconfirmationcheck();
+
+    }
+    public boolean verifyclearallconfirmationcheck() {
+        verifynondefaultvalueconfirmationchecked();
+        return true;
+
+    }
 }
 
 

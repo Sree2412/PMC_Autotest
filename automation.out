@@ -14630,3 +14630,43 @@
 2021-05-28 08:35:51 INFO  HomePage:1372 - clicked on Production Location and Foldering clear section:-[[ChromeDriver: chrome on WINDOWS (2e41373ab955ea37916e3120515f4969)] -> css selector: #ui-panel-6-titlebar > p-header > div.production-location-foldering-buttons > button > span]
 2021-05-28 08:35:52 INFO  testBase:25 - =======Finished clearsectionconfirmcheck Test===========
 2021-05-28 08:35:52 INFO  testBase:308 - browser closed
+2021-05-28 08:56:53 INFO  testBase:127 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:57:03 INFO  testBase:169 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:57:03 INFO  testBase:22 - =======started clearallconfirmchecks Test===========
+2021-05-28 08:57:04 INFO  HomePage:63 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (99f9bde0f62352a73bc3e936794879a4)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button]
+2021-05-28 08:57:04 INFO  HomePage:93 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (99f9bde0f62352a73bc3e936794879a4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-28 08:57:04 INFO  HomePage:95 - click Select Relativity US Form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select'
+2021-05-28 08:57:04 INFO  HomePage:97 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (99f9bde0f62352a73bc3e936794879a4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(1)]
+2021-05-28 08:57:07 INFO  HomePage:1413 - clicked on General Production Requirements clear section:-[[ChromeDriver: chrome on WINDOWS (99f9bde0f62352a73bc3e936794879a4)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button]
+2021-05-28 08:57:08 INFO  testBase:26 - =======Finished clearallconfirmchecks Test===========
+2021-05-28 08:57:09 INFO  testBase:308 - browser closed
+2021-05-28 08:57:26 INFO  testBase:127 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:57:35 INFO  testBase:169 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:57:35 INFO  testBase:23 - =======started clearallconfirmchecks Test===========
+2021-05-28 08:57:35 INFO  HomePage:63 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (7a54839a31a28c8ea22c443ac40c52b5)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button]
+2021-05-28 08:57:35 INFO  HomePage:72 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (7a54839a31a28c8ea22c443ac40c52b5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-28 08:57:35 INFO  HomePage:74 - click Select Relativity US Form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select'
+2021-05-28 08:57:36 INFO  HomePage:76 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (7a54839a31a28c8ea22c443ac40c52b5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(1)]
+2021-05-28 08:57:38 INFO  HomePage:1413 - clicked on General Production Requirements clear section:-[[ChromeDriver: chrome on WINDOWS (7a54839a31a28c8ea22c443ac40c52b5)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button]
+2021-05-28 08:57:40 INFO  testBase:27 - =======Finished clearallconfirmchecks Test===========
+2021-05-28 08:57:40 INFO  testBase:308 - browser closed
+2021-05-28 08:57:58 INFO  testBase:127 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:58:07 INFO  testBase:169 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:58:07 INFO  testBase:22 - =======started clearallconfirmchecks Test===========
+2021-05-28 08:58:08 INFO  HomePage:63 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (6c232dbf8ffc210308e6205b76cdac78)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button]
+2021-05-28 08:58:08 INFO  HomePage:82 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (6c232dbf8ffc210308e6205b76cdac78)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-28 08:58:08 INFO  HomePage:84 - click Select Relativity US Form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select'
+2021-05-28 08:58:08 INFO  HomePage:86 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (6c232dbf8ffc210308e6205b76cdac78)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(1)]
+2021-05-28 08:58:10 INFO  HomePage:1413 - clicked on General Production Requirements clear section:-[[ChromeDriver: chrome on WINDOWS (6c232dbf8ffc210308e6205b76cdac78)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button]
+2021-05-28 08:58:12 INFO  testBase:26 - =======Finished clearallconfirmchecks Test===========
+2021-05-28 08:58:12 INFO  testBase:308 - browser closed
+2021-05-28 08:58:32 INFO  testBase:127 - navigating to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:58:41 INFO  testBase:169 - Entering creds to :-http://lvsvtapaw01.consiliotest.com/pmc
+2021-05-28 08:58:41 INFO  testBase:23 - =======started clearallconfirmchecks Test===========
+2021-05-28 08:58:41 INFO  HomePage:63 - click New Form button object is:-[[ChromeDriver: chrome on WINDOWS (efad1e0ea211a7d0fcf3067412962e0f)] -> css selector: #ui-fieldset-1-content > div > div > p-button:nth-child(1) > button]
+2021-05-28 08:58:41 INFO  HomePage:105 - click Select Form Template dropdown object is:-[[ChromeDriver: chrome on WINDOWS (efad1e0ea211a7d0fcf3067412962e0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div > select]
+2021-05-28 08:58:41 INFO  HomePage:107 - click Select Relativity US Form object is:-Proxy element for: DefaultElementLocator 'By.cssSelector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select'
+2021-05-28 08:58:42 INFO  HomePage:109 - Click Open Form Button is:-[[ChromeDriver: chrome on WINDOWS (efad1e0ea211a7d0fcf3067412962e0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(1)]
+2021-05-28 08:58:44 INFO  HomePage:1413 - clicked on General Production Requirements clear section:-[[ChromeDriver: chrome on WINDOWS (efad1e0ea211a7d0fcf3067412962e0f)] -> css selector: body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > button]
+2021-05-28 08:58:46 INFO  testBase:27 - =======Finished clearallconfirmchecks Test===========
+2021-05-28 08:58:46 INFO  testBase:308 - browser closed
