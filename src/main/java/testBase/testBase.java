@@ -1,6 +1,5 @@
 package testBase;
 
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -10,12 +9,8 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -32,29 +27,26 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 
+
 public class testBase {
 
     public static final Logger log = Logger.getLogger(testBase.class.getName());
 
     public WebDriver driver;
-    //excelReader.Excel_Reader excel;
-    //public EventFiringWebDriver driver;
-    // public WebEventListener eventListener;
+    //public excelReader.ExcelExtractor excel;
     public Properties OR = new Properties();
     public static ExtentReports extent;
     public static ExtentTest test;
-
-    //public ITestResult result;
+    public ITestResult result;
 
     public WebDriver getDriver() {
         return driver;
     }
-
     /*For Extent Reporting*/
     static {
         Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-        extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test" + formater.format(calendar.getTime()) + ".html", false);
+        SimpleDateFormat formater = new SimpleDateFormat("MM_dd_yyyy_hh_mm_ss");
+       // extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test" + formater.format(calendar.getTime()) + ".html", false);
     }
 
     /*To read  Configuration file*/
@@ -65,10 +57,7 @@ public class testBase {
 
     }
 
-    /*To set up Webevent Listners*/
-    public void setDriver(EventFiringWebDriver driver) {
-        this.driver = driver;
-    }
+
 
     /*Initializing objects*/
     public void init() throws IOException, InterruptedException {
@@ -79,11 +68,7 @@ public class testBase {
         System.out.println(OR.getProperty("browser"));
         selectBrowser(OR.getProperty("browser"));
         getUrl(OR.getProperty("url"));
-
-
     }
-
-
 
 
     /*To select and open browsers of choice using different OS*/
@@ -94,25 +79,13 @@ public class testBase {
 
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
-                driver = new ChromeDriver();
-               /* ChromeOptions options = new ChromeOptions();
-               // options.addArguments("headless");
-                options.addArguments("--start-maximized");
-                //options.addArguments("user-data-dir=C:\\Users\\samada.CONSILIOTEST\\AppData\\Local\\Google\\Chrome\\User Data");
-                ChromeDriver driver = new ChromeDriver(options);
-                driver.get("http://lvsvtapaw01.consiliotest.com/pmc");*/
-
-
+                driver = new ChromeDriver();//gui mode on
 
             }
-
-
         } else if (browser.equals("firefox")) {
             System.out.println(System.getProperty("user.dir"));
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver/geckodriver.exe");
             driver = new FirefoxDriver();
-
-
         }
     }
 
@@ -122,12 +95,17 @@ public class testBase {
 
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
     public void getUrl(String url)  {
-       driver.manage().window().maximize();
+        driver.manage().window().maximize();
+       // Headless mode on
+        /* ChromeOptions options = new ChromeOptions();
+                options.addArguments("headless");
+                options.addArguments("--start-maximized");
+                ChromeDriver driver = new ChromeDriver(options);*/
         driver.get(url);
         log.info("navigating to :-" + url);
 
 
-        Screen scr = new Screen();
+        /*Screen scr = new Screen();
 
         Pattern ptnlink1 = new Pattern(System.getProperty("user.dir") + "\\Sikuli\\PMC\\1622065504963.png");
         try {
@@ -165,16 +143,14 @@ public class testBase {
             scr.click(ptnlink6);
         } catch (FindFailed findFailed) {
             findFailed.printStackTrace();
-        }
-        log.info("Entering creds to :-" + url);
-
+        }*/
 
     }
 
 
 
-    /*Read Excel sheet data
-    public String[][] getData(String excelName, String sheetName) {
+    //Read Excel sheet data
+    /*public String[][] getData(String excelName, String sheetName) {
         String path = System.getProperty("user.dir") + "/src/main/java/data/" + excelName;
         excel = new excelReader.Excel_Reader(path);
         String[][] data = excel.getDataFromSheet(sheetName, excelName);
@@ -184,6 +160,12 @@ public class testBase {
     public void waitForElement(WebDriver driver, int timeOutInSeconds, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
         wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    /* Explicit Wait method for Webelement to be clickable*/
+    public void  waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+//		return element;
     }
 
     /*Highlighting web element*/
@@ -249,7 +231,7 @@ public class testBase {
         }
         File destFile = null;
         Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        SimpleDateFormat formater = new SimpleDateFormat("MM_dd_yyyy_hh_mm_ss");
 
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
@@ -289,6 +271,7 @@ public class testBase {
     @AfterMethod()
     public void afterMethod(ITestResult result) {
         getresult(result);
+
     }
     /*To capture results to extent reports this method should be run before all executions*/
     @BeforeMethod()
@@ -309,12 +292,7 @@ public class testBase {
         extent.endTest(test);
         extent.flush();
     }
-   /* Explicit Wait method for Webelement to be clickable*/
-    public void  waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
-        WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-//		return element;
-    }
+
 
 }
 

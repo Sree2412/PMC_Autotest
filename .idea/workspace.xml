@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.18">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0080_Clearallconfirmationchecks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0081_Clearallconfirmationchecks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0082_Clearallconfirmationchecks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0083_Clearallconfirmationchecks.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.19">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI_Testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Testing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testBase/testBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testBase/testBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,17 @@
       <recent name="Testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC0083_Clearallconfirmationchecks.clearallconfirmchecks">
+  <component name="RunManager" selected="TestNG.TC0002_CreatenewForm_SL_US">
+    <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml " type="TestNG">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -114,6 +125,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC0001_CreatenewForm_RelUS.createNewFormrelus" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0001_CreatenewForm_RelUS" />
+      <option name="METHOD_NAME" value="createNewFormrelus" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0002_CreatenewForm_SL_US" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0002_CreatenewForm_SL_US" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0006_CompareForms.compareForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0006_CompareForms" />
+      <option name="METHOD_NAME" value="compareForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0008_Editexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomePage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0008_Editexistingform" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TC000_CreatenewForm" type="TestNG" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
@@ -148,93 +229,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0079_Clearsectionconfirmationcheck" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SLUSForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SLUSForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0079_Clearsectionconfirmationcheck" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0080_Clearallconfirmationchecks.clearallconfirmchecks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RELUKForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RELUKForms" />
-      <option name="MAIN_CLASS_NAME" value="RELUKForms.TC0080_Clearallconfirmationchecks" />
-      <option name="METHOD_NAME" value="clearallconfirmchecks" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0081_Clearallconfirmationchecks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RELUSForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RELUSForms" />
-      <option name="MAIN_CLASS_NAME" value="RELUSForms.TC0081_Clearallconfirmationchecks" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0082_Clearallconfirmationchecks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SLUKForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SLUKForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUKForms.TC0082_Clearallconfirmationchecks" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0083_Clearallconfirmationchecks.clearallconfirmchecks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SLUSForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SLUSForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0083_Clearallconfirmationchecks" />
-      <option name="METHOD_NAME" value="clearallconfirmchecks" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="&lt;default&gt; (1)" type="TestNG" nameIsGenerated="true">
       <module name="UI_Testing" />
       <option name="PACKAGE_NAME" value="" />
@@ -247,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TC0083_Clearallconfirmationchecks.clearallconfirmchecks" />
-        <item itemvalue="TestNG.TC0082_Clearallconfirmationchecks" />
-        <item itemvalue="TestNG.TC0081_Clearallconfirmationchecks" />
-        <item itemvalue="TestNG.TC0080_Clearallconfirmationchecks.clearallconfirmchecks" />
-        <item itemvalue="TestNG.TC0079_Clearsectionconfirmationcheck" />
+        <item itemvalue="TestNG.TC0002_CreatenewForm_SL_US" />
+        <item itemvalue="TestNG.TC0001_CreatenewForm_RelUS.createNewFormrelus" />
+        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)" />
+        <item itemvalue="TestNG.TC0008_Editexistingform" />
+        <item itemvalue="TestNG.TC0006_CompareForms.compareForm" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622216179439</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Version 1.0.19">
+      <created>1622217621492</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1622217621492</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -447,7 +448,8 @@
     <MESSAGE value="Version 1.0.16" />
     <MESSAGE value="Version 1.0.17" />
     <MESSAGE value="Version 1.0.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.18" />
+    <MESSAGE value="Version 1.0.19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,5 +463,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PMC_UITest$C__Users_samada_CONSILIOTEST_Documents_GitHub_PMC_UITest_testNG_xml.ic" NAME="$PROJECT_DIR$/testNG.xml Coverage Results" MODIFIED="1621362432163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PMC_UITest$C__Users_samada_CONSILIOTEST_Documents_GitHub_PMC_UITest_testNG_xml__1_.ic" NAME="$PROJECT_DIR$/testNG.xml (1) Coverage Results" MODIFIED="1622224058144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

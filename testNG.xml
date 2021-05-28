@@ -72,6 +72,23 @@
             <class name="SLUKForms.TC0065_Confirmationcheckboxuncheck_prodfilespec"></class>
             <class name="SLUKForms.TC0066_Confirmationcheckboxcheck_prodlocationfoldering"></class>
             <class name="SLUKForms.TC0067_Confirmationcheckboxuncheck_prodlocationfoldering"></class>
+            <class name="RELUKForms.TC0068_Nondefaultconfirmationcheck"></class>
+            <class name="RELUSForms.TC0069_Nondefaultconfirmationcheck"></class>
+            <class name="SLUKForms.TC0070_Nondefaultconfirmationcheck"></class>
+            <class name="SLUSForms.TC0071_Nondefaultconfirmationcheck"></class>
+            <class name="RELUKForms.TC0072_ClearvalueclickingXandconfirmingcheckbox"></class>
+            <class name="RELUSForms.TC0073_ClearvalueclickingXandconfirmingcheckbox"></class>
+            <class name="SLUKForms.TC0074_ClearvalueclickingXandconfirmingcheckbox"></class>
+            <class name="SLUSForms.TC0075_ClearvalueclickingXandconfirmingcheckbox"></class>
+            <class name="RELUKForms.TC0076_Clearsectionconfirmationcheck"></class>
+            <class name="RELUSForms.TC0077_Clearsectionconfirmationcheck"></class>
+            <class name="SLUKForms.TC0078_Clearsectionconfirmationcheck"></class>
+            <class name="SLUSForms.TC0079_Clearsectionconfirmationcheck"></class>
+            <class name="RELUKForms.TC0080_Clearallconfirmationchecks"></class>
+            <class name="RELUSForms.TC0081_Clearallconfirmationchecks"></class>
+            <class name="SLUKForms.TC0082_Clearallconfirmationchecks"></class>
+            <class name="SLUSForms.TC0083_Clearallconfirmationchecks"></class>
+
 
 
         </classes>
