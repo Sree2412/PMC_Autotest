@@ -60,6 +60,10 @@ public class ComparePage  extends testBase {
         selectclass1.click();
         selectclass1.sendKeys(Keys.DOWN);
         log.info("select option:-" +  selectclass1.toString());
+        selectclass1.sendKeys(Keys.DOWN);
+        log.info("select option:-" +  selectclass1.toString());
+        selectclass1.sendKeys(Keys.DOWN);
+        log.info("select option:-" +  selectclass1.toString());
         selectclass1.sendKeys(Keys.ENTER);
         log.info("Enter option:-" +  selectclass1.toString());
 
