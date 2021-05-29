@@ -1,6 +1,7 @@
 
 package uiActions;
 
+import junit.framework.Assert;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -1587,8 +1588,6 @@ public class ProdspecPage  extends testBase {
         Productionbatespadding.sendKeys(Keys.RETURN);
 
 
-
-
     }
 
     public void suffixdisplayonprodbatespreview_relus() {
@@ -1628,7 +1627,207 @@ public class ProdspecPage  extends testBase {
         }
 
     }
-}
+
+    public void loadfileNoneoption() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement DataNone = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(1) > div:nth-child(4) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement ImagesNone = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(2) > div:nth-child(5) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement TextNone = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(3) > div:nth-child(2) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+
+        waitForElement(driver, 10, DataNone);
+        boolean isEnabled1 = DataNone.isSelected();
+        waitForElement(driver, 10, ImagesNone);
+        boolean isEnabled2 = ImagesNone.isSelected();
+        waitForElement(driver, 10, TextNone);
+        boolean isEnabled3 = TextNone.isSelected();
+        // performing click operation if checkbox is not selected
+        if (isEnabled1 == false && isEnabled2 == false) {
+            DataNone.click();
+            log.info("click on Data None option :-" + DataNone.toString());
+
+            ImagesNone.click();
+            log.info("click on Data None option :-" + ImagesNone.toString());
+
+            //TextNone.click();
+            log.info("click on Data None option :-" + TextNone.toString());
+
+        } else {
+            System.out.println("Checkboxes are already checked");
+        }
+
+    }
+
+    public void loadfileNoneoption_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        loadfileNoneoption();
+
+    }
+
+    public void loadfileNoneoption_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        loadfileNoneoption();
+
+    }
+
+    public void loadfileNoneoption_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        loadfileNoneoption();
+
+    }
+
+    public void loadfileNoneoption_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        loadfileNoneoption();
+
+    }
+
+    public boolean verifyloadfileNoneoption() {
+        WebElement Datastandard = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(1) > div:nth-child(2) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement Datacustom = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(1) > div:nth-child(3) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement Imagestandard = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(2) > div:nth-child(2) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement ImageLFP = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(2) > div:nth-child(3) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement ImageDII = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(2) > div:nth-child(4) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+        WebElement TextLST = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(3) > div:nth-child(3) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+
+        boolean checked1 = Datastandard.isSelected();
+        boolean checked2 = Datacustom.isSelected();
+        boolean checked3 = Imagestandard.isSelected();
+        boolean checked4 = ImageLFP.isSelected();
+        boolean checked5 = ImageDII.isSelected();
+        boolean checked6 = TextLST.isSelected();
+
+        if (checked1 == false && checked2 == false && checked3 == false && checked4 == false && checked5 == false && checked6 == false) {
+            return true;
+
+
+        } else {
+            return false;
+        }
+    }
+
+    public void datanoneoptionpopup() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement DataNone = driver.findElement(By.cssSelector("#ui-fieldset-10-content > div > div:nth-child(1) > div:nth-child(4) > p-checkbox > div > div.ui-chkbox-box.ui-widget.ui-corner-all.ui-state-default"));
+
+        waitForElement(driver, 10, DataNone);
+        boolean isEnabled1 = DataNone.isSelected();
+
+        // performing click operation if checkbox is not selected
+        if (isEnabled1 == false) {
+            DataNone.click();
+
+        } else {
+            System.out.println("Checkbox is already checked");
+        }
+
+
+    }
+
+    public void datanoneoptionpopup_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        datanoneoptionpopup();
+
+    }
+
+    public void datanoneoptionpopup_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        datanoneoptionpopup();
+
+    }
+
+    public void datanoneoptionpopup_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        datanoneoptionpopup();
+
+    }
+
+    public void datanoneoptionpopup_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        datanoneoptionpopup();
+
+    }
+
+    public boolean verifydatanoneoptionpopup() {
+        try {
+
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+            boolean b = driver.getPageSource().contains("This production will not have an associated data file");
+            /*new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
+            Alert alert = driver.switchTo().alert();
+            alert.getText().contains("This production will not have an associated data file.");*/
+            return b;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
+
+        public void datanonefieldsdisable(){
+            datanoneoptionpopup();
+        }
+        public void datanonefieldsdisable_relus(){
+            HomePage homepage = new HomePage(driver);
+            homepage.NewFormcreation_relus();
+            datanonefieldsdisable();
+
+        }
+        public void datanonefieldsdisable_reluk(){
+            HomePage homepage = new HomePage(driver);
+            homepage.NewFormcreation_reluk();
+            datanonefieldsdisable();
+
+        }
+        public void datanonefieldsdisable_slus(){
+            HomePage homepage = new HomePage(driver);
+            homepage.NewFormcreation_slus();
+            datanonefieldsdisable();
+        }
+        public void datanonefieldsdisable_sluk(){
+            HomePage homepage = new HomePage(driver);
+            homepage.NewFormcreation_sluk();
+            datanonefieldsdisable();
+        }
+        public boolean verifydatanonefieldsdisable() {
+
+            try {
+                waitForElement(driver, 50, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > input")));
+                boolean Loadfiledelimiter = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > input")).isEnabled();
+
+                waitForElement(driver, 50, driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > input")));
+                boolean Loadfilencoding = driver.findElement(By.cssSelector("#ui-panel-5-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > input")).isEnabled();
+                waitForElement(driver, 50, driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > input")));
+                boolean Loadfilefolder = driver.findElement(By.cssSelector("#ui-panel-6-content > div > div > div > div.ui-g-9 > div:nth-child(4) > span > editable-dropdown > div > div > input")).isEnabled();
+                Assert.assertEquals(Loadfiledelimiter,false);
+                Assert.assertEquals(Loadfilencoding,false);
+                Assert.assertEquals(Loadfilefolder,false);
+
+
+                return true;
+            } catch (Exception e) {
+                return false;
+            }
+    }
+
+    }
+
+
 
 
 

@@ -88,7 +88,26 @@
             <class name="RELUSForms.TC0081_Clearallconfirmationchecks"></class>
             <class name="SLUKForms.TC0082_Clearallconfirmationchecks"></class>
             <class name="SLUSForms.TC0083_Clearallconfirmationchecks"></class>
-
+            <class name="RELUKForms.TC0084_BrandinginfoProductionbatespreview"></class>
+            <class name="RELUSForms.TC0085_BrandinginfoProductionbatespreview"></class>
+            <class name="SLUKForms.TC0086_BrandinginfoProductionbatespreview"></class>
+            <class name="SLUSForms.TC0087_BrandinginfoProductionbatespreview"></class>
+            <class name="RELUKForms.TC0088_SuffixonProductionBatesPreview"></class>
+            <class name="RELUSForms.TC0089_SuffixonProductionBatesPreview"></class>
+            <class name="SLUKForms.TC0090_SuffixonProductionBatesPreview"></class>
+            <class name="SLUSForms.TC0091_SuffixonProductionBatesPreview"></class>
+            <class name="RELUKForms.TC0092_LoadfileNoneoption"></class>
+            <class name="RELUSForms.TC0093_LoadfileNoneoption"></class>
+            <class name="SLUKForms.TC0094_LoadfileNoneoption"></class>
+            <class name="SLUSForms.TC0095_LoadfileNoneoption"></class>
+            <class name="RELUSForms.TC0096_DataNonepopup"></class>
+            <class name="RELUKForms.TC0097_DataNonepopup"></class>
+            <class name="SLUKForms.TC0098_DataNonepopup"></class>
+            <class name="SLUSForms.TC0099_DataNonepopup"></class>
+            <class name="RELUKForms.TC0100_DataNonefieldsdisable"></class>
+            <class name="RELUSForms.TC0101_DataNonefieldsdisable"></class>
+            <class name="SLUKForms.TC0102_DataNonefieldsdisable"></class>
+            <class name="SLUSForms.TC0103_DataNonefieldsdisable"></class>
 
 
         </classes>
