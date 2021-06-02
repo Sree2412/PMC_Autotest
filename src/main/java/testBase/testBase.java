@@ -17,7 +17,6 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -47,7 +46,7 @@ public class testBase {
     static {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("MM_dd_yyyy_hh_mm_ss");
-       // extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test" + formater.format(calendar.getTime()) + ".html", false);
+        extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/Report/test" + formater.format(calendar.getTime()) + ".html", false);
     }
 
     /*To read  Configuration file*/
@@ -97,12 +96,10 @@ public class testBase {
         }
     }
 
+
     /*navigating to url+ maximizing windows+Adding implicit wait time*/
     public void getUrl(String url)  {
         //driver.manage().window().maximize();
-       // Headless mode on
-
-
         driver.get(url);
         log.info("navigating to :-" + url);
 

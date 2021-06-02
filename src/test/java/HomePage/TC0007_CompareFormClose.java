@@ -10,7 +10,10 @@ import uiActions.ComparePage;
 import java.io.IOException;
 
 
-public class TC0007_CompareFormClose extends testBase {
+public class
+
+
+TC0007_CompareFormClose extends testBase {
     uiActions.ComparePage comparepage;
 
     @BeforeClass

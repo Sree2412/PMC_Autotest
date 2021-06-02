@@ -25,8 +25,6 @@ public class TC0029_Confirmationcheckboxuncheck_Generalprodreq extends testBase 
     @Test
     public void generalprodreqcheckboxesunchecked() {
         log.info("=======started generalprodreqcheckboxesunchecked Test===========");
-
-
         ProdspecPage prodspecpage = new ProdspecPage(driver);
         prodspecpage.generalprodreqcheckboxunchecked_reluk();
         Assert.assertEquals(true, prodspecpage.verifygeneralprodreqcheckboxunchecked());

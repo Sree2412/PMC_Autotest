@@ -4,26 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.21">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0092_LoadfileNoneoption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0097_DataNonepopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0100_DataNonefieldsdisable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0093_LoadfileNoneoption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0096_DataNonepopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0101_DataNonefieldsdisable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0094_LoadfileNoneoption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0098_DataNonepopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0102_DataNonefieldsdisable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0095_LoadfileNoneoption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0099_DataNonepopup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0103_DataNonefieldsdisable.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.22">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPageext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC00104_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC00105_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC00106_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC00107_SaveformwithHcodeandProdname.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Report/testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Report/testreport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ComparePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0007_CompareFormClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0007_CompareFormClose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0026_HcodeDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0026_HcodeDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0029_Confirmationcheckboxuncheck_Generalprodreq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0029_Confirmationcheckboxuncheck_Generalprodreq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testBase/testBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testBase/testBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uiActions/HomePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,17 @@
       <recent name="Testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SLUSForms">
+  <component name="RunManager" selected="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)">
+    <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml " type="TestNG">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -142,32 +153,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RELUSForms" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0005_Cancelselectform.cancelselectform" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RELUSForms.*" />
+          <option name="PATTERN" value="HomePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="RELUSForms" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0005_Cancelselectform" />
+      <option name="METHOD_NAME" value="cancelselectform" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SLUSForms" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0008_Editexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SLUSForms.*" />
+          <option name="PATTERN" value="HomePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SLUSForms" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PACKAGE_NAME" value="HomePage" />
+      <option name="MAIN_CLASS_NAME" value="HomePage.TC0008_Editexistingform" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -208,7 +222,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0010_Copyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0010_Copyexistingform.copyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -218,24 +232,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="HomePage" />
       <option name="MAIN_CLASS_NAME" value="HomePage.TC0010_Copyexistingform" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0011_Cancelcopyexistingform" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HomePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HomePage" />
-      <option name="MAIN_CLASS_NAME" value="HomePage.TC0011_Cancelcopyexistingform" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="copyexistingform" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -254,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SLUSForms" />
-        <item itemvalue="TestNG.RELUSForms" />
+        <item itemvalue="TestNG.C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml (1)" />
         <item itemvalue="TestNG.HomePage" />
-        <item itemvalue="TestNG.TC0011_Cancelcopyexistingform" />
-        <item itemvalue="TestNG.TC0010_Copyexistingform" />
+        <item itemvalue="TestNG.TC0010_Copyexistingform.copyexistingform" />
+        <item itemvalue="TestNG.TC0008_Editexistingform" />
+        <item itemvalue="TestNG.TC0005_Cancelselectform.cancelselectform" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622295915579</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Version 1.0.22">
+      <created>1622320711059</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1622320711060</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -485,7 +490,8 @@
     <MESSAGE value="Version 1.0.19" />
     <MESSAGE value="Version 1.0.20" />
     <MESSAGE value="Version 1.0.21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.21" />
+    <MESSAGE value="Version 1.0.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

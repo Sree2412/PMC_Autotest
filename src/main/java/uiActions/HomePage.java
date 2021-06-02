@@ -1,5 +1,6 @@
 package uiActions;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,16 +27,16 @@ public class HomePage  extends testBase {
     WebElement NewFormbutton;
 
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div > select")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select")
     WebElement SelectFormTemplatedropdown;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select")
     WebElement SelectRelativityUSForm;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(1)")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-4.ng-star-inserted > p-footer > button:nth-child(1) > span")
     WebElement OpenFormButton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button:nth-child(2)")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-4.ng-star-inserted > p-footer > button:nth-child(2) > span")
     WebElement CancelFormButton;
 
     @FindBy(css = "#ui-panel-0_header")
@@ -67,46 +68,97 @@ public class HomePage  extends testBase {
     /* Create all page action  methods here*/
     public void NewFormcreation_relus() {
         createnewformfromhome();
-        waitForElement(driver, 25000, SelectFormTemplatedropdown);
-        Select selectformdropdown = new Select(SelectFormTemplatedropdown);
-        log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(0);
-        log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
+
+        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
+        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
+        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
+        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
+        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
+        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
+        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
+        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        Select selectboxdropdown = new Select(selectbox);
+        log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
+        selectboxdropdown.selectByIndex(0);
+        log.info("click Select Relativity US Form object is:-" + selectboxdropdown.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     public void NewFormcreation_slus() {
         createnewformfromhome();
-        waitForElement(driver, 25000, SelectFormTemplatedropdown);
-        Select selectformdropdown = new Select(SelectFormTemplatedropdown);
-        log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(1);
-        log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
+
+        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
+        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
+        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
+        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
+        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
+        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
+        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
+        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        Select selectboxdropdown = new Select(selectbox);
+        log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
+        selectboxdropdown.selectByIndex(1);
+        log.info("click Select Relativity US Form object is:-" + selectboxdropdown.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
-
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     public void NewFormcreation_reluk() {
         createnewformfromhome();
-        waitForElement(driver, 25000, SelectFormTemplatedropdown);
-        Select selectformdropdown = new Select(SelectFormTemplatedropdown);
-        log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(2);
-        log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
+
+        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
+        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
+        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
+        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
+        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
+        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
+        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
+        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        Select selectboxdropdown = new Select(selectbox);
+        log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
+        selectboxdropdown.selectByIndex(2);
+        log.info("click Select Relativity US Form object is:-" + selectboxdropdown.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
     public void NewFormcreation_sluk() {
         createnewformfromhome();
-        waitForElement(driver, 25000, SelectFormTemplatedropdown);
-        Select selectformdropdown = new Select(SelectFormTemplatedropdown);
-        log.info("click Select Form Template dropdown object is:-" + SelectFormTemplatedropdown.toString());
-        selectformdropdown.selectByIndex(3);
-        log.info("click Select Relativity US Form object is:-" + SelectRelativityUSForm.toString());
+
+        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
+        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
+        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
+        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
+        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
+        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
+        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
+        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        Select selectboxdropdown = new Select(selectbox);
+        log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
+        selectboxdropdown.selectByIndex(3);
+        log.info("click Select Relativity US Form object is:-" + selectboxdropdown.toString());
         OpenFormButton.click();
         log.info("Click Open Form Button is:-" + OpenFormButton.toString());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 

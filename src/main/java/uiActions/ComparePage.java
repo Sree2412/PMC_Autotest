@@ -24,7 +24,7 @@ public class ComparePage  extends testBase {
     @FindBy(css = "#ui-fieldset-1-content > div > div > p-button:nth-child(2) > button > span")
     WebElement Compareformsbutton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-5.ng-star-inserted > p-footer > button")
+    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-4.ng-star-inserted > p-footer > button > span")
     WebElement CloseButton;
 
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > div:nth-child(1) > div.ui-g-12 > p-button > button")
