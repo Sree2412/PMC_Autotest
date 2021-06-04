@@ -115,6 +115,109 @@ import java.security.SecureRandom;
             }
         }
 
+    public void cannontsaveform() {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Savedraft)).click();
+        log.info("Click Save Draft:-" + Savedraft.toString());
+
+    }
+    public void cannontsaveform_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        cannontsaveform();
+    }
+    public void cannontsaveform_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        cannontsaveform();
+    }
+    public void cannontsaveform_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        cannontsaveform();
+    }
+    public void cannontsaveform_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        cannontsaveform();
+    }
+    public boolean verifycannotsaveformwithoutprodname() {
+        try {
+
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+            String popup = driver.findElement(By.cssSelector("#toast-container")).getText();
+            popup.contains("The Production Name question must contain a value to submit this form");
+
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+    public void cannotsaveformwohcode() {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        waitForElement(driver, 10, ProductionName);
+        ProductionName.sendKeys(generateRandomString());
+        log.info("Enter Production Name:-" + ProductionName.toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Savedraft)).click();
+        log.info("Click Save Draft:-" + Savedraft.toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void cannotsaveformwohcode_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        cannotsaveformwohcode();
+
+    }
+    public void cannotsaveformwohcode_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        cannotsaveformwohcode();
+
+    }
+    public void cannotsaveformwohcode_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        cannotsaveformwohcode();
+
+    }
+    public void cannotsaveformwohcode_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        cannotsaveformwohcode();
+
+    }
+    public boolean verifycannotsaveformwithoutHcode() {
+        try {
+
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+            String popup = driver.findElement(By.cssSelector("#toast-container")).getText();
+            popup.contains("A Project H-Code must be selected before saving this form ");
+
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
+
 
 
     }

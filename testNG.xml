@@ -112,6 +112,15 @@
             <class name="RELUSForms.TC0105_SaveformwithHcodeandProdname"></class>
             <class name="SLUKForms.TC0106_SaveformwithHcodeandProdname"></class>
             <class name="SLUSForms.TC0107_SaveformwithHcodeandProdname"></class>
+            <class name="RELUKForms.TC0108_CannotsaveformwithoutProdname"></class>
+            <class name="RELUSForms.TC0109_CannotsaveformwithoutProdname"></class>
+            <class name="SLUKForms.TC0110_CannotsaveformwithoutProdname"></class>
+            <class name="SLUSForms.TC0111_CannotsaveformwithoutProdname"></class>
+            <class name="RELUKForms.TC0112_CannotsaveformwithoutHcode"></class>
+            <class name="RELUSForms.TC0113_CannotsaveformwithoutHcode"></class>
+            <class name="SLUKForms.TC0114_CannotsaveformwithoutHcode"></class>
+            <class name="SLUSForms.TC0115_CannotsaveformwithoutHcode"></class>
+
 
 
 
