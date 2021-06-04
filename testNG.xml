@@ -108,6 +108,11 @@
             <class name="RELUSForms.TC0101_DataNonefieldsdisable"></class>
             <class name="SLUKForms.TC0102_DataNonefieldsdisable"></class>
             <class name="SLUSForms.TC0103_DataNonefieldsdisable"></class>
+            <class name="RELUKForms.TC00104_SaveformwithHcodeandProdname"></class>
+            <class name="RELUSForms.TC00105_SaveformwithHcodeandProdname"></class>
+            <class name="SLUKForms.TC00106_SaveformwithHcodeandProdname"></class>
+            <class name="SLUSForms.TC00107_SaveformwithHcodeandProdname"></class>
+
 
 
         </classes>

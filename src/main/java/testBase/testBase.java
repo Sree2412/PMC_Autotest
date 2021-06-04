@@ -81,7 +81,7 @@ public class testBase {
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 //driver = new ChromeDriver();//gui mode on
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
+               // options.addArguments("--headless");
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-gpu");
                 options.addArguments("--window-size=1280,800");

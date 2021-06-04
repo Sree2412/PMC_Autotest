@@ -9,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testBase.testBase;
+
+import java.math.BigInteger;
+import java.security.SecureRandom;
 //import com.github.javafaker.name;
 
 
@@ -25,6 +28,8 @@ import testBase.testBase;
         /* Create WebElements per each page here*/
         @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-buttons > div > p-button > button")
         WebElement Savedraft;
+        @FindBy(css = "#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")
+        WebElement ProductionName;
 
 
         /*Create constructor class for each new pageclass --Copy this constructor method*/
@@ -37,6 +42,13 @@ import testBase.testBase;
     }*/
 
 
+
+    public String generateRandomString() {
+
+        return "Autotest" + new BigInteger(120, new SecureRandom()).toString(32);
+    }
+
+
     public void saveform() {
             ProdspecPage hcode = new ProdspecPage(driver);
             hcode.selecthcodefromdropdown();
@@ -46,20 +58,19 @@ import testBase.testBase;
                 e.printStackTrace();
             }
 
-
-            System.out.println("Databasename");
-            System.out.println("Productionname");
-
-            waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(1) > input")));
-            log.info("Enter Database Name:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(1) > input")).toString());
-            waitForElement(driver, 10, driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")));
-            log.info("Enter Production Name:-" + driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")).toString());
+            waitForElement(driver, 10, ProductionName);
+            ProductionName.sendKeys(generateRandomString());
+            log.info("Enter Production Name:-" + ProductionName.toString());
             new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Savedraft)).click();
             log.info("Click Save Draft:-" + Savedraft.toString());
-
-
-
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
+
+    }
 
         public void saveform_relus() {
             HomePage homepage = new HomePage(driver);
@@ -91,23 +102,14 @@ import testBase.testBase;
 
         public boolean verifysavedform () {
             try {
-            EditexistingPage editexistingpage = new EditexistingPage(driver);
+                new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("body > app-root > app-main > div > div > div.layout-menu > app-menu > div > a:nth-child(1)"))).click();
+                EditexistingPage editexistingpage = new EditexistingPage(driver);
             editexistingpage.editexistingform();
-            WebElement dialogwrapper = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
-            WebElement dialog = dialogwrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content"));
-            WebElement ptable = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table"));
-            WebElement tablehoover =ptable.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div"));
-            WebElement tablewrapper = tablehoover.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div > div"));
-            WebElement tablegrid = tablewrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div > div > table"));
-            WebElement tablebody = tablegrid.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody"));
-            // find the row
-            WebElement tablerow= tablebody.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)"));
-            log.info("tablerow object is:-" + driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-5.ui-dialog-content.ui-widget-content > p-table > div > div > table > tbody > tr:nth-child(1)")) .toString());
-            //click on the row
+            editexistingpage.editexistingProdspecforms();
+            String prodName = driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")).getAttribute("class");
+            prodName.contains("Autotest" + new BigInteger(120, new SecureRandom()).toString(32));
 
-
-
-                return true;
+            return true;
             } catch (Exception e) {
                 return false;
             }
