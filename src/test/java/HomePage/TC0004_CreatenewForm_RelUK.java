@@ -9,12 +9,9 @@ import uiActions.HomePage;
 
 import java.io.IOException;
 
-
-
 public class TC0004_CreatenewForm_RelUK extends testBase {
     uiActions.HomePage Homepage;
 
-    //uiActions.DesiredCapability desiredCapability;
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
         init();

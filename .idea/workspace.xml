@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.23">
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.24">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Report/testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Report/testreport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/CopyexistingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/EditexistingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPageext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPageext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0001_CreatenewForm_RelUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0001_CreatenewForm_RelUS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0002_CreatenewForm_SL_US.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0002_CreatenewForm_SL_US.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0003_CreatenewForm_SL_UK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0004_CreatenewForm_RelUK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0004_CreatenewForm_RelUK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0005_Cancelselectform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0005_Cancelselectform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0008_Editexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0010_Copyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0010_Copyexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePage/TC0011_Cancelcopyexistingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePage/TC0011_Cancelcopyexistingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RELUKForms/TC00104_SaveformwithHcodeandProdname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0104_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RELUSForms/TC00105_SaveformwithHcodeandProdname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0105_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SLUKForms/TC00106_SaveformwithHcodeandProdname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0106_SaveformwithHcodeandProdname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SLUSForms/TC00107_SaveformwithHcodeandProdname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0107_SaveformwithHcodeandProdname.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +219,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC00107_SaveformwithHcodeandProdname" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC0107_SaveformwithHcodeandProdname" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
         <pattern>
@@ -221,7 +228,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SLUSForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC00107_SaveformwithHcodeandProdname" />
+      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0107_SaveformwithHcodeandProdname" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -245,7 +252,7 @@
         <item itemvalue="TestNG.TC0009_Canceleditexistingform.cancelexistingformbutton" />
         <item itemvalue="TestNG.TC0008_Editexistingform.openexistingform" />
         <item itemvalue="TestNG.TC0009_Canceleditexistingform" />
-        <item itemvalue="TestNG.TC00107_SaveformwithHcodeandProdname" />
+        <item itemvalue="TestNG.TC0107_SaveformwithHcodeandProdname" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622665119477</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Version 1.0.24">
+      <created>1622835900550</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1622835900550</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +477,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Version 0.01" />
     <MESSAGE value="Version 1.00" />
     <MESSAGE value="Version 1.01" />
     <MESSAGE value="Version 1.02" />
@@ -488,7 +501,8 @@
     <MESSAGE value="Version 1.0.21" />
     <MESSAGE value="Version 1.0.22" />
     <MESSAGE value="Version 1.0.23" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.23" />
+    <MESSAGE value="Version 1.0.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

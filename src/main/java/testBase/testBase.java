@@ -1,5 +1,4 @@
 package testBase;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -76,7 +75,6 @@ public class testBase {
         System.out.println(System.getProperty("os.name"));
         if (System.getProperty("os.name").contains("Window")) {
             if (browser.equals("chrome")) {
-
                 System.out.println(System.getProperty("user.dir"));
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver/chromedriver.exe");
                 //driver = new ChromeDriver();//gui mode on

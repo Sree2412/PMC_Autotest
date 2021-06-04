@@ -12,7 +12,6 @@ import java.io.IOException;
     public class TC0005_Cancelselectform extends testBase {
         uiActions.HomePage Homepage;
 
-        //uiActions.DesiredCapability desiredCapability;
         @BeforeClass
         public void setUp() throws IOException, InterruptedException {
             init();

@@ -9,9 +9,6 @@ import uiActions.HomePage;
 
 import java.io.IOException;
 
-
-
-
 public class TC0002_CreatenewForm_SL_US extends testBase {
     uiActions.HomePage Homepage;
 

@@ -10,7 +10,7 @@ import uiActions.ProdspecPageext;
 
 import java.io.IOException;
 
-    public class TC00106_SaveformwithHcodeandProdname extends testBase {
+    public class TC0106_SaveformwithHcodeandProdname extends testBase {
         ProdspecPage prodspecPage;
 
         @BeforeClass

@@ -13,7 +13,6 @@ import java.io.IOException;
 public class TC0001_CreatenewForm_RelUS extends testBase{
     uiActions.HomePage Homepage;
 
-    //uiActions.DesiredCapability desiredCapability;
     @BeforeClass
     public void setUp() throws IOException, InterruptedException {
         init();

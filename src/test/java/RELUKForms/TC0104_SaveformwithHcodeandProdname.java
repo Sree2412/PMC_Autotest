@@ -1,4 +1,6 @@
-package RELUSForms;
+package RELUKForms;
+
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,7 +11,7 @@ import uiActions.ProdspecPageext;
 
 import java.io.IOException;
 
-    public class TC00105_SaveformwithHcodeandProdname extends testBase {
+    public class TC0104_SaveformwithHcodeandProdname extends testBase {
         ProdspecPage prodspecPage;
 
         @BeforeClass
@@ -20,9 +22,9 @@ import java.io.IOException;
         @Test
         public void saveprodspecformwithhcodeandprodname() {
             log.info("=======started saveprodspecformwithhcodeandprodname Test===========");
-            ProdspecPageext prodspecpageext = new ProdspecPageext(driver);
-            prodspecpageext.saveform_relus();
-            Assert.assertEquals(true, prodspecpageext.verifysavedform());
+            ProdspecPageext prodspecPageext = new ProdspecPageext(driver);
+            prodspecPageext.saveform_reluk();
+            Assert.assertEquals(true, prodspecPageext.verifysavedform());
             log.info("=======Finished saveprodspecformwithhcodeandprodname Test===========");
         }
 
@@ -32,8 +34,6 @@ import java.io.IOException;
             closeBrowser();
         }
     }
-
-
 
 
 

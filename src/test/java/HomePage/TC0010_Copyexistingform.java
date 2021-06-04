@@ -2,18 +2,14 @@
 
 package HomePage;
 
-        import org.testng.Assert;
+import org.testng.Assert;
         import org.testng.annotations.AfterClass;
         import org.testng.annotations.BeforeClass;
         import org.testng.annotations.Test;
         import testBase.testBase;
         import uiActions.CopyexistingPage;
         import java.io.IOException;
-
-
-
-
-public class TC0010_Copyexistingform extends testBase {
+        public class TC0010_Copyexistingform extends testBase {
     uiActions.CopyexistingPage copyexistingPage;
 
     @BeforeClass
