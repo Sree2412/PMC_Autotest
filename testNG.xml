@@ -120,6 +120,15 @@
             <class name="RELUSForms.TC0113_CannotsaveformwithoutHcode"></class>
             <class name="SLUKForms.TC0114_CannotsaveformwithoutHcode"></class>
             <class name="SLUSForms.TC0115_CannotsaveformwithoutHcode"></class>
+            <class name="RELUKForms.TC0116_UnsavedchangeswarningtoSave"></class>
+            <class name="RELUSForms.TC0117_UnsavedchangeswarningtoSave"></class>
+            <class name="SLUKForms.TC0118_UnsavedchangeswarningtoSave"></class>
+            <class name="SLUSForms.TC0119_UnsavedchangeswarningtoSave"></class>
+            <class name="RELUKForms.TC0120_EnableSubmitbutton"></class>
+            <class name="RELUSForms.TC0121_EnableSubmitbutton"></class>
+            <class name="SLUKForms.TC0122_EnableSubmitbutton"></class>
+            <class name="SLUSForms.TC0123_EnableSubmitbutton"></class>
+
 
 
 
