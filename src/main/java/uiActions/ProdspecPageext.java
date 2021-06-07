@@ -11,7 +11,7 @@ import testBase.testBase;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;
-//import com.github.javafaker.name;
+
 
 
 
@@ -376,6 +376,108 @@ import java.security.SecureRandom;
         }
 
     }
+
+    public void prodnamelessthan5chars(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")).sendKeys("test");
+        log.info("Enter Prod Name less than 5 chars:-" + "#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input".toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Savedraft)).click();
+        log.info("Click Save Draft:-" + Savedraft.toString());
+
+
+    }
+    public void prodnamelessthan5chars_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        prodnamelessthan5chars();
+
+    }
+    public void prodnamelessthan5chars_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        prodnamelessthan5chars();
+
+    }
+    public void prodnamelessthan5chars_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        prodnamelessthan5chars();
+
+    }
+    public void prodnamelessthan5chars_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        prodnamelessthan5chars();
+
+    }
+    public boolean verifyprodnamelessthan5chars() {
+        try {
+
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+            String popup = driver.findElement(By.cssSelector("#toast-container")).getText();
+            popup.contains("The Production Name must be atleast 5 characters.");
+
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+    public void duplicateprodname(){
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        ProdspecPage selecthcode =new ProdspecPage(driver);
+        selecthcode.selecthcodefromdropdown();
+        driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")).sendKeys("test1");
+        log.info("Enter Prod Name:-" + "#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input".toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Savedraft)).click();
+        log.info("Click Save Draft:-" + Savedraft.toString());
+
+
+    }
+    public void duplicateprodname_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        duplicateprodname();
+
+    }
+    public void duplicateprodname_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        duplicateprodname();
+
+    }
+    public void duplicateprodname_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        duplicateprodname();
+
+    }
+    public void duplicateprodname_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        duplicateprodname();
+
+    }
+    public boolean verifyduplicateprodname() {
+        try {
+            waitForElement(driver, 50, driver.findElement(By.xpath("//*[@id=\"toast-container\"]")));
+            String popup = driver.findElement(By.xpath("//*[@id=\"toast-container\"]")).getText();
+            popup.contains("Unable to save form.");
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
 }
 
 

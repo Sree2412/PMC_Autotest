@@ -128,6 +128,15 @@
             <class name="RELUSForms.TC0121_EnableSubmitbutton"></class>
             <class name="SLUKForms.TC0122_EnableSubmitbutton"></class>
             <class name="SLUSForms.TC0123_EnableSubmitbutton"></class>
+            <class name="RELUKForms.TC0124_ProdspecNameatleast5char"></class>
+            <class name="RELUSForms.TC0125_ProdspecNameatleast5char"></class>
+            <class name="SLUKForms.TC0126_ProdspecNameatleast5char"></class>
+            <class name="SLUSForms.TC0127_ProdspecNameatleast5char"></class>
+            <class name="RELUKForms.TC0128_DuplicateProdnameforHcode"></class>
+            <class name="RELUSForms.TC0129_DuplicateProdnameforHcode"></class>
+            <class name="SLUKForms.TC0130_DuplicateProdnameforHcode"></class>
+            <class name="SLUSForms.TC0131_DuplicateProdnameforHcode"></class>
+
 
 
 
