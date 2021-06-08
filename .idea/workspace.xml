@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.26">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0124_ProdspecNameatleast5char.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0128_DuplicateProdnameforHcode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0125_ProdspecNameatleast5char.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RELUSForms/TC0129_DuplicateProdnameforHcode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0126_ProdspecNameatleast5char.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUKForms/TC0130_DuplicateProdnameforHcode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0127_ProdspecNameatleast5char.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SLUSForms/TC0131_DuplicateProdnameforHcode.java" afterDir="false" />
+    <list default="true" id="a4ddfd8a-d4d4-4795-85c7-fd793b3d6f9e" name="Default Changelist" comment="Version 1.0.27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automation.out" beforeDir="false" afterPath="$PROJECT_DIR$/automation.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Report/testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Report/testreport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/testBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPageext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uiActions/ProdspecPageext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0128_DuplicateProdnameforHcode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RELUKForms/TC0128_DuplicateProdnameforHcode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <recent name="Testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC0128_DuplicateProdnameforHcode.duplicateProdnameforHcode">
+  <component name="RunManager" selected="TestNG.TC0131_DuplicateProdnameforHcode">
     <configuration name="C:/Users/samada.CONSILIOTEST/Documents/GitHub/PMC_UITest/testNG.xml " type="TestNG">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -155,60 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC0125_ProdspecNameatleast5char.ProdspecNameatleast5char" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RELUSForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RELUSForms" />
-      <option name="MAIN_CLASS_NAME" value="RELUSForms.TC0125_ProdspecNameatleast5char" />
-      <option name="METHOD_NAME" value="ProdspecNameatleast5char" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0126_ProdspecNameatleast5char.ProdspecNameatleast5char" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SLUKForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SLUKForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUKForms.TC0126_ProdspecNameatleast5char" />
-      <option name="METHOD_NAME" value="ProdspecNameatleast5char" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC0127_ProdspecNameatleast5char.ProdspecNameatleast5char" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="UI_Testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SLUSForms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SLUSForms" />
-      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0127_ProdspecNameatleast5char" />
-      <option name="METHOD_NAME" value="ProdspecNameatleast5char" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TC0128_DuplicateProdnameforHcode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="UI_Testing" />
       <extension name="coverage">
@@ -244,6 +181,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC0129_DuplicateProdnameforHcode.duplicateProdnameforHcode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RELUSForms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RELUSForms" />
+      <option name="MAIN_CLASS_NAME" value="RELUSForms.TC0129_DuplicateProdnameforHcode" />
+      <option name="METHOD_NAME" value="duplicateProdnameforHcode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0130_DuplicateProdnameforHcode.duplicateProdnameforHcode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SLUKForms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SLUKForms" />
+      <option name="MAIN_CLASS_NAME" value="SLUKForms.TC0130_DuplicateProdnameforHcode" />
+      <option name="METHOD_NAME" value="duplicateProdnameforHcode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC0131_DuplicateProdnameforHcode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UI_Testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SLUSForms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SLUSForms" />
+      <option name="MAIN_CLASS_NAME" value="SLUSForms.TC0131_DuplicateProdnameforHcode" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;default&gt; (1)" type="TestNG" nameIsGenerated="true">
       <module name="UI_Testing" />
       <option name="PACKAGE_NAME" value="" />
@@ -256,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC0131_DuplicateProdnameforHcode" />
+        <item itemvalue="TestNG.TC0130_DuplicateProdnameforHcode.duplicateProdnameforHcode" />
+        <item itemvalue="TestNG.TC0129_DuplicateProdnameforHcode.duplicateProdnameforHcode" />
         <item itemvalue="TestNG.TC0128_DuplicateProdnameforHcode.duplicateProdnameforHcode" />
         <item itemvalue="TestNG.TC0128_DuplicateProdnameforHcode" />
-        <item itemvalue="TestNG.TC0127_ProdspecNameatleast5char.ProdspecNameatleast5char" />
-        <item itemvalue="TestNG.TC0126_ProdspecNameatleast5char.ProdspecNameatleast5char" />
-        <item itemvalue="TestNG.TC0125_ProdspecNameatleast5char.ProdspecNameatleast5char" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622961771403</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Version 1.0.27">
+      <created>1623106925448</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1623106925448</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Version 1.02" />
     <MESSAGE value="Version 1.03" />
     <MESSAGE value="Version 1.04" />
     <MESSAGE value="Version 1.05" />
@@ -531,7 +527,8 @@
     <MESSAGE value="Version 1.0.24" />
     <MESSAGE value="Version 1.0.25" />
     <MESSAGE value="Version 1.0.26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.26" />
+    <MESSAGE value="Version 1.0.27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

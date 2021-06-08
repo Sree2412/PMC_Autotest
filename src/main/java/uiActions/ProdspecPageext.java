@@ -468,10 +468,10 @@ import java.security.SecureRandom;
     }
     public boolean verifyduplicateprodname() {
         try {
-            waitForElement(driver, 50, driver.findElement(By.xpath("//*[@id=\"toast-container\"]")));
-            String popup = driver.findElement(By.xpath("//*[@id=\"toast-container\"]")).getText();
-            popup.contains("Unable to save form.");
-            return true;
+            Thread.sleep(2000);
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+           boolean b = driver.getPageSource().contains("Unable to save form. A production form named \"test1\" already exists for this HCode.");
+            return b;
         } catch (Exception e) {
             return false;
         }
