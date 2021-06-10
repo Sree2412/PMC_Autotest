@@ -335,8 +335,8 @@ import java.security.SecureRandom;
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(9) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(10) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(12) > span > input"))).sendKeys(Keys.UP);
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-2-content > div > div.ui-g-9.ng-tns-c92-7 > span > input"))).sendKeys("Test001");
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-3-content > div > div.ui-g-9.ng-tns-c92-8 > span > input"))).sendKeys("Test001");
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-2-content\"]/div/div[2]/span/input"))).sendKeys("Test001");
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-3-content\"]/div/div[2]/span/input"))).sendKeys("Test001");
 
     }
     public void enableSubmitbutton_relus(){

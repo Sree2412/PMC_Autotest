@@ -33,10 +33,10 @@ public class HomePage  extends testBase {
     @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c120-5.ui-dialog-content.ui-widget-content > div > select")
     WebElement SelectRelativityUSForm;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-4.ng-star-inserted > p-footer > button:nth-child(1) > span")
+    @FindBy(xpath= "/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[3]/p-footer/button[1]/span")
     WebElement OpenFormButton;
 
-    @FindBy(css = "body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ui-dialog-footer.ui-widget-content.ng-tns-c86-4.ng-star-inserted > p-footer > button:nth-child(2) > span")
+    @FindBy(xpath = "/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[3]/p-footer/button[2]/span")
     WebElement CancelFormButton;
 
     @FindBy(css = "#ui-panel-0_header")
@@ -66,17 +66,11 @@ public class HomePage  extends testBase {
 
     }
     /* Create all page action  methods here*/
+
+
     public void NewFormcreation_relus() {
         createnewformfromhome();
-
-        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
-        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
-        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
-        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
-        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
-        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
-        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
-        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        WebElement selectbox = driver.findElement(By.xpath("/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[2]/div/select"));
         Select selectboxdropdown = new Select(selectbox);
         log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
         selectboxdropdown.selectByIndex(0);
@@ -91,15 +85,7 @@ public class HomePage  extends testBase {
     }
     public void NewFormcreation_slus() {
         createnewformfromhome();
-
-        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
-        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
-        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
-        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
-        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
-        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
-        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
-        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        WebElement selectbox = driver.findElement(By.xpath("/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[2]/div/select"));
         Select selectboxdropdown = new Select(selectbox);
         log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
         selectboxdropdown.selectByIndex(1);
@@ -114,15 +100,7 @@ public class HomePage  extends testBase {
     }
     public void NewFormcreation_reluk() {
         createnewformfromhome();
-
-        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
-        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
-        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
-        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
-        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
-        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
-        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
-        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+        WebElement selectbox = driver.findElement(By.xpath("/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[2]/div/select"));
         Select selectboxdropdown = new Select(selectbox);
         log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
         selectboxdropdown.selectByIndex(2);
@@ -140,14 +118,8 @@ public class HomePage  extends testBase {
     public void NewFormcreation_sluk() {
         createnewformfromhome();
 
-        WebElement layoutmain = driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div"));
-        WebElement layoutpadding = layoutmain.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div"));
-        WebElement pdialog = layoutpadding.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog"));
-        WebElement middle = pdialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div"));
-        WebElement widget = middle.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div"));
-        WebElement dialog = widget.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content"));
-        WebElement wrapper = dialog.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div"));
-        WebElement selectbox = wrapper.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-home > div > p-dialog > div > div > div.ng-tns-c86-4.ui-dialog-content.ui-widget-content > div > select"));
+
+        WebElement selectbox = driver.findElement(By.xpath("/html/body/app-root/app-main/div/div/div[2]/div/app-home/div/p-dialog/div/div/div[2]/div/select"));
         Select selectboxdropdown = new Select(selectbox);
         log.info("click Select Form Template dropdown object is:-" + selectboxdropdown.toString());
         selectboxdropdown.selectByIndex(3);

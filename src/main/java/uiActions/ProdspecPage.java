@@ -28,6 +28,33 @@ public class ProdspecPage  extends testBase {
     WebElement HCodedropdown;
     @FindBy(css = "#dropdown-list > li:nth-child(1) > div > input")
     WebElement HCodeSearch;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")
+    WebElement Markupsetconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")
+    WebElement Textconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/div/user-confirmation-checkbox/i")
+    WebElement Imageredactionconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/div/user-confirmation-checkbox/i")
+    WebElement BlackoutorAudioconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/div/user-confirmation-checkbox/i")
+    WebElement Redactedwithfamilyconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")
+    WebElement Unreadableplaceholderconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")
+    WebElement Handlingunreadableconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")
+    WebElement Privielegeplaceholderconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")
+    WebElement Privielegewithfamilyconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")
+    WebElement emptyfileidentifierconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")
+    WebElement emptyfilesconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")
+    WebElement NativeFilesconfcheck;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")
+    WebElement Tifffailureconfcheck;
+
 
 
     /*Create constructor class for each new pageclass --Copy this constructor method*/
@@ -357,44 +384,44 @@ public class ProdspecPage  extends testBase {
         }
         log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 1st  redaction info checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on 1st  redaction info checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on  checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on  checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on previously produced docs handling checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on previously produced docs handling checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on family association checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on family association checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div.form-height.margin-top-10.ng-star-inserted > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div.form-height.margin-top-10.ng-star-inserted > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div.form-height.margin-top-10.ng-star-inserted > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div.form-height.margin-top-10.ng-star-inserted > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
     }
 
@@ -444,14 +471,29 @@ public class ProdspecPage  extends testBase {
         }
         log.info("opened prodspec page:-" + driver.findElement(By.cssSelector("#ui-panel-0-label")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on 1st  redaction info checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on 1st  redaction info checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on  checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on  checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
 
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i"))).click();
-        log.info("clicked on previously produced docs handling checkbox  info section:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on previously produced docs handling checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/div/user-confirmation-checkbox/i")).toString());
+
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on family association checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/div/user-confirmation-checkbox/i")).toString());
+
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/div/user-confirmation-checkbox/i")).toString());
+
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
+
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/div/user-confirmation-checkbox/i")).toString());
+
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i"))).click();
+        log.info("clicked on markupset checkbox  info section:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/div/user-confirmation-checkbox/i")).toString());
 
     }
 
@@ -978,44 +1020,44 @@ public class ProdspecPage  extends testBase {
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > select")));
         Select FamilyAssociation = new Select(driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > select")));
         FamilyAssociation.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > span > editable-dropdown > div > select")));
-        Select MarkupsetorRedactionlayer = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
+        Select MarkupsetorRedactionlayer = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
         MarkupsetorRedactionlayer.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Text = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
+        Select Text = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
         Text.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > span > editable-dropdown > div > select")));
-        Select Imageredactionlabel = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/select")));
+        Select Imageredactionlabel = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/select")));
         Imageredactionlabel.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > span > editable-dropdown > div > select")));
-        Select BlackoutredactionorAudio = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/select")));
+        Select BlackoutredactionorAudio = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/select")));
         BlackoutredactionorAudio.selectByIndex(2);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > span > editable-dropdown > div > select")));
-        Select RedactedwithFamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/select")));
+        Select RedactedwithFamily = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/select")));
         RedactedwithFamily.selectByIndex(3);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Unreadableplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
+        Select Unreadableplaceholder = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
         Unreadableplaceholder.selectByIndex(2);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > span > editable-dropdown > div > select")));
-        Select Unreadablewithfamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
+        Select Unreadablewithfamily = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
         Unreadablewithfamily.selectByIndex(3);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > select")));
-        Select Privilegeplaceholder = new Select(driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
+        Select Privilegeplaceholder = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
         Privilegeplaceholder.selectByIndex(2);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > select")));
-        Select Privilegewithfamily = new Select(driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
+        Select Privilegewithfamily = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
         Privilegewithfamily.selectByIndex(3);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > span > editable-dropdown > div > select")));
-        Select Emptyfileidentifier = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
+        Select Emptyfileidentifier = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
         Emptyfileidentifier.selectByIndex(2);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
-        Select Emptyfiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
+        Select Emptyfiles = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
         Emptyfiles.selectByIndex(2);
-        waitForElement(driver, 10000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > span > editable-dropdown > div > select")));
-        Select Nativefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > span > editable-dropdown > div > select")));
+        waitForElement(driver, 10000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
+        Select Nativefiles = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")));
         Nativefiles.selectByIndex(3);
-        waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
-        Select Tifffailurefiles = new Select(driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div.form-height.margin-top-10.ng-star-inserted > span > editable-dropdown > div > select")));
+        waitForElement(driver, 5000, driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
+        Select Tifffailurefiles = new Select(driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")));
         Tifffailurefiles.selectByIndex(2);
         waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > select")));
         Select Spreadsheetfiles = new Select(driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > select")));
@@ -1135,56 +1177,56 @@ public class ProdspecPage  extends testBase {
             String className6 = driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > div > user-confirmation-checkbox > i")).getAttribute("class");
             className6.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
-            String className7 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Markupsetconfcheck);
+            String className7 = Markupsetconfcheck.getAttribute("class");
             className7.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
-            String className8 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Textconfcheck);
+            String className8 = Textconfcheck.getAttribute("class");
             className8.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
-            String className9 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Imageredactionconfcheck);
+            String className9 = Imageredactionconfcheck.getAttribute("class");
             className9.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > div > user-confirmation-checkbox > i")));
-            String className10 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, BlackoutorAudioconfcheck);
+            String className10 = BlackoutorAudioconfcheck.getAttribute("class");
             className10.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > div > user-confirmation-checkbox > i")));
-            String className11 = driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Redactedwithfamilyconfcheck);
+            String className11 = Redactedwithfamilyconfcheck.getAttribute("class");
             className11.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
-            String className12 = driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Unreadableplaceholderconfcheck);
+            String className12 = Unreadableplaceholderconfcheck.getAttribute("class");
             className12.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
-            String className13 = driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Handlingunreadableconfcheck);
+            String className13 = Handlingunreadableconfcheck.getAttribute("class");
             className13.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
-            String className14 = driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Privielegeplaceholderconfcheck);
+            String className14 = Privielegeplaceholderconfcheck.getAttribute("class");
             className14.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
-            String className15 = driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Privielegewithfamilyconfcheck);
+            String className15 = Privielegewithfamilyconfcheck.getAttribute("class");
             className15.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
-            String className16 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, emptyfileidentifierconfcheck);
+            String className16 = emptyfileidentifierconfcheck.getAttribute("class");
             className16.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
-            String className17 = driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, emptyfilesconfcheck);
+            String className17 = emptyfilesconfcheck.getAttribute("class");
             className17.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")));
-            String className18 = driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, NativeFilesconfcheck);
+            String className18 = NativeFilesconfcheck.getAttribute("class");
             className18.contains("pi pi-check-circle default-option-check");
 
-            waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")));
-            String className19 = driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > div > user-confirmation-checkbox > i")).getAttribute("class");
+            waitForElement(driver, 5000, Tifffailureconfcheck);
+            String className19 = Tifffailureconfcheck.getAttribute("class");
             className19.contains("pi pi-check-circle default-option-check");
 
             waitForElement(driver, 5000, driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(3) > div > user-confirmation-checkbox > i")));
@@ -1278,32 +1320,32 @@ public class ProdspecPage  extends testBase {
         log.info("clicked on *Previously Produced Docs-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(6) > span > editable-dropdown > div > div > span > i")).toString());
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > div > span > i"))).click();
         log.info("clicked on *Family Association:-" + driver.findElement(By.cssSelector("#ui-panel-1-content > div > div > div.ui-g-9 > div:nth-child(7) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Markup Set:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Text:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Image Redaction Label:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Blackout Redactions Text/Audio:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(4) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Redacted with Family:-" + driver.findElement(By.cssSelector("#ui-fieldset-4-content > div > div.ui-g-9.ng-tns-c92-11 > div:nth-child(5) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Unreadable Placeholder/Text-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Unreadable with Family-" + driver.findElement(By.cssSelector("#ui-fieldset-5-content > div > div.ui-g-9.ng-tns-c92-12 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on 1Privilege Placeholder/Text-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Privilege with Family Member-" + driver.findElement(By.cssSelector("#ui-fieldset-6-content > div > div.ui-g-9.ng-tns-c92-13 > div:nth-child(3) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on Empty File Identifier:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Empty Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-7-content > div > div.ui-g-9.ng-tns-c92-14 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Native Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
-        log.info("clicked on *Tiff failure/Exception Files:-" + driver.findElement(By.cssSelector("#ui-fieldset-8-content > div > div.ui-g-9.ng-tns-c92-15 > div:nth-child(2) > span > editable-dropdown > div > div > span > i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Markup Set:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Text:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Image Redaction Label:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Blackout Redactions Text/Audio:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Redacted with Family:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Unreadable Placeholder/Text-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Unreadable with Family-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on 1Privilege Placeholder/Text-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Privilege with Family Member-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on Empty File Identifier:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Empty Files:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Native Files:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/div/span/i")).toString());
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i"))).click();
+        log.info("clicked on *Tiff failure/Exception Files:-" + driver.findElement(By.xpath("//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/div/span/i")).toString());
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i"))).click();
         log.info("clicked on *Spreadsheet Files:-" + driver.findElement(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(1) > span > editable-dropdown > div > div > span > i")).toString());
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-3-content > div > div > div.ui-g-9 > div:nth-child(2) > span > editable-dropdown > div > div > span > i"))).click();
