@@ -32,6 +32,6 @@ public class TC0028_Confirmationcheckboxes_GeneralProdreq extends testBase {
     @AfterClass
     public void endTest() {
 
-        closeBrowser();
+        //closeBrowser();
     }
 }

@@ -67,7 +67,7 @@ public class ProdspecPage  extends testBase {
 
     public void selecthcodefromdropdown() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -113,7 +113,7 @@ public class ProdspecPage  extends testBase {
     public void expandcollapsesections() {
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -252,7 +252,7 @@ public class ProdspecPage  extends testBase {
 
     public void Generalprodreqcheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -321,7 +321,7 @@ public class ProdspecPage  extends testBase {
 
     public void generalprodreqcheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -378,7 +378,7 @@ public class ProdspecPage  extends testBase {
 
     public void redactionandplaceholderreqcheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -465,7 +465,7 @@ public class ProdspecPage  extends testBase {
 
     public void redactionplaceholderreqcheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -537,7 +537,7 @@ public class ProdspecPage  extends testBase {
 
     public void nativeimagingoptionscheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -596,7 +596,7 @@ public class ProdspecPage  extends testBase {
 
     public void nativeimagingoptionscheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -649,7 +649,7 @@ public class ProdspecPage  extends testBase {
 
     public void brandinginfocheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -707,7 +707,7 @@ public class ProdspecPage  extends testBase {
 
     public void brandinginfocheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -757,7 +757,7 @@ public class ProdspecPage  extends testBase {
 
     public void prodfilespeccheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -819,7 +819,7 @@ public class ProdspecPage  extends testBase {
 
     public void prodfilespeccheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -877,7 +877,7 @@ public class ProdspecPage  extends testBase {
 
     public void prodlocationcheckboxchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -941,7 +941,7 @@ public class ProdspecPage  extends testBase {
 
     public void prodlocationcheckboxunchecked() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -995,7 +995,7 @@ public class ProdspecPage  extends testBase {
 
     public void nondefaultconfirmationcheck() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1302,7 +1302,7 @@ public class ProdspecPage  extends testBase {
 
     public void clearvalueclickingXandconfirmingcheckbox() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1420,7 +1420,7 @@ public class ProdspecPage  extends testBase {
 
     public void clearsectionconfirmationcheck() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1476,7 +1476,7 @@ public class ProdspecPage  extends testBase {
 
     public void clearallconfirmationcheck() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1521,7 +1521,7 @@ public class ProdspecPage  extends testBase {
 
     public void productionbatespreview() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1583,7 +1583,7 @@ public class ProdspecPage  extends testBase {
 
     public void suffixdisplayonprodbatespreview() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1655,7 +1655,7 @@ public class ProdspecPage  extends testBase {
 
     public void loadfileNoneoption() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -1740,7 +1740,7 @@ public class ProdspecPage  extends testBase {
 
     public void datanoneoptionpopup() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

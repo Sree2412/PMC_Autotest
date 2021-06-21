@@ -50,7 +50,7 @@ import java.security.SecureRandom;
         ProdspecPage hcode = new ProdspecPage(driver);
         hcode.selecthcodefromdropdown();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -115,7 +115,7 @@ import java.security.SecureRandom;
     public void cannontsaveform() {
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -165,7 +165,7 @@ import java.security.SecureRandom;
     public void cannotsaveformwohcode() {
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -379,7 +379,7 @@ import java.security.SecureRandom;
 
     public void prodnamelessthan5chars(){
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -429,7 +429,7 @@ import java.security.SecureRandom;
     }
     public void duplicateprodname(){
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -468,7 +468,7 @@ import java.security.SecureRandom;
     }
     public boolean verifyduplicateprodname() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
            boolean b = driver.getPageSource().contains("Unable to save form. A production form named \"test1\" already exists for this HCode.");
             return b;
