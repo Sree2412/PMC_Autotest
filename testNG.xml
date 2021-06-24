@@ -136,7 +136,14 @@
             <class name="RELUSForms.TC0129_DuplicateProdnameforHcode"></class>
             <class name="SLUKForms.TC0130_DuplicateProdnameforHcode"></class>
             <class name="SLUSForms.TC0131_DuplicateProdnameforHcode"></class>
-
+            <class name="RELUKForms.TC0132_Mouseovertextverification"></class>
+            <class name="RELUSForms.TC0133_Mouseovertextverification"></class>
+            <class name="SLUKForms.TC0134_Mouseovertextverification"></class>
+            <class name="SLUSForms.TC0135_Mouseovertextverification"></class>
+            <class name="RELUKForms.TC0136_Defaultselections"></class>
+            <class name="RELUSForms.TC0137_Defaultselections"></class>
+            <class name="SLUKForms.TC0138_Defaultselections"></class>
+            <class name="SLUSForms.TC0139_Defaultselections"></class>
 
 
 

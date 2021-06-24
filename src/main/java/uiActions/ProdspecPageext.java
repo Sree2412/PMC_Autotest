@@ -179,9 +179,86 @@ import java.security.SecureRandom;
     WebElement Pathprefix;
     @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[1]/span[6]/label")
     WebElement pdffilesfolder;
-
-
-
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectProductionDAT;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectProductionDate;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[3]/span/editable-dropdown/div/select")
+    WebElement SelectProductionTime;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectProductionType;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[5]/span/editable-dropdown/div/select")
+    WebElement SelectSortorder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[6]/span/editable-dropdown/div/select")
+    WebElement SelectPreproduceddochandling;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[7]/span/editable-dropdown/div/select")
+    WebElement Selectfamilyassociation;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectMarkupSet;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectRedactionlayer;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectText;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/select")
+    WebElement SelectImageredactionlabel;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectBlackoutredaction;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectAudio;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/select")
+    WebElement SelectRedactedwithfamily;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectUnreadableplaceholdertext;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectUnreadablewithfamilyhandling;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectPrivplaceholdertext;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectPrivfamilyhandling;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectEmptyfileid;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement Selectemptyfile;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectNativefiles;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectTifffailure;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectSpreadsheet;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectPresentation;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[3]/span/editable-dropdown/div/select")
+    WebElement SelectOtherfiles;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectProductionnumbering;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[10]/span/editable-dropdown/div/select")
+    WebElement SelectUseexistingfield;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[11]/span/editable-dropdown/div/select")
+    WebElement SelectBrandingfont;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-9-content\"]/div/div[3]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectBottomRight;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[1]/span/editable-dropdown/div/select")
+    WebElement Selectloadfiledelimiter;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectLoadfileencoding;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[3]/span/editable-dropdown/div/select")
+    WebElement SelectImagefiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectTextfiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[5]/span/editable-dropdown/div/select")
+    WebElement SelectNativefiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[1]/span/editable-dropdown/div/select")
+    WebElement SelectImagefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[2]/span/editable-dropdown/div/select")
+    WebElement SelectTextfolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[3]/span/editable-dropdown/div/select")
+    WebElement SelectNativesfolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[4]/span/editable-dropdown/div/select")
+    WebElement SelectLoadfilesfolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[5]/span/editable-dropdown/div/select")
+    WebElement SelectPathprefix;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[6]/span/editable-dropdown/div/select")
+    WebElement SelectPDFFilefolder;
 
 
     /*Create constructor class for each new pageclass --Copy this constructor method*/
@@ -462,7 +539,8 @@ import java.security.SecureRandom;
         }
 
     }
-    public void enableSubmitbutton(){
+
+    public void enableSubmitbutton() {
         ProdspecPage confirmcheck = new ProdspecPage(driver);
         confirmcheck.Generalprodreqcheckboxchecked();
         confirmcheck.redactionandplaceholderreqcheckboxchecked();
@@ -470,7 +548,7 @@ import java.security.SecureRandom;
         confirmcheck.brandinginfocheckboxchecked();
         confirmcheck.prodfilespeccheckboxchecked();
         confirmcheck.prodlocationcheckboxchecked();
-       new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-7-titlebar > p-header > div > user-confirmation-checkbox > i"))).click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-7-titlebar > p-header > div > user-confirmation-checkbox > i"))).click();
         confirmcheck.suffixdisplayonprodbatespreview();
         saveform();
         try {
@@ -480,7 +558,8 @@ import java.security.SecureRandom;
         }
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(1) > input"))).sendKeys("H45678");
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(3) > input"))).sendKeys("Test001");
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > span > input"))).sendKeys(Keys.UP);;
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > span > input"))).sendKeys(Keys.UP);
+        ;
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(6) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(7) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(9) > span > input"))).sendKeys(Keys.UP);
@@ -490,20 +569,23 @@ import java.security.SecureRandom;
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ui-fieldset-3-content\"]/div/div[2]/span/input"))).sendKeys("Test001");
 
     }
-    public void enableSubmitbutton_relus(){
+
+    public void enableSubmitbutton_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         enableSubmitbutton();
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
 
     }
-    public void enableSubmitbutton_reluk(){
+
+    public void enableSubmitbutton_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         enableSubmitbutton();
 
     }
-    public void enableSubmitbutton_slus(){
+
+    public void enableSubmitbutton_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         enableSubmitbutton();
@@ -511,11 +593,13 @@ import java.security.SecureRandom;
 
 
     }
-    public void enableSubmitbutton_sluk(){
+
+    public void enableSubmitbutton_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         enableSubmitbutton();
     }
+
     public boolean verifySubmitbuttonenabled() {
         try {
 
@@ -528,7 +612,7 @@ import java.security.SecureRandom;
 
     }
 
-    public void prodnamelessthan5chars(){
+    public void prodnamelessthan5chars() {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -541,30 +625,35 @@ import java.security.SecureRandom;
 
 
     }
-    public void prodnamelessthan5chars_relus(){
+
+    public void prodnamelessthan5chars_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         prodnamelessthan5chars();
 
     }
-    public void prodnamelessthan5chars_reluk(){
+
+    public void prodnamelessthan5chars_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         prodnamelessthan5chars();
 
     }
-    public void prodnamelessthan5chars_slus(){
+
+    public void prodnamelessthan5chars_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         prodnamelessthan5chars();
 
     }
-    public void prodnamelessthan5chars_sluk(){
+
+    public void prodnamelessthan5chars_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         prodnamelessthan5chars();
 
     }
+
     public boolean verifyprodnamelessthan5chars() {
         try {
 
@@ -578,13 +667,14 @@ import java.security.SecureRandom;
         }
 
     }
-    public void duplicateprodname(){
+
+    public void duplicateprodname() {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        ProdspecPage selecthcode =new ProdspecPage(driver);
+        ProdspecPage selecthcode = new ProdspecPage(driver);
         selecthcode.selecthcodefromdropdown();
         driver.findElement(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input")).sendKeys("test1");
         log.info("Enter Prod Name:-" + "#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(2) > input".toString());
@@ -593,35 +683,40 @@ import java.security.SecureRandom;
 
 
     }
-    public void duplicateprodname_relus(){
+
+    public void duplicateprodname_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         duplicateprodname();
 
     }
-    public void duplicateprodname_reluk(){
+
+    public void duplicateprodname_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         duplicateprodname();
 
     }
-    public void duplicateprodname_slus(){
+
+    public void duplicateprodname_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         duplicateprodname();
 
     }
-    public void duplicateprodname_sluk(){
+
+    public void duplicateprodname_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         duplicateprodname();
 
     }
+
     public boolean verifyduplicateprodname() {
         try {
             Thread.sleep(3000);
             waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
-           boolean b = driver.getPageSource().contains("Unable to save form. A production form named \"test1\" already exists for this HCode.");
+            boolean b = driver.getPageSource().contains("Unable to save form. A production form named \"test1\" already exists for this HCode.");
             return b;
         } catch (Exception e) {
             return false;
@@ -630,114 +725,117 @@ import java.security.SecureRandom;
     }
 
 
-    public void mouseovertext_relus(){
+    public void mouseovertext_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         waitForElement(driver, 10, Blackoutnativelyredacteddoccount);
         String actualTooltip74 = Blackoutnativelyredacteddoccount.getAttribute("title");
         String expectedTooltip74 = "Blackout Redacted Document Count";
         actualTooltip74.equals(expectedTooltip74);
-        if(actualTooltip74.equals(expectedTooltip74)) {
+        if (actualTooltip74.equals(expectedTooltip74)) {
             System.out.println("Blackout Redacted Document Count verified");
         }
         waitForElement(driver, 10, BlackoutRedactionsText);
         String actualTooltip72 = BlackoutRedactionsText.getAttribute("title");
         String expectedTooltip72 = "Blackout Redactions Text";
         actualTooltip72.equals(expectedTooltip72);
-        if(actualTooltip72.equals(expectedTooltip72)) {
+        if (actualTooltip72.equals(expectedTooltip72)) {
             System.out.println("Blackout Redactions Text verified");
         }
         waitForElement(driver, 10, Markupset);
         String actualTooltip73 = Markupset.getAttribute("title");
         String expectedTooltip73 = "Markup Set";
         actualTooltip73.equals(expectedTooltip73);
-        if(actualTooltip73.equals(expectedTooltip73)) {
+        if (actualTooltip73.equals(expectedTooltip73)) {
             System.out.println("Markup Set verified");
         }
 
 
     }
-    public void mouseovertext_reluk(){
+
+    public void mouseovertext_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         waitForElement(driver, 10, Blackoutnativelyredacteddoccount);
         String actualTooltip74 = Blackoutnativelyredacteddoccount.getAttribute("title");
         String expectedTooltip74 = "Blackout Redacted Document Count";
         actualTooltip74.equals(expectedTooltip74);
-        if(actualTooltip74.equals(expectedTooltip74)) {
+        if (actualTooltip74.equals(expectedTooltip74)) {
             System.out.println("Blackout Redacted Document Count verified");
         }
         waitForElement(driver, 10, BlackoutRedactionsText);
         String actualTooltip72 = BlackoutRedactionsText.getAttribute("title");
         String expectedTooltip72 = "Blackout Redactions Text";
         actualTooltip72.equals(expectedTooltip72);
-        if(actualTooltip72.equals(expectedTooltip72)) {
+        if (actualTooltip72.equals(expectedTooltip72)) {
             System.out.println("Blackout Redactions Text verified");
         }
         waitForElement(driver, 10, Markupset);
         String actualTooltip73 = Markupset.getAttribute("title");
         String expectedTooltip73 = "Markup Set";
         actualTooltip73.equals(expectedTooltip73);
-        if(actualTooltip73.equals(expectedTooltip73)) {
+        if (actualTooltip73.equals(expectedTooltip73)) {
             System.out.println("Markup Set verified");
         }
 
 
     }
-    public void mouseovertext_slus(){
+
+    public void mouseovertext_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         waitForElement(driver, 10, Exceptiondoccount);
         String actualTooltip6 = Exceptiondoccount.getAttribute("title");
         String expectedTooltip6 = "Exception Document Count";
-        if(actualTooltip6.equals(expectedTooltip6)) {
+        if (actualTooltip6.equals(expectedTooltip6)) {
             System.out.println("Exception Document Count verified");
         }
         waitForElement(driver, 10, Audio);
         String actualTooltip20 = Audio.getAttribute("title");
         String expectedTooltip20 = "Audio Redactions";
         actualTooltip20.equals(expectedTooltip20);
-        if(actualTooltip20.equals(expectedTooltip20)) {
+        if (actualTooltip20.equals(expectedTooltip20)) {
             System.out.println("Audio verified");
         }
         waitForElement(driver, 10, Redactionlayer);
         String actualTooltip17 = Redactionlayer.getAttribute("title");
         String expectedTooltip17 = "Redaction Layer";
         actualTooltip17.equals(expectedTooltip17);
-        if(actualTooltip17.equals(expectedTooltip17)) {
+        if (actualTooltip17.equals(expectedTooltip17)) {
             System.out.println("Redaction Layer verified");
         }
 
 
-
     }
-    public void mouseovertext_sluk(){
+
+    public void mouseovertext_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         waitForElement(driver, 10, Exceptiondoccount);
         String actualTooltip6 = Exceptiondoccount.getAttribute("title");
         String expectedTooltip6 = "Exception Document Count";
         actualTooltip6.equals(expectedTooltip6);
-        if(actualTooltip6.equals(expectedTooltip6)) {
+        if (actualTooltip6.equals(expectedTooltip6)) {
             System.out.println("Exception Document Count verified");
         }
         waitForElement(driver, 10, Audio);
         String actualTooltip20 = Audio.getAttribute("title");
         String expectedTooltip20 = "Audio Redactions";
         actualTooltip20.equals(expectedTooltip20);
-        if(actualTooltip20.equals(expectedTooltip20)) {
+        if (actualTooltip20.equals(expectedTooltip20)) {
             System.out.println("Audio is verified");
         }
         waitForElement(driver, 10, Redactionlayer);
         String actualTooltip17 = Redactionlayer.getAttribute("title");
         String expectedTooltip17 = "Redaction Layer";
         actualTooltip17.equals(expectedTooltip17);
-        if(actualTooltip17.equals(expectedTooltip17)) {
+        if (actualTooltip17.equals(expectedTooltip17)) {
             System.out.println("Redaction Layer is verified");
         }
 
 
     }
+
     public boolean verifymouseovertext() {
 
         try {
@@ -1020,6 +1118,231 @@ import java.security.SecureRandom;
             return false;
         }
 
+    }
+
+    public boolean verifydefaultselection_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
+        SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
+        SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
+        SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
+        SelectSortorder. getText().contains("STANDARD: CustID - displayName, Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
+        SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
+        Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
+                SelectMarkupSet. getText().contains("STANDARD: Primary Markup Set")&&
+                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
+                SelectImageredactionlabel. getText().contains("STANDARD: Redactions use text from applicable Markup Set")&&
+                SelectBlackoutredaction. getText().contains("STANDARD: Process Excel text into Redacted Native Text field")&&
+                SelectRedactedwithfamily. getText().contains("STANDARD: N/A")&&
+                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
+                SelectUnreadablewithfamilyhandling. getText().contains("STANDARD: N/A")&&
+                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
+                SelectPrivfamilyhandling. getText().contains("STANDARD: N/A")&&
+                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
+                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
+                SelectNativefiles. getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided")&&
+                SelectTifffailure. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided")&&
+                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
+                SelectPresentation. getText().contains("STANDARD: N/A")&&
+                SelectOtherfiles. getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed")&&
+                SelectProductionnumbering. getText().contains("STANDARD: Page-level numbering")&&
+                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
+                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
+                SelectBottomRight. getText().contains("STANDARD: Production Bates")&&
+                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
+                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-8)")&&
+                SelectImagefiledelivery. getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI")&&
+                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included")&&
+                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
+                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)")&&
+                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)")&&
+                SelectNativesfolder. getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)")&&
+                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
+                SelectPathprefix. getText().contains("STANDARD: N/A")&&
+                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        ) {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+    }
+
+
+    public boolean verifydefaultselection_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        if(SelectProductionDAT. getText().contains("STANDARD: Universal Time Coordinated")&&
+            SelectProductionDate. getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank")&&
+            SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
+            SelectProductionType. getText().contains("UK STANDARD: Natives, Text, Images for placeholder/redacted documents & family members to be the original image")&&
+            SelectSortorder. getText().contains("UK STANDARD: Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
+            SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
+            Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
+            SelectMarkupSet. getText().contains("STANDARD: Primary Markup Set")&&
+            SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
+            SelectImageredactionlabel. getText().contains("STANDARD: Redactions use text from applicable Markup Set")&&
+            SelectBlackoutredaction. getText().contains("STANDARD: Process Excel text into Redacted Native Text field")&&
+            SelectRedactedwithfamily. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+            SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
+            SelectUnreadablewithfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+            SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
+            SelectPrivfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+            SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
+            Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
+            SelectNativefiles. getText().contains("UK STANDARD: N/A")&&
+            SelectTifffailure. getText().contains("STANDARD: N/A")&&
+            SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
+            SelectPresentation. getText().contains("STANDARD: N/A")&&
+            SelectOtherfiles. getText().contains("UK STANDARD: N/A")&&
+            SelectProductionnumbering. getText().contains("UK STANDARD: Document-level numbering")&&
+            SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
+            SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
+            Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
+            SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-8)")&&
+            SelectImagefiledelivery. getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI")&&
+            SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included")&&
+            SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
+            SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)")&&
+            SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)")&&
+            SelectNativesfolder. getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)")&&
+            SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
+            SelectPathprefix. getText().contains("STANDARD: N/A")&&
+            SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+
+           ) {
+                return true;
+            }
+
+        else {
+                return false;
+            }
+    }
+    public boolean verifydefaultselection_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
+                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
+                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
+                SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
+                SelectSortorder. getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)")&&
+                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
+                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
+                SelectRedactionlayer. getText().contains("STANDARD: Default Annotation Layer")&&
+                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
+                SelectImageredactionlabel. getText().contains("STANDARD: All redactions receive \"REDACTED\" language")&&
+                SelectAudio. getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep")&&
+                SelectRedactedwithfamily. getText().contains("STANDARD: N/A")&&
+                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
+                SelectUnreadablewithfamilyhandling. getText().contains("STANDARD: N/A")&&
+                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
+                SelectPrivfamilyhandling. getText().contains("STANDARD: N/A")&&
+                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
+                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
+                SelectNativefiles. getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided")&&
+                SelectTifffailure. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided")&&
+                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
+                SelectPresentation. getText().contains("STANDARD: N/A")&&
+                SelectOtherfiles. getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed")&&
+                SelectProductionnumbering. getText().contains("STANDARD: Page-level numbering")&&
+                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
+                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
+                SelectBottomRight. getText().contains("STANDARD: Production Bates")&&
+                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
+                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-16)")&&
+                SelectImagefiledelivery. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
+                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included")&&
+                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
+                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
+                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)")&&
+                SelectNativesfolder. getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)")&&
+                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
+                SelectPathprefix. getText().contains("STANDARD: N/A")&&
+                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+
+        ) {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+    }
+
+   /*
+
+
+
+
+    */
+    public boolean verifydefaultselection_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
+                SelectProductionDate.getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank")&&
+                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
+                SelectProductionType. getText().contains("UK STANDARD: Natives, Text, Images (placeholder/redacted)")&&
+                SelectSortorder. getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)")&&
+                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
+                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
+                SelectRedactionlayer. getText().contains("STANDARD: Default Annotation Layer")&&
+                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
+                SelectImageredactionlabel. getText().contains("STANDARD: All redactions receive \"REDACTED\" language")&&
+                SelectAudio. getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep")&&
+                SelectRedactedwithfamily. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
+                SelectUnreadablewithfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
+                SelectPrivfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
+                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
+                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
+                SelectNativefiles. getText().contains("UK STANDARD: N/A")&&
+                SelectTifffailure. getText().contains("STANDARD: N/A")&&
+                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
+                SelectPresentation. getText().contains("STANDARD: N/A")&&
+                SelectOtherfiles. getText().contains("UK STANDARD: N/A")&&
+                SelectProductionnumbering. getText().contains("UK STANDARD: Document-level numbering")&&
+                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
+                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
+                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
+                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-16)")&&
+                SelectImagefiledelivery. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
+                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included")&&
+                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
+                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
+                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)")&&
+                SelectNativesfolder. getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)")&&
+                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
+                SelectPathprefix. getText().contains("STANDARD: N/A")&&
+                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        ) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
