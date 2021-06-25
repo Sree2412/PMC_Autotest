@@ -144,6 +144,10 @@
             <class name="RELUSForms.TC0137_Defaultselections"></class>
             <class name="SLUKForms.TC0138_Defaultselections"></class>
             <class name="SLUSForms.TC0139_Defaultselections"></class>
+            <class name="RELUKForms.TC0140_Fieldschoices"></class>
+            <class name="RELUSForms.TC0141_Fieldschoices"></class>
+            <class name="SLUKForms.TC0142_Fieldschoices"></class>
+            <class name="SLUSForms.TC0143_Fieldschoices"></class>
 
 
 

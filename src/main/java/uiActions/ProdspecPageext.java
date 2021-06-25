@@ -259,6 +259,99 @@ import java.security.SecureRandom;
     WebElement SelectPathprefix;
     @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[6]/span/editable-dropdown/div/select")
     WebElement SelectPDFFilefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultProductionDAT;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultProductionDate;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[3]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultProductionTime;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[4]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultProductiontype;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[5]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultSortorder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[6]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultpreproduceddochandling;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[7]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultfamilyhandling;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultMarkupset;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultText;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[3]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultImageRedactionlabel;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[4]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultBlackoutRedactiontext;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultRedactedwithFamily;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultunreadableplaceholdertext;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultunreadablewithfamilyhandling;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultPrivplaceholdertext;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultPrivwithfamilyhandling;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultemptyfileid;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-7-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultemptyfiles;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultNativefiles;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultTifffailure;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement Defaultspreadsheet;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultPresentation;
+    @FindBy(xpath = "//*[@id=\"ui-panel-3-content\"]/div/div/div[2]/div[3]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultOtherfiles;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultProductionnumbering;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[10]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultUseexistingfields;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[11]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultBrandingfont;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-9-content\"]/div/div[3]/div[4]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultBottomright;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultLoadfiledelimiter;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultLoadfileencoding;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[3]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultImagefiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[4]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultTextfiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-5-content\"]/div/div/div[3]/div[5]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultNativefiledelivery;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultImagefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[2]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultTextfolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[3]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultNativefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[4]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultLoadfilefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[5]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultPathprefix;
+    @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[2]/div[6]/span/editable-dropdown/div/select/option[2]")
+    WebElement DefaultPDFFilefolder;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultProductionDate_uk;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[4]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultProductiontype_uk;
+    @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[5]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultSortorder_uk;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-4-content\"]/div/div[2]/div[5]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultRedactedwithfamily_uk;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-5-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultUnreadablewithfamilyhandling_uk;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-6-content\"]/div/div[2]/div[2]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultPrivwithfamilyhandling_uk;
+    @FindBy(xpath = "//*[@id=\"ui-fieldset-8-content\"]/div/div[2]/div[1]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultNativefiles_uk;
+    @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[3]")
+    WebElement DefaultProductionnumbering_uk;
+
 
 
     /*Create constructor class for each new pageclass --Copy this constructor method*/
@@ -1119,8 +1212,240 @@ import java.security.SecureRandom;
         }
 
     }
+    public boolean verifydefaultselection_relus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-    public boolean verifydefaultselection_relus() {
+        if(DefaultProductionDAT.isEnabled()&&
+        DefaultProductionDate.isEnabled()&&
+        DefaultProductionTime.isEnabled()&&
+        DefaultProductiontype.isEnabled()&&
+        DefaultSortorder.isEnabled()&&
+        Defaultpreproduceddochandling.isEnabled()&&
+        Defaultfamilyhandling.isEnabled()&&
+        DefaultMarkupset.isEnabled()&&
+        DefaultText.isEnabled()&&
+        DefaultImageRedactionlabel.isEnabled()&&
+        DefaultBlackoutRedactiontext.isEnabled()&&
+        DefaultRedactedwithFamily.isEnabled()&&
+        Defaultunreadableplaceholdertext.isEnabled()&&
+        Defaultunreadablewithfamilyhandling.isEnabled()&&
+        DefaultPrivplaceholdertext.isEnabled()&&
+                DefaultPrivwithfamilyhandling.isEnabled()&&
+                Defaultemptyfileid.isEnabled()&&
+                Defaultemptyfiles.isEnabled()&&
+                DefaultNativefiles.isEnabled()&&
+                DefaultTifffailure.isEnabled()&&
+                Defaultspreadsheet.isEnabled()&&
+                DefaultPresentation.isEnabled()&&
+                DefaultOtherfiles.isEnabled()&&
+                DefaultProductionnumbering.isEnabled()&&
+                DefaultUseexistingfields.isEnabled()&&
+                DefaultBrandingfont.isEnabled()&&
+                DefaultBottomright.isEnabled()&&
+                DefaultLoadfiledelimiter.isEnabled()&&
+                DefaultLoadfileencoding.isEnabled()&&
+                DefaultImagefiledelivery.isEnabled()&&
+                DefaultTextfiledelivery.isEnabled()&&
+                DefaultNativefiledelivery.isEnabled()&&
+                DefaultImagefolder.isEnabled()&&
+                DefaultTextfolder.isEnabled()&&
+                DefaultNativefolder.isEnabled()&&
+                DefaultLoadfilefolder.isEnabled()&&
+                DefaultPathprefix.isEnabled()&&
+                DefaultPDFFilefolder.isEnabled()
+
+        )
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
+
+    public boolean verifydefaultselection_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if(DefaultProductionDAT.isEnabled()&&
+                DefaultProductionDate_uk.isEnabled()&&
+                DefaultProductionTime.isEnabled()&&
+                DefaultProductiontype_uk.isEnabled()&&
+                DefaultSortorder_uk.isEnabled()&&
+                Defaultpreproduceddochandling.isEnabled()&&
+                Defaultfamilyhandling.isEnabled()&&
+                DefaultMarkupset.isEnabled()&&
+                DefaultText.isEnabled()&&
+                DefaultImageRedactionlabel.isEnabled()&&
+                DefaultBlackoutRedactiontext.isEnabled()&&
+                DefaultRedactedwithfamily_uk.isEnabled()&&
+                Defaultunreadableplaceholdertext.isEnabled()&&
+                DefaultUnreadablewithfamilyhandling_uk.isEnabled()&&
+                DefaultPrivplaceholdertext.isEnabled()&&
+                DefaultPrivwithfamilyhandling_uk.isEnabled()&&
+                Defaultemptyfileid.isEnabled()&&
+                Defaultemptyfiles.isEnabled()&&
+                DefaultNativefiles_uk.isEnabled()&&
+                DefaultTifffailure.isEnabled()&&
+                Defaultspreadsheet.isEnabled()&&
+                DefaultPresentation.isEnabled()&&
+                DefaultOtherfiles.isEnabled()&&
+                DefaultProductionnumbering_uk.isEnabled()&&
+                DefaultUseexistingfields.isEnabled()&&
+                DefaultBrandingfont.isEnabled()&&
+                DefaultBottomright.isEnabled()&&
+                DefaultLoadfiledelimiter.isEnabled()&&
+                DefaultLoadfileencoding.isEnabled()&&
+                DefaultImagefiledelivery.isEnabled()&&
+                DefaultTextfiledelivery.isEnabled()&&
+                DefaultNativefiledelivery.isEnabled()&&
+                DefaultImagefolder.isEnabled()&&
+                DefaultTextfolder.isEnabled()&&
+                DefaultNativefolder.isEnabled()&&
+                DefaultLoadfilefolder.isEnabled()&&
+                DefaultPathprefix.isEnabled()&&
+                DefaultPDFFilefolder.isEnabled()
+
+        )
+        {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+
+
+    }
+    public boolean verifydefaultselection_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if(DefaultProductionDAT.isEnabled()&&
+                DefaultProductionDate.isEnabled()&&
+                DefaultProductionTime.isEnabled()&&
+                DefaultProductiontype.isEnabled()&&
+                DefaultSortorder.isEnabled()&&
+                Defaultpreproduceddochandling.isEnabled()&&
+                Defaultfamilyhandling.isEnabled()&&
+                DefaultMarkupset.isEnabled()&&
+                DefaultText.isEnabled()&&
+                DefaultImageRedactionlabel.isEnabled()&&
+                DefaultBlackoutRedactiontext.isEnabled()&&
+                DefaultRedactedwithFamily.isEnabled()&&
+                Defaultunreadableplaceholdertext.isEnabled()&&
+                Defaultunreadablewithfamilyhandling.isEnabled()&&
+                DefaultPrivplaceholdertext.isEnabled()&&
+                DefaultPrivwithfamilyhandling.isEnabled()&&
+                Defaultemptyfileid.isEnabled()&&
+                Defaultemptyfiles.isEnabled()&&
+                DefaultNativefiles.isEnabled()&&
+                DefaultTifffailure.isEnabled()&&
+                Defaultspreadsheet.isEnabled()&&
+                DefaultPresentation.isEnabled()&&
+                DefaultOtherfiles.isEnabled()&&
+                DefaultProductionnumbering.isEnabled()&&
+                DefaultUseexistingfields.isEnabled()&&
+                DefaultBrandingfont.isEnabled()&&
+                DefaultBottomright.isEnabled()&&
+                DefaultLoadfiledelimiter.isEnabled()&&
+                DefaultLoadfileencoding.isEnabled()&&
+                DefaultImagefiledelivery.isEnabled()&&
+                DefaultTextfiledelivery.isEnabled()&&
+                DefaultNativefiledelivery.isEnabled()&&
+                DefaultImagefolder.isEnabled()&&
+                DefaultTextfolder.isEnabled()&&
+                DefaultNativefolder.isEnabled()&&
+                DefaultLoadfilefolder.isEnabled()&&
+                DefaultPathprefix.isEnabled()&&
+                DefaultPDFFilefolder.isEnabled()
+
+
+        )
+        {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+    }
+    public boolean  verifydefaultselection_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if(DefaultProductionDAT.isEnabled()&&
+                DefaultProductionDate_uk.isEnabled()&&
+                DefaultProductionTime.isEnabled()&&
+                DefaultProductiontype_uk.isEnabled()&&
+                DefaultSortorder_uk.isEnabled()&&
+                Defaultpreproduceddochandling.isEnabled()&&
+                Defaultfamilyhandling.isEnabled()&&
+                DefaultMarkupset.isEnabled()&&
+                DefaultText.isEnabled()&&
+                DefaultImageRedactionlabel.isEnabled()&&
+                DefaultBlackoutRedactiontext.isEnabled()&&
+                DefaultRedactedwithfamily_uk.isEnabled()&&
+                Defaultunreadableplaceholdertext.isEnabled()&&
+                DefaultUnreadablewithfamilyhandling_uk.isEnabled()&&
+                DefaultPrivplaceholdertext.isEnabled()&&
+                DefaultPrivwithfamilyhandling_uk.isEnabled()&&
+                Defaultemptyfileid.isEnabled()&&
+                Defaultemptyfiles.isEnabled()&&
+                DefaultNativefiles_uk.isEnabled()&&
+                DefaultTifffailure.isEnabled()&&
+                Defaultspreadsheet.isEnabled()&&
+                DefaultPresentation.isEnabled()&&
+                DefaultOtherfiles.isEnabled()&&
+                DefaultProductionnumbering_uk.isEnabled()&&
+                DefaultUseexistingfields.isEnabled()&&
+                DefaultBrandingfont.isEnabled()&&
+                DefaultBottomright.isEnabled()&&
+                DefaultLoadfiledelimiter.isEnabled()&&
+                DefaultLoadfileencoding.isEnabled()&&
+                DefaultImagefiledelivery.isEnabled()&&
+                DefaultTextfiledelivery.isEnabled()&&
+                DefaultNativefiledelivery.isEnabled()&&
+                DefaultImagefolder.isEnabled()&&
+                DefaultTextfolder.isEnabled()&&
+                DefaultNativefolder.isEnabled()&&
+                DefaultLoadfilefolder.isEnabled()&&
+                DefaultPathprefix.isEnabled()&&
+                DefaultPDFFilefolder.isEnabled()
+
+        )
+        {
+            return true;
+        }
+
+        else {
+            return false;
+        }
+
+
+
+    }
+    public boolean verifyfieldchoices_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         try {
@@ -1129,12 +1454,12 @@ import java.security.SecureRandom;
             e.printStackTrace();
         }
         if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
-        SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
-        SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
-        SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
-        SelectSortorder. getText().contains("STANDARD: CustID - displayName, Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
-        SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
-        Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
+                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
+                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
+                SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
+                SelectSortorder. getText().contains("STANDARD: CustID - displayName, Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
+                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
+                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
                 SelectMarkupSet. getText().contains("STANDARD: Primary Markup Set")&&
                 SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
                 SelectImageredactionlabel. getText().contains("STANDARD: Redactions use text from applicable Markup Set")&&
@@ -1175,8 +1500,7 @@ import java.security.SecureRandom;
         }
     }
 
-
-    public boolean verifydefaultselection_reluk() {
+    public boolean verifyfieldchoices_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         try {
@@ -1231,7 +1555,8 @@ import java.security.SecureRandom;
                 return false;
             }
     }
-    public boolean verifydefaultselection_slus() {
+
+    public boolean verifyfieldchoices_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         try {
@@ -1287,13 +1612,9 @@ import java.security.SecureRandom;
         }
     }
 
-   /*
 
 
-
-
-    */
-    public boolean verifydefaultselection_sluk() {
+    public boolean verifyfieldchoices_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         try {
