@@ -179,6 +179,8 @@ import java.security.SecureRandom;
     WebElement Pathprefix;
     @FindBy(xpath = "//*[@id=\"ui-panel-6-content\"]/div/div/div/div[1]/span[6]/label")
     WebElement pdffilesfolder;
+    @FindBy(xpath = "/html/body/app-root/app-main/div/div/div[2]/div/app-prod-spec/div[1]/div[2]/div/div/button[1]")
+    WebElement Submit;
     @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select")
     WebElement SelectProductionDAT;
     @FindBy(xpath = "//*[@id=\"ui-panel-1-content\"]/div/div/div[2]/div[2]/span/editable-dropdown/div/select")
@@ -351,7 +353,10 @@ import java.security.SecureRandom;
     WebElement DefaultNativefiles_uk;
     @FindBy(xpath = "//*[@id=\"ui-panel-4-content\"]/div/div/div[2]/div[1]/span/editable-dropdown/div/select/option[3]")
     WebElement DefaultProductionnumbering_uk;
-
+    @FindBy(xpath = "//*[@id=\"button-split\"]/span[2]")
+    WebElement Submitrequirements;
+    @FindBy(xpath = "//*[@id=\"dropdown-split\"]")
+    WebElement listofmenuitems;
 
 
     /*Create constructor class for each new pageclass --Copy this constructor method*/
@@ -652,7 +657,6 @@ import java.security.SecureRandom;
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(1) > input"))).sendKeys("H45678");
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > span:nth-child(3) > input"))).sendKeys("Test001");
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > span > input"))).sendKeys(Keys.UP);
-        ;
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(6) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(7) > span > input"))).sendKeys(Keys.UP);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(9) > span > input"))).sendKeys(Keys.UP);
@@ -1212,7 +1216,8 @@ import java.security.SecureRandom;
         }
 
     }
-    public boolean verifydefaultselection_relus(){
+
+    public boolean verifydefaultselection_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
         try {
@@ -1221,57 +1226,53 @@ import java.security.SecureRandom;
             e.printStackTrace();
         }
 
-        if(DefaultProductionDAT.isEnabled()&&
-        DefaultProductionDate.isEnabled()&&
-        DefaultProductionTime.isEnabled()&&
-        DefaultProductiontype.isEnabled()&&
-        DefaultSortorder.isEnabled()&&
-        Defaultpreproduceddochandling.isEnabled()&&
-        Defaultfamilyhandling.isEnabled()&&
-        DefaultMarkupset.isEnabled()&&
-        DefaultText.isEnabled()&&
-        DefaultImageRedactionlabel.isEnabled()&&
-        DefaultBlackoutRedactiontext.isEnabled()&&
-        DefaultRedactedwithFamily.isEnabled()&&
-        Defaultunreadableplaceholdertext.isEnabled()&&
-        Defaultunreadablewithfamilyhandling.isEnabled()&&
-        DefaultPrivplaceholdertext.isEnabled()&&
-                DefaultPrivwithfamilyhandling.isEnabled()&&
-                Defaultemptyfileid.isEnabled()&&
-                Defaultemptyfiles.isEnabled()&&
-                DefaultNativefiles.isEnabled()&&
-                DefaultTifffailure.isEnabled()&&
-                Defaultspreadsheet.isEnabled()&&
-                DefaultPresentation.isEnabled()&&
-                DefaultOtherfiles.isEnabled()&&
-                DefaultProductionnumbering.isEnabled()&&
-                DefaultUseexistingfields.isEnabled()&&
-                DefaultBrandingfont.isEnabled()&&
-                DefaultBottomright.isEnabled()&&
-                DefaultLoadfiledelimiter.isEnabled()&&
-                DefaultLoadfileencoding.isEnabled()&&
-                DefaultImagefiledelivery.isEnabled()&&
-                DefaultTextfiledelivery.isEnabled()&&
-                DefaultNativefiledelivery.isEnabled()&&
-                DefaultImagefolder.isEnabled()&&
-                DefaultTextfolder.isEnabled()&&
-                DefaultNativefolder.isEnabled()&&
-                DefaultLoadfilefolder.isEnabled()&&
-                DefaultPathprefix.isEnabled()&&
+        if (DefaultProductionDAT.isEnabled() &&
+                DefaultProductionDate.isEnabled() &&
+                DefaultProductionTime.isEnabled() &&
+                DefaultProductiontype.isEnabled() &&
+                DefaultSortorder.isEnabled() &&
+                Defaultpreproduceddochandling.isEnabled() &&
+                Defaultfamilyhandling.isEnabled() &&
+                DefaultMarkupset.isEnabled() &&
+                DefaultText.isEnabled() &&
+                DefaultImageRedactionlabel.isEnabled() &&
+                DefaultBlackoutRedactiontext.isEnabled() &&
+                DefaultRedactedwithFamily.isEnabled() &&
+                Defaultunreadableplaceholdertext.isEnabled() &&
+                Defaultunreadablewithfamilyhandling.isEnabled() &&
+                DefaultPrivplaceholdertext.isEnabled() &&
+                DefaultPrivwithfamilyhandling.isEnabled() &&
+                Defaultemptyfileid.isEnabled() &&
+                Defaultemptyfiles.isEnabled() &&
+                DefaultNativefiles.isEnabled() &&
+                DefaultTifffailure.isEnabled() &&
+                Defaultspreadsheet.isEnabled() &&
+                DefaultPresentation.isEnabled() &&
+                DefaultOtherfiles.isEnabled() &&
+                DefaultProductionnumbering.isEnabled() &&
+                DefaultUseexistingfields.isEnabled() &&
+                DefaultBrandingfont.isEnabled() &&
+                DefaultBottomright.isEnabled() &&
+                DefaultLoadfiledelimiter.isEnabled() &&
+                DefaultLoadfileencoding.isEnabled() &&
+                DefaultImagefiledelivery.isEnabled() &&
+                DefaultTextfiledelivery.isEnabled() &&
+                DefaultNativefiledelivery.isEnabled() &&
+                DefaultImagefolder.isEnabled() &&
+                DefaultTextfolder.isEnabled() &&
+                DefaultNativefolder.isEnabled() &&
+                DefaultLoadfilefolder.isEnabled() &&
+                DefaultPathprefix.isEnabled() &&
                 DefaultPDFFilefolder.isEnabled()
-
-        )
-        {
+        ) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
 
-
-    public boolean verifydefaultselection_reluk(){
+    public boolean verifydefaultselection_reluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_reluk();
         try {
@@ -1279,57 +1280,54 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if(DefaultProductionDAT.isEnabled()&&
-                DefaultProductionDate_uk.isEnabled()&&
-                DefaultProductionTime.isEnabled()&&
-                DefaultProductiontype_uk.isEnabled()&&
-                DefaultSortorder_uk.isEnabled()&&
-                Defaultpreproduceddochandling.isEnabled()&&
-                Defaultfamilyhandling.isEnabled()&&
-                DefaultMarkupset.isEnabled()&&
-                DefaultText.isEnabled()&&
-                DefaultImageRedactionlabel.isEnabled()&&
-                DefaultBlackoutRedactiontext.isEnabled()&&
-                DefaultRedactedwithfamily_uk.isEnabled()&&
-                Defaultunreadableplaceholdertext.isEnabled()&&
-                DefaultUnreadablewithfamilyhandling_uk.isEnabled()&&
-                DefaultPrivplaceholdertext.isEnabled()&&
-                DefaultPrivwithfamilyhandling_uk.isEnabled()&&
-                Defaultemptyfileid.isEnabled()&&
-                Defaultemptyfiles.isEnabled()&&
-                DefaultNativefiles_uk.isEnabled()&&
-                DefaultTifffailure.isEnabled()&&
-                Defaultspreadsheet.isEnabled()&&
-                DefaultPresentation.isEnabled()&&
-                DefaultOtherfiles.isEnabled()&&
-                DefaultProductionnumbering_uk.isEnabled()&&
-                DefaultUseexistingfields.isEnabled()&&
-                DefaultBrandingfont.isEnabled()&&
-                DefaultBottomright.isEnabled()&&
-                DefaultLoadfiledelimiter.isEnabled()&&
-                DefaultLoadfileencoding.isEnabled()&&
-                DefaultImagefiledelivery.isEnabled()&&
-                DefaultTextfiledelivery.isEnabled()&&
-                DefaultNativefiledelivery.isEnabled()&&
-                DefaultImagefolder.isEnabled()&&
-                DefaultTextfolder.isEnabled()&&
-                DefaultNativefolder.isEnabled()&&
-                DefaultLoadfilefolder.isEnabled()&&
-                DefaultPathprefix.isEnabled()&&
+        if (DefaultProductionDAT.isEnabled() &&
+                DefaultProductionDate_uk.isEnabled() &&
+                DefaultProductionTime.isEnabled() &&
+                DefaultProductiontype_uk.isEnabled() &&
+                DefaultSortorder_uk.isEnabled() &&
+                Defaultpreproduceddochandling.isEnabled() &&
+                Defaultfamilyhandling.isEnabled() &&
+                DefaultMarkupset.isEnabled() &&
+                DefaultText.isEnabled() &&
+                DefaultImageRedactionlabel.isEnabled() &&
+                DefaultBlackoutRedactiontext.isEnabled() &&
+                DefaultRedactedwithfamily_uk.isEnabled() &&
+                Defaultunreadableplaceholdertext.isEnabled() &&
+                DefaultUnreadablewithfamilyhandling_uk.isEnabled() &&
+                DefaultPrivplaceholdertext.isEnabled() &&
+                DefaultPrivwithfamilyhandling_uk.isEnabled() &&
+                Defaultemptyfileid.isEnabled() &&
+                Defaultemptyfiles.isEnabled() &&
+                DefaultNativefiles_uk.isEnabled() &&
+                DefaultTifffailure.isEnabled() &&
+                Defaultspreadsheet.isEnabled() &&
+                DefaultPresentation.isEnabled() &&
+                DefaultOtherfiles.isEnabled() &&
+                DefaultProductionnumbering_uk.isEnabled() &&
+                DefaultUseexistingfields.isEnabled() &&
+                DefaultBrandingfont.isEnabled() &&
+                DefaultBottomright.isEnabled() &&
+                DefaultLoadfiledelimiter.isEnabled() &&
+                DefaultLoadfileencoding.isEnabled() &&
+                DefaultImagefiledelivery.isEnabled() &&
+                DefaultTextfiledelivery.isEnabled() &&
+                DefaultNativefiledelivery.isEnabled() &&
+                DefaultImagefolder.isEnabled() &&
+                DefaultTextfolder.isEnabled() &&
+                DefaultNativefolder.isEnabled() &&
+                DefaultLoadfilefolder.isEnabled() &&
+                DefaultPathprefix.isEnabled() &&
                 DefaultPDFFilefolder.isEnabled()
-
-        )
-        {
+        ) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
 
 
     }
-    public boolean verifydefaultselection_slus(){
+
+    public boolean verifydefaultselection_slus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_slus();
         try {
@@ -1337,56 +1335,52 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if(DefaultProductionDAT.isEnabled()&&
-                DefaultProductionDate.isEnabled()&&
-                DefaultProductionTime.isEnabled()&&
-                DefaultProductiontype.isEnabled()&&
-                DefaultSortorder.isEnabled()&&
-                Defaultpreproduceddochandling.isEnabled()&&
-                Defaultfamilyhandling.isEnabled()&&
-                DefaultMarkupset.isEnabled()&&
-                DefaultText.isEnabled()&&
-                DefaultImageRedactionlabel.isEnabled()&&
-                DefaultBlackoutRedactiontext.isEnabled()&&
-                DefaultRedactedwithFamily.isEnabled()&&
-                Defaultunreadableplaceholdertext.isEnabled()&&
-                Defaultunreadablewithfamilyhandling.isEnabled()&&
-                DefaultPrivplaceholdertext.isEnabled()&&
-                DefaultPrivwithfamilyhandling.isEnabled()&&
-                Defaultemptyfileid.isEnabled()&&
-                Defaultemptyfiles.isEnabled()&&
-                DefaultNativefiles.isEnabled()&&
-                DefaultTifffailure.isEnabled()&&
-                Defaultspreadsheet.isEnabled()&&
-                DefaultPresentation.isEnabled()&&
-                DefaultOtherfiles.isEnabled()&&
-                DefaultProductionnumbering.isEnabled()&&
-                DefaultUseexistingfields.isEnabled()&&
-                DefaultBrandingfont.isEnabled()&&
-                DefaultBottomright.isEnabled()&&
-                DefaultLoadfiledelimiter.isEnabled()&&
-                DefaultLoadfileencoding.isEnabled()&&
-                DefaultImagefiledelivery.isEnabled()&&
-                DefaultTextfiledelivery.isEnabled()&&
-                DefaultNativefiledelivery.isEnabled()&&
-                DefaultImagefolder.isEnabled()&&
-                DefaultTextfolder.isEnabled()&&
-                DefaultNativefolder.isEnabled()&&
-                DefaultLoadfilefolder.isEnabled()&&
-                DefaultPathprefix.isEnabled()&&
+        if (DefaultProductionDAT.isEnabled() &&
+                DefaultProductionDate.isEnabled() &&
+                DefaultProductionTime.isEnabled() &&
+                DefaultProductiontype.isEnabled() &&
+                DefaultSortorder.isEnabled() &&
+                Defaultpreproduceddochandling.isEnabled() &&
+                Defaultfamilyhandling.isEnabled() &&
+                DefaultMarkupset.isEnabled() &&
+                DefaultText.isEnabled() &&
+                DefaultImageRedactionlabel.isEnabled() &&
+                DefaultBlackoutRedactiontext.isEnabled() &&
+                DefaultRedactedwithFamily.isEnabled() &&
+                Defaultunreadableplaceholdertext.isEnabled() &&
+                Defaultunreadablewithfamilyhandling.isEnabled() &&
+                DefaultPrivplaceholdertext.isEnabled() &&
+                DefaultPrivwithfamilyhandling.isEnabled() &&
+                Defaultemptyfileid.isEnabled() &&
+                Defaultemptyfiles.isEnabled() &&
+                DefaultNativefiles.isEnabled() &&
+                DefaultTifffailure.isEnabled() &&
+                Defaultspreadsheet.isEnabled() &&
+                DefaultPresentation.isEnabled() &&
+                DefaultOtherfiles.isEnabled() &&
+                DefaultProductionnumbering.isEnabled() &&
+                DefaultUseexistingfields.isEnabled() &&
+                DefaultBrandingfont.isEnabled() &&
+                DefaultBottomright.isEnabled() &&
+                DefaultLoadfiledelimiter.isEnabled() &&
+                DefaultLoadfileencoding.isEnabled() &&
+                DefaultImagefiledelivery.isEnabled() &&
+                DefaultTextfiledelivery.isEnabled() &&
+                DefaultNativefiledelivery.isEnabled() &&
+                DefaultImagefolder.isEnabled() &&
+                DefaultTextfolder.isEnabled() &&
+                DefaultNativefolder.isEnabled() &&
+                DefaultLoadfilefolder.isEnabled() &&
+                DefaultPathprefix.isEnabled() &&
                 DefaultPDFFilefolder.isEnabled()
-
-
-        )
-        {
+        ) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
     }
-    public boolean  verifydefaultselection_sluk(){
+
+    public boolean verifydefaultselection_sluk() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_sluk();
         try {
@@ -1394,57 +1388,51 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if(DefaultProductionDAT.isEnabled()&&
-                DefaultProductionDate_uk.isEnabled()&&
-                DefaultProductionTime.isEnabled()&&
-                DefaultProductiontype_uk.isEnabled()&&
-                DefaultSortorder_uk.isEnabled()&&
-                Defaultpreproduceddochandling.isEnabled()&&
-                Defaultfamilyhandling.isEnabled()&&
-                DefaultMarkupset.isEnabled()&&
-                DefaultText.isEnabled()&&
-                DefaultImageRedactionlabel.isEnabled()&&
-                DefaultBlackoutRedactiontext.isEnabled()&&
-                DefaultRedactedwithfamily_uk.isEnabled()&&
-                Defaultunreadableplaceholdertext.isEnabled()&&
-                DefaultUnreadablewithfamilyhandling_uk.isEnabled()&&
-                DefaultPrivplaceholdertext.isEnabled()&&
-                DefaultPrivwithfamilyhandling_uk.isEnabled()&&
-                Defaultemptyfileid.isEnabled()&&
-                Defaultemptyfiles.isEnabled()&&
-                DefaultNativefiles_uk.isEnabled()&&
-                DefaultTifffailure.isEnabled()&&
-                Defaultspreadsheet.isEnabled()&&
-                DefaultPresentation.isEnabled()&&
-                DefaultOtherfiles.isEnabled()&&
-                DefaultProductionnumbering_uk.isEnabled()&&
-                DefaultUseexistingfields.isEnabled()&&
-                DefaultBrandingfont.isEnabled()&&
-                DefaultBottomright.isEnabled()&&
-                DefaultLoadfiledelimiter.isEnabled()&&
-                DefaultLoadfileencoding.isEnabled()&&
-                DefaultImagefiledelivery.isEnabled()&&
-                DefaultTextfiledelivery.isEnabled()&&
-                DefaultNativefiledelivery.isEnabled()&&
-                DefaultImagefolder.isEnabled()&&
-                DefaultTextfolder.isEnabled()&&
-                DefaultNativefolder.isEnabled()&&
-                DefaultLoadfilefolder.isEnabled()&&
-                DefaultPathprefix.isEnabled()&&
+        if (DefaultProductionDAT.isEnabled() &&
+                DefaultProductionDate_uk.isEnabled() &&
+                DefaultProductionTime.isEnabled() &&
+                DefaultProductiontype_uk.isEnabled() &&
+                DefaultSortorder_uk.isEnabled() &&
+                Defaultpreproduceddochandling.isEnabled() &&
+                Defaultfamilyhandling.isEnabled() &&
+                DefaultMarkupset.isEnabled() &&
+                DefaultText.isEnabled() &&
+                DefaultImageRedactionlabel.isEnabled() &&
+                DefaultBlackoutRedactiontext.isEnabled() &&
+                DefaultRedactedwithfamily_uk.isEnabled() &&
+                Defaultunreadableplaceholdertext.isEnabled() &&
+                DefaultUnreadablewithfamilyhandling_uk.isEnabled() &&
+                DefaultPrivplaceholdertext.isEnabled() &&
+                DefaultPrivwithfamilyhandling_uk.isEnabled() &&
+                Defaultemptyfileid.isEnabled() &&
+                Defaultemptyfiles.isEnabled() &&
+                DefaultNativefiles_uk.isEnabled() &&
+                DefaultTifffailure.isEnabled() &&
+                Defaultspreadsheet.isEnabled() &&
+                DefaultPresentation.isEnabled() &&
+                DefaultOtherfiles.isEnabled() &&
+                DefaultProductionnumbering_uk.isEnabled() &&
+                DefaultUseexistingfields.isEnabled() &&
+                DefaultBrandingfont.isEnabled() &&
+                DefaultBottomright.isEnabled() &&
+                DefaultLoadfiledelimiter.isEnabled() &&
+                DefaultLoadfileencoding.isEnabled() &&
+                DefaultImagefiledelivery.isEnabled() &&
+                DefaultTextfiledelivery.isEnabled() &&
+                DefaultNativefiledelivery.isEnabled() &&
+                DefaultImagefolder.isEnabled() &&
+                DefaultTextfolder.isEnabled() &&
+                DefaultNativefolder.isEnabled() &&
+                DefaultLoadfilefolder.isEnabled() &&
+                DefaultPathprefix.isEnabled() &&
                 DefaultPDFFilefolder.isEnabled()
-
-        )
-        {
+        ) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
-
-
-
     }
+
     public boolean verifyfieldchoices_relus() {
         HomePage homepage = new HomePage(driver);
         homepage.NewFormcreation_relus();
@@ -1453,49 +1441,47 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
-                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
-                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
-                SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
-                SelectSortorder. getText().contains("STANDARD: CustID - displayName, Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
-                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
-                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
-                SelectMarkupSet. getText().contains("STANDARD: Primary Markup Set")&&
-                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
-                SelectImageredactionlabel. getText().contains("STANDARD: Redactions use text from applicable Markup Set")&&
-                SelectBlackoutredaction. getText().contains("STANDARD: Process Excel text into Redacted Native Text field")&&
-                SelectRedactedwithfamily. getText().contains("STANDARD: N/A")&&
-                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
-                SelectUnreadablewithfamilyhandling. getText().contains("STANDARD: N/A")&&
-                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
-                SelectPrivfamilyhandling. getText().contains("STANDARD: N/A")&&
-                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
-                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
-                SelectNativefiles. getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided")&&
-                SelectTifffailure. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided")&&
-                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
-                SelectPresentation. getText().contains("STANDARD: N/A")&&
-                SelectOtherfiles. getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed")&&
-                SelectProductionnumbering. getText().contains("STANDARD: Page-level numbering")&&
-                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
-                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
-                SelectBottomRight. getText().contains("STANDARD: Production Bates")&&
-                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
-                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-8)")&&
-                SelectImagefiledelivery. getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI")&&
-                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included")&&
-                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
-                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)")&&
-                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)")&&
-                SelectNativesfolder. getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)")&&
-                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
-                SelectPathprefix. getText().contains("STANDARD: N/A")&&
-                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated") &&
+                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank") &&
+                SelectProductionTime.getText().contains("STANDARD: HH:mm:ss, Null times will be blank") &&
+                SelectProductionType.getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)") &&
+                SelectSortorder.getText().contains("STANDARD: CustID - displayName, Family Datetime, Group Identifier, DocumentID (All Ascending)") &&
+                SelectPreproduceddochandling.getText().contains("STANDARD: Exclude Previously Produced Documents") &&
+                Selectfamilyassociation.getText().contains("STANDARD: Produce Full Familes") &&
+                SelectMarkupSet.getText().contains("STANDARD: Primary Markup Set") &&
+                SelectText.getText().contains("STANDARD: OCR documents with redactions") &&
+                SelectImageredactionlabel.getText().contains("STANDARD: Redactions use text from applicable Markup Set") &&
+                SelectBlackoutredaction.getText().contains("STANDARD: Process Excel text into Redacted Native Text field") &&
+                SelectRedactedwithfamily.getText().contains("STANDARD: N/A") &&
+                SelectUnreadableplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided") &&
+                SelectUnreadablewithfamilyhandling.getText().contains("STANDARD: N/A") &&
+                SelectPrivplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided") &&
+                SelectPrivfamilyhandling.getText().contains("STANDARD: N/A") &&
+                SelectEmptyfileid.getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty") &&
+                Selectemptyfile.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided") &&
+                SelectNativefiles.getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided") &&
+                SelectTifffailure.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided") &&
+                SelectSpreadsheet.getText().contains("STANDARD: N/A") &&
+                SelectPresentation.getText().contains("STANDARD: N/A") &&
+                SelectOtherfiles.getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed") &&
+                SelectProductionnumbering.getText().contains("STANDARD: Page-level numbering") &&
+                SelectUseexistingfield.getText().contains("STANDARD: N/A") &&
+                SelectBrandingfont.getText().contains("STANDARD: Arial, Bold size 10") &&
+                SelectBottomRight.getText().contains("STANDARD: Production Bates") &&
+                Selectloadfiledelimiter.getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)") &&
+                SelectLoadfileencoding.getText().contains("STANDARD: Unicode (UTF-8)") &&
+                SelectImagefiledelivery.getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI") &&
+                SelectTextfiledelivery.getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included") &&
+                SelectNativefiledelivery.getText().contains("STANDARD: Native files named after Production Begin Bates") &&
+                SelectImagefolder.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)") &&
+                SelectTextfolder.getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)") &&
+                SelectNativesfolder.getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)") &&
+                SelectLoadfilesfolder.getText().contains("STANDARD: DATA") &&
+                SelectPathprefix.getText().contains("STANDARD: N/A") &&
+                SelectPDFFilefolder.getText().contains("STANDARD: N/A")
         ) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
     }
@@ -1509,51 +1495,49 @@ import java.security.SecureRandom;
             e.printStackTrace();
         }
 
-        if(SelectProductionDAT. getText().contains("STANDARD: Universal Time Coordinated")&&
-            SelectProductionDate. getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank")&&
-            SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
-            SelectProductionType. getText().contains("UK STANDARD: Natives, Text, Images for placeholder/redacted documents & family members to be the original image")&&
-            SelectSortorder. getText().contains("UK STANDARD: Family Datetime, Group Identifier, DocumentID (All Ascending)")&&
-            SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
-            Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
-            SelectMarkupSet. getText().contains("STANDARD: Primary Markup Set")&&
-            SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
-            SelectImageredactionlabel. getText().contains("STANDARD: Redactions use text from applicable Markup Set")&&
-            SelectBlackoutredaction. getText().contains("STANDARD: Process Excel text into Redacted Native Text field")&&
-            SelectRedactedwithfamily. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-            SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
-            SelectUnreadablewithfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-            SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
-            SelectPrivfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-            SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
-            Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
-            SelectNativefiles. getText().contains("UK STANDARD: N/A")&&
-            SelectTifffailure. getText().contains("STANDARD: N/A")&&
-            SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
-            SelectPresentation. getText().contains("STANDARD: N/A")&&
-            SelectOtherfiles. getText().contains("UK STANDARD: N/A")&&
-            SelectProductionnumbering. getText().contains("UK STANDARD: Document-level numbering")&&
-            SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
-            SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
-            Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
-            SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-8)")&&
-            SelectImagefiledelivery. getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI")&&
-            SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included")&&
-            SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
-            SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)")&&
-            SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)")&&
-            SelectNativesfolder. getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)")&&
-            SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
-            SelectPathprefix. getText().contains("STANDARD: N/A")&&
-            SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated") &&
+                SelectProductionDate.getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank") &&
+                SelectProductionTime.getText().contains("STANDARD: HH:mm:ss, Null times will be blank") &&
+                SelectProductionType.getText().contains("UK STANDARD: Natives, Text, Images for placeholder/redacted documents & family members to be the original image") &&
+                SelectSortorder.getText().contains("UK STANDARD: Family Datetime, Group Identifier, DocumentID (All Ascending)") &&
+                SelectPreproduceddochandling.getText().contains("STANDARD: Exclude Previously Produced Documents") &&
+                Selectfamilyassociation.getText().contains("STANDARD: Produce Full Familes") &&
+                SelectMarkupSet.getText().contains("STANDARD: Primary Markup Set") &&
+                SelectText.getText().contains("STANDARD: OCR documents with redactions") &&
+                SelectImageredactionlabel.getText().contains("STANDARD: Redactions use text from applicable Markup Set") &&
+                SelectBlackoutredaction.getText().contains("STANDARD: Process Excel text into Redacted Native Text field") &&
+                SelectRedactedwithfamily.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectUnreadableplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided") &&
+                SelectUnreadablewithfamilyhandling.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectPrivplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided") &&
+                SelectPrivfamilyhandling.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectEmptyfileid.getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty") &&
+                Selectemptyfile.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided") &&
+                SelectNativefiles.getText().contains("UK STANDARD: N/A") &&
+                SelectTifffailure.getText().contains("STANDARD: N/A") &&
+                SelectSpreadsheet.getText().contains("STANDARD: N/A") &&
+                SelectPresentation.getText().contains("STANDARD: N/A") &&
+                SelectOtherfiles.getText().contains("UK STANDARD: N/A") &&
+                SelectProductionnumbering.getText().contains("UK STANDARD: Document-level numbering") &&
+                SelectUseexistingfield.getText().contains("STANDARD: N/A") &&
+                SelectBrandingfont.getText().contains("STANDARD: Arial, Bold size 10") &&
+                Selectloadfiledelimiter.getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)") &&
+                SelectLoadfileencoding.getText().contains("STANDARD: Unicode (UTF-8)") &&
+                SelectImagefiledelivery.getText().contains("STANDARD: Single-Page TIFF - Group IV & 300 DPI") &&
+                SelectTextfiledelivery.getText().contains("STANDARD: Document level Unicode (UTF-8), Text Path field in DAT, Redacted OCR included") &&
+                SelectNativefiledelivery.getText().contains("STANDARD: Native files named after Production Begin Bates") &&
+                SelectImagefolder.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created IMAGES001 etc.)") &&
+                SelectTextfolder.getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created TEXT001 etc.)") &&
+                SelectNativesfolder.getText().contains("STANDARD: NATIVE, 1,000 documents per folder (subfolders created NATIVES001 etc.)") &&
+                SelectLoadfilesfolder.getText().contains("STANDARD: DATA") &&
+                SelectPathprefix.getText().contains("STANDARD: N/A") &&
+                SelectPDFFilefolder.getText().contains("STANDARD: N/A")
 
-           ) {
-                return true;
-            }
-
-        else {
-                return false;
-            }
+        ) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public boolean verifyfieldchoices_slus() {
@@ -1564,54 +1548,51 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
-                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank")&&
-                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
-                SelectProductionType. getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)")&&
-                SelectSortorder. getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)")&&
-                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
-                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
-                SelectRedactionlayer. getText().contains("STANDARD: Default Annotation Layer")&&
-                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
-                SelectImageredactionlabel. getText().contains("STANDARD: All redactions receive \"REDACTED\" language")&&
-                SelectAudio. getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep")&&
-                SelectRedactedwithfamily. getText().contains("STANDARD: N/A")&&
-                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
-                SelectUnreadablewithfamilyhandling. getText().contains("STANDARD: N/A")&&
-                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
-                SelectPrivfamilyhandling. getText().contains("STANDARD: N/A")&&
-                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
-                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
-                SelectNativefiles. getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided")&&
-                SelectTifffailure. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided")&&
-                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
-                SelectPresentation. getText().contains("STANDARD: N/A")&&
-                SelectOtherfiles. getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed")&&
-                SelectProductionnumbering. getText().contains("STANDARD: Page-level numbering")&&
-                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
-                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
-                SelectBottomRight. getText().contains("STANDARD: Production Bates")&&
-                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
-                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-16)")&&
-                SelectImagefiledelivery. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
-                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included")&&
-                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
-                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
-                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)")&&
-                SelectNativesfolder. getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)")&&
-                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
-                SelectPathprefix. getText().contains("STANDARD: N/A")&&
-                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated") &&
+                SelectProductionDate.getText().contains("STANDARD: MM/dd/yyyy, Null dates will be blank") &&
+                SelectProductionTime.getText().contains("STANDARD: HH:mm:ss, Null times will be blank") &&
+                SelectProductionType.getText().contains("STANDARD: Images, Text, Natives (add additional extensions below to produce in native with placeholder)") &&
+                SelectSortorder.getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)") &&
+                SelectPreproduceddochandling.getText().contains("STANDARD: Exclude Previously Produced Documents") &&
+                Selectfamilyassociation.getText().contains("STANDARD: Produce Full Familes") &&
+                SelectRedactionlayer.getText().contains("STANDARD: Default Annotation Layer") &&
+                SelectText.getText().contains("STANDARD: OCR documents with redactions") &&
+                SelectImageredactionlabel.getText().contains("STANDARD: All redactions receive \"REDACTED\" language") &&
+                SelectAudio.getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep") &&
+                SelectRedactedwithfamily.getText().contains("STANDARD: N/A") &&
+                SelectUnreadableplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided") &&
+                SelectUnreadablewithfamilyhandling.getText().contains("STANDARD: N/A") &&
+                SelectPrivplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided") &&
+                SelectPrivfamilyhandling.getText().contains("STANDARD: N/A") &&
+                SelectEmptyfileid.getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty") &&
+                Selectemptyfile.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided") &&
+                SelectNativefiles.getText().contains("STANDARD: Placeholder image with \"Document Produced in Native Format\" language, text file to contain original text, and native provided") &&
+                SelectTifffailure.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Rendered\" language, text file to contain original text, and native provided") &&
+                SelectSpreadsheet.getText().contains("STANDARD: N/A") &&
+                SelectPresentation.getText().contains("STANDARD: N/A") &&
+                SelectOtherfiles.getText().contains("STANDARD: Images - Word/Text with Track Changes On; Auto-Date, Auto-Time and Auto-Filepaths Removed") &&
+                SelectProductionnumbering.getText().contains("STANDARD: Page-level numbering") &&
+                SelectUseexistingfield.getText().contains("STANDARD: N/A") &&
+                SelectBrandingfont.getText().contains("STANDARD: Arial, Bold size 10") &&
+                SelectBottomRight.getText().contains("STANDARD: Production Bates") &&
+                Selectloadfiledelimiter.getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)") &&
+                SelectLoadfileencoding.getText().contains("STANDARD: Unicode (UTF-16)") &&
+                SelectImagefiledelivery.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)") &&
+                SelectTextfiledelivery.getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included") &&
+                SelectNativefiledelivery.getText().contains("STANDARD: Native files named after Production Begin Bates") &&
+                SelectImagefolder.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)") &&
+                SelectTextfolder.getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)") &&
+                SelectNativesfolder.getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)") &&
+                SelectLoadfilesfolder.getText().contains("STANDARD: DATA") &&
+                SelectPathprefix.getText().contains("STANDARD: N/A") &&
+                SelectPDFFilefolder.getText().contains("STANDARD: N/A")
 
         ) {
             return true;
-        }
-
-        else {
+        } else {
             return false;
         }
     }
-
 
 
     public boolean verifyfieldchoices_sluk() {
@@ -1622,50 +1603,265 @@ import java.security.SecureRandom;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated")&&
-                SelectProductionDate.getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank")&&
-                SelectProductionTime. getText().contains("STANDARD: HH:mm:ss, Null times will be blank")&&
-                SelectProductionType. getText().contains("UK STANDARD: Natives, Text, Images (placeholder/redacted)")&&
-                SelectSortorder. getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)")&&
-                SelectPreproduceddochandling. getText().contains("STANDARD: Exclude Previously Produced Documents")&&
-                Selectfamilyassociation. getText().contains("STANDARD: Produce Full Familes")&&
-                SelectRedactionlayer. getText().contains("STANDARD: Default Annotation Layer")&&
-                SelectText. getText().contains("STANDARD: OCR documents with redactions")&&
-                SelectImageredactionlabel. getText().contains("STANDARD: All redactions receive \"REDACTED\" language")&&
-                SelectAudio. getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep")&&
-                SelectRedactedwithfamily. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-                SelectUnreadableplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided")&&
-                SelectUnreadablewithfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-                SelectPrivplaceholdertext. getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided")&&
-                SelectPrivfamilyhandling. getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text")&&
-                SelectEmptyfileid. getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty")&&
-                Selectemptyfile. getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided")&&
-                SelectNativefiles. getText().contains("UK STANDARD: N/A")&&
-                SelectTifffailure. getText().contains("STANDARD: N/A")&&
-                SelectSpreadsheet. getText().contains("STANDARD: N/A")&&
-                SelectPresentation. getText().contains("STANDARD: N/A")&&
-                SelectOtherfiles. getText().contains("UK STANDARD: N/A")&&
-                SelectProductionnumbering. getText().contains("UK STANDARD: Document-level numbering")&&
-                SelectUseexistingfield. getText().contains("STANDARD: N/A")&&
-                SelectBrandingfont. getText().contains("STANDARD: Arial, Bold size 10")&&
-                Selectloadfiledelimiter. getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)")&&
-                SelectLoadfileencoding. getText().contains("STANDARD: Unicode (UTF-16)")&&
-                SelectImagefiledelivery. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
-                SelectTextfiledelivery. getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included")&&
-                SelectNativefiledelivery. getText().contains("STANDARD: Native files named after Production Begin Bates")&&
-                SelectImagefolder. getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)")&&
-                SelectTextfolder. getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)")&&
-                SelectNativesfolder. getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)")&&
-                SelectLoadfilesfolder. getText().contains("STANDARD: DATA")&&
-                SelectPathprefix. getText().contains("STANDARD: N/A")&&
-                SelectPDFFilefolder. getText().contains("STANDARD: N/A")
+        if (SelectProductionDAT.getText().contains("STANDARD: Universal Time Coordinated") &&
+                SelectProductionDate.getText().contains("UK STANDARD: dd/MM/yyyy, Null dates will be blank") &&
+                SelectProductionTime.getText().contains("STANDARD: HH:mm:ss, Null times will be blank") &&
+                SelectProductionType.getText().contains("UK STANDARD: Natives, Text, Images (placeholder/redacted)") &&
+                SelectSortorder.getText().contains("STANDARD: CustodianName, MasterDate, DocID (All Ascending)") &&
+                SelectPreproduceddochandling.getText().contains("STANDARD: Exclude Previously Produced Documents") &&
+                Selectfamilyassociation.getText().contains("STANDARD: Produce Full Familes") &&
+                SelectRedactionlayer.getText().contains("STANDARD: Default Annotation Layer") &&
+                SelectText.getText().contains("STANDARD: OCR documents with redactions") &&
+                SelectImageredactionlabel.getText().contains("STANDARD: All redactions receive \"REDACTED\" language") &&
+                SelectAudio.getText().contains("STANDARD: Audio files converted to MP3 with the redaction sound of Beep") &&
+                SelectRedactedwithfamily.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectUnreadableplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text files to contain placeholder language, and no native provided") &&
+                SelectUnreadablewithfamilyhandling.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectPrivplaceholdertext.getText().contains("STANDARD: Placeholder image with \"Document Withheld for Privilege\" language, text file to contain placeholder language, & no native provided") &&
+                SelectPrivfamilyhandling.getText().contains("UK STANDARD: Family members which are NOT Privilege/Unreadable/Redacted disclosed as original images with extracted text") &&
+                SelectEmptyfileid.getText().contains("STANDARD: Has Native = No AND Processing Exception Category = Empty") &&
+                Selectemptyfile.getText().contains("STANDARD: Placeholder image with \"Document Cannot be Viewed\" language, text file to contain placeholder language, and no native provided") &&
+                SelectNativefiles.getText().contains("UK STANDARD: N/A") &&
+                SelectTifffailure.getText().contains("STANDARD: N/A") &&
+                SelectSpreadsheet.getText().contains("STANDARD: N/A") &&
+                SelectPresentation.getText().contains("STANDARD: N/A") &&
+                SelectOtherfiles.getText().contains("UK STANDARD: N/A") &&
+                SelectProductionnumbering.getText().contains("UK STANDARD: Document-level numbering") &&
+                SelectUseexistingfield.getText().contains("STANDARD: N/A") &&
+                SelectBrandingfont.getText().contains("STANDARD: Arial, Bold size 10") &&
+                Selectloadfiledelimiter.getText().contains("STANDARD: Concordance Field:\"¶\"(20),Text-Qualifier:\"þ\"(254),Newline:\"®\"(174),Multi-Line:\";\"(59)") &&
+                SelectLoadfileencoding.getText().contains("STANDARD: Unicode (UTF-16)") &&
+                SelectImagefiledelivery.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)") &&
+                SelectTextfiledelivery.getText().contains("STANDARD: Document level Unicode (UTF-16), Text Path field in DAT, Redacted OCR included") &&
+                SelectNativefiledelivery.getText().contains("STANDARD: Native files named after Production Begin Bates") &&
+                SelectImagefolder.getText().contains("STANDARD: IMAGES, 1,000 pages per folder (subfolders created 0001 etc.)") &&
+                SelectTextfolder.getText().contains("STANDARD: TEXT, 1,000 documents per folder (subfolders created 0001 etc.)") &&
+                SelectNativesfolder.getText().contains("STANDARD: NATIVES, 1,000 documents per folder (subfolders created 0001 etc.)") &&
+                SelectLoadfilesfolder.getText().contains("STANDARD: DATA") &&
+                SelectPathprefix.getText().contains("STANDARD: N/A") &&
+                SelectPDFFilefolder.getText().contains("STANDARD: N/A")
         ) {
             return true;
         } else {
             return false;
         }
     }
+
+    public void requiredfields_relus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_relus();
+
+    }
+
+    public void requiredfields_reluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+
+    }
+
+    public void requiredfields_slus() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+
+    }
+
+    public void requiredfields_sluk() {
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+
+    }
+    public boolean verifyrequiredfields_rel() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Submitrequirements)).click();
+        System.out.println(""+listofmenuitems.getText());
+        if (listofmenuitems.getText().contains("All User Validation Checkboxes Must Be Checked.\n" +
+                "Database Name is required.\n" +
+                "Production Name is required.\n" +
+                "List or Batch Set/Production Source is required.\n" +
+                "Total Document Count is required.\n" +
+                "Unreadable Document Count is required.\n" +
+                "Redacted Document Count is required.\n" +
+                "Privilege Document Count is required.\n" +
+                "Blackout Natively Redacted Doc Count is required.\n" +
+                "Empty File Document Count is required.\n" +
+                "Unreadable Identifier (field/choice) is required.\n" +
+                "Privilege Identifier (field/choice) is required.\n" +
+                "Prefix (include _ or -, no space) is required.\n" +
+                "Starting Number is required.\n" +
+                "Production Bates Padding is required.")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean verifyrequiredfields_sl() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"button-split\"]/span[2]"))).click();
+        System.out.println(""+listofmenuitems.getText());
+        if (listofmenuitems.getText().contains("All User Validation Checkboxes Must Be Checked.\n" +
+                "Database Name is required.\n" +
+                "Production Name is required.\n" +
+                "List or Batch Set/Production Source is required.\n" +
+                "Total Document Count is required.\n" +
+                "Unreadable Document Count is required.\n" +
+                "Redacted Document Count is required.\n" +
+                "Privilege Document Count is required.\n" +
+                "Exception Document Count is required.\n" +
+                "Empty File Document Count is required.\n" +
+                "Unreadable Identifier (field/choice) is required.\n" +
+                "Privilege Identifier (field/choice) is required.\n" +
+                "Prefix (include _ or -, no space) is required.\n" +
+                "Starting Number is required.\n" +
+                "Production Bates Padding is required.")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void validationerrorredhighlight(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        enableSubmitbutton();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-panel-0-content > div > div > div.ui-g-9 > div:nth-child(4) > span > input"))).clear();
+        log.info("Clear TotalDoccount"  +Totaldoccount.toString());
+
+    }
+     public void validationerrorredhighlight_relus(){
+         HomePage homepage = new HomePage(driver);
+         homepage.NewFormcreation_relus();
+         validationerrorredhighlight();
+         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
+
+
+     }
+    public void validationerrorredhighlight_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        validationerrorredhighlight();
+    }
+    public void validationerrorredhighlight_slus(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_slus();
+        validationerrorredhighlight();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("#ui-fieldset-6-content > div > div:nth-child(3) > div:nth-child(4) > div > user-confirmation-checkbox > i"))).click();
+
+    }
+    public void validationerrorredhighlight_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        validationerrorredhighlight();
+
+    }
+
+    public boolean verifyvalidationerrors_toasterpopup() {
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Submit)).click();
+        log.info("Click submit"  +Totaldoccount.toString());
+        try {
+            waitForElement(driver, 50, driver.findElement(By.cssSelector("#toast-container")));
+            boolean b = driver.getPageSource().contains("Total Document Count is required.");
+
+            return b;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+    public boolean verifyredhighlight(){
+
+        try {
+            String className2 = driver.findElement(By.xpath("//*[@id=\"ui-panel-0-content\"]/div/div/div[2]/div[1]/span/input")).getAttribute("class");
+            className2.contains("ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all ng-valid ng-dirty ng-touched element-not-valid");
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+       public boolean verifyvalidationerrors() {
+       try {
+           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Totaldoccount)).click();
+           new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"button-split\"]/span[2]"))).click();
+           log.info("Click submit requirements"  +Submitrequirements.toString());
+           System.out.println(""+listofmenuitems.getText());
+           driver.getPageSource().contains("Total Document Count is required.");
+               return true;
+           } catch (Exception e) {
+               return false;
+           }
+       }
+
+
+
+    public void clearerrorvalidation(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        enableSubmitbutton();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(Submit)).click();
+        log.info("Click submit"  +Submit.toString());
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    public void clearerrorvalidation_relus(){
+        enableSubmitbutton_relus();
+    }
+    public void clearerrorvalidation_reluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_reluk();
+        clearerrorvalidation();
+    }
+    public void clearerrorvalidation_slus(){
+        enableSubmitbutton_slus();
+    }
+    public void clearerrorvalidation_sluk(){
+        HomePage homepage = new HomePage(driver);
+        homepage.NewFormcreation_sluk();
+        clearerrorvalidation();
+    }
+    public boolean verifyclearerrorvalidation() {
+        try{
+            waitForElement(driver, 5000, Totaldoccount);
+            String className2 = Totaldoccount.getAttribute("class");
+            className2.contains("ui-spinner-input ui-inputtext ui-widget ui-state-default ui-corner-all ng-pristine ng-valid ng-touched");
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

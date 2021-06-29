@@ -148,8 +148,18 @@
             <class name="RELUSForms.TC0141_Fieldschoices"></class>
             <class name="SLUKForms.TC0142_Fieldschoices"></class>
             <class name="SLUSForms.TC0143_Fieldschoices"></class>
-
-
+            <class name="RELUKForms.TC0144_Requiredfieldsvalidation"></class>
+            <class name="RELUSForms.TC0145_Requiredfieldsvalidation"></class>
+            <class name="SLUKForms.TC0146_Requiredfieldsvalidation"></class>
+            <class name="SLUSForms.TC0147_Requiredfieldsvalidation"></class>
+            <class name="RELUKForms.TC0148_Validationerrorverification"></class>
+            <class name="RELUSForms.TC0149_Validationerrorverification"></class>
+            <class name="SLUKForms.TC0150_Validationerrorverification"></class>
+            <class name="SLUSForms.TC0151_Validationerrorverification"></class>
+            <class name="RELUKForms.TC0152_Clearerrorvalidation"></class>
+            <class name="RELUSForms.TC0153_Clearerrorvalidation"></class>
+            <class name="SLUKForms.TC0154_Clearerrorvalidation"></class>
+            <class name="SLUSForms.TC0155_Clearerrorvalidation"></class>
 
 
 
