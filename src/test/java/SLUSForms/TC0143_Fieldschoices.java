@@ -17,11 +17,11 @@ import java.io.IOException;
         }
 
         @Test
-        public void defaultvaluesverification() {
-            log.info("=======started defaultvaluesverification Test===========");
+        public void fieldchoices() {
+            log.info("=======started fieldchoices Test===========");
             ProdspecPageext prodspecPageext = new ProdspecPageext(driver);
             Assert.assertEquals(true, prodspecPageext.verifyfieldchoices_slus());
-            log.info("=======Finished defaultvaluesverification Test===========");
+            log.info("=======Finished fieldchoices Test===========");
         }
 
         @AfterClass

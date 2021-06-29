@@ -74,7 +74,8 @@ public class ProdspecPage  extends testBase {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(HCodedropdown)).click();
         log.info("clicked on EnterHcode object is:-" + HCodedropdown.toString());
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(HCodeSearch)).click();
-        HCodeSearch.sendKeys("H45678 - QA - H45678");
+        HCodeSearch.sendKeys("H");
+        HCodeSearch.sendKeys(Keys.DOWN);
         log.info("Enter Hcode value object is:-" + HCodeSearch.toString());
         driver.findElement(By.cssSelector("#dropdown-list > li.ng-star-inserted > cdk-virtual-scroll-viewport > div.cdk-virtual-scroll-content-wrapper > a:nth-child(1)")).click();
         log.info("Enter Hcode value object selected:-" + HCodedropdown.toString());
@@ -219,7 +220,7 @@ public class ProdspecPage  extends testBase {
     public boolean verifyhcodedropdown() {
         try {
             waitForElement(driver, 20, driver.findElement(By.cssSelector("body > app-root > app-main > div > div > div.layout-main > div > app-prod-spec > div.prod-spec-header-top > div.prod-spec-header-matter > div > filter-dropdown > div > input")));
-            boolean b = driver.getPageSource().contains("H45678 - QA - H45678");
+            boolean b = driver.getPageSource().contains("H");
 
             return b;
         } catch (Exception e) {

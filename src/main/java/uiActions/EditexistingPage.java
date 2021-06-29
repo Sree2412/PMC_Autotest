@@ -2,6 +2,7 @@ package uiActions;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,7 +57,9 @@ public class EditexistingPage  extends testBase {
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(EnterHCode)).click();
         log.info("clicked on EnterHcode object is:-" + EnterHCode.toString());
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(HcodeSearch)).click();
-        HcodeSearch.sendKeys("H45678 - QA - H45678");
+        HcodeSearch.sendKeys("H");
+        HcodeSearch.sendKeys(Keys.DOWN);
+        log.info("Enter Hcode value object is:-" + HcodeSearch.toString());
         log.info("Enter Hcode value object is:-" + HcodeSearch.toString());
         driver.findElement(By.cssSelector("#dropdown-list > li.ng-star-inserted > cdk-virtual-scroll-viewport > div.cdk-virtual-scroll-content-wrapper > a:nth-child(1)")).click();
         log.info("Enter Hcode value object is:-" + EnterHCode.toString());
